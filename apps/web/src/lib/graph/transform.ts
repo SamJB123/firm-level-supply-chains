@@ -1,5 +1,3 @@
-import Graph from 'graphology'
-
 import type {
   ConfidenceBand,
   FilterState,
@@ -9,17 +7,17 @@ import type {
   RelationType,
 } from '../types'
 
-const COUNTRY_COLOR: Record<GraphNodeRecord['country'], string> = {
+export const COUNTRY_COLOR: Record<GraphNodeRecord['country'], string> = {
   AU: '#0f766e',
   CN: '#b91c1c',
   US: '#1d4ed8',
   OTHER: '#6b7280',
 }
 
-const CONFIDENCE_SIZE: Record<ConfidenceBand, number> = {
-  high: 8,
-  medium: 6,
-  low: 5,
+const CONFIDENCE_WIDTH: Record<ConfidenceBand, number> = {
+  high: 2.8,
+  medium: 1.9,
+  low: 1.2,
 }
 
 export function createDefaultFilters(bundle: GraphBundle): FilterState {
@@ -74,40 +72,28 @@ export function filterBundle(bundle: GraphBundle, filters: FilterState): GraphBu
   }
 }
 
-export function buildSigmaGraph(bundle: GraphBundle): Graph {
-  const graph = new Graph()
-  const countries = [...new Set(bundle.nodes.map((node) => node.country))]
-  const grouped = new Map(countries.map((country, index) => [country, { index, nodes: bundle.nodes.filter((node) => node.country === country) }]))
+export function getNodeColor(node: GraphNodeRecord): string {
+  return COUNTRY_COLOR[node.country]
+}
 
-  grouped.forEach(({ index, nodes }, country) => {
-    const centerX = (index - (countries.length - 1) / 2) * 4
-    const centerY = 0
-    nodes.forEach((node, nodeIndex) => {
-      const angle = (Math.PI * 2 * nodeIndex) / Math.max(nodes.length, 1)
-      const radius = 1.8 + nodeIndex * 0.08
-      graph.addNode(node.id, {
-        label: node.label,
-        x: centerX + Math.cos(angle) * radius,
-        y: centerY + Math.sin(angle) * radius,
-        size: node.node_kind === 'placeholder' ? 8 : 12,
-        color: COUNTRY_COLOR[country],
-      })
-    })
-  })
+export function getNodeValue(node: GraphNodeRecord): number {
+  return node.node_kind === 'placeholder' ? 3.2 : 6
+}
 
-  bundle.edges.forEach((edge) => {
-    if (!graph.hasNode(edge.source) || !graph.hasNode(edge.target)) {
-      return
-    }
-    graph.addEdgeWithKey(edge.id, edge.source, edge.target, {
-      label: edge.relation_type,
-      size: CONFIDENCE_SIZE[edge.confidence],
-      color: edge.explicit ? '#475569' : '#f59e0b',
-      type: 'arrow',
-    })
-  })
+export function getLinkColor(edge: GraphEdgeRecord): string {
+  return edge.explicit ? '#64748b' : '#f59e0b'
+}
 
-  return graph
+export function getLinkWidth(edge: GraphEdgeRecord): number {
+  return CONFIDENCE_WIDTH[edge.confidence]
+}
+
+export function getLinkParticleCount(edge: GraphEdgeRecord): number {
+  return edge.explicit ? 2 : 1
+}
+
+export function getLinkArrowLength(edge: GraphEdgeRecord): number {
+  return edge.explicit ? 4.5 : 3.2
 }
 
 export function collectAvailableRelationTypes(bundle: GraphBundle): RelationType[] {

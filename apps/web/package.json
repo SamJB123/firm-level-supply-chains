@@ -12,11 +12,11 @@
     "test": "vitest run"
   },
   "dependencies": {
+    "3d-force-graph": "^1.79.1",
     "@tanstack/react-router": "^1.132.18",
-    "graphology": "^0.26.0",
     "react": "^19.2.0",
     "react-dom": "^19.2.0",
-    "sigma": "^3.0.2"
+    "three": "^0.183.2"
   },
   "devDependencies": {
     "@eslint/js": "^9.39.1",
