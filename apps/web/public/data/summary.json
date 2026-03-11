@@ -1,0 +1,30 @@
+{
+  "nodeCount": 11,
+  "edgeCount": 8,
+  "evidenceCount": 47,
+  "candidateCount": 0,
+  "explicitEdgeCount": 2,
+  "placeholderEdgeCount": 6,
+  "sources": {
+    "AU": [
+      "Modern Slavery Statements Register",
+      "Public annual report / announcement PDFs",
+      "ABN Lookup / Australian Business Register"
+    ],
+    "CN": [
+      "CNINFO announcement metadata",
+      "CNINFO annual and semiannual report PDFs"
+    ],
+    "US": [
+      "SEC EDGAR submissions metadata",
+      "SEC filing HTML / exhibits",
+      "SEC XBRL and CompanyFacts APIs"
+    ]
+  },
+  "countries": [
+    "AU",
+    "CN",
+    "OTHER",
+    "US"
+  ]
+}

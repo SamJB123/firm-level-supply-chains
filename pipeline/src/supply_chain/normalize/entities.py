@@ -49,9 +49,11 @@ def build_entities(evidence_items: list[ParsedEvidence], overrides: dict[str, st
     name_to_entity_id: dict[str, str] = {}
 
     def ensure_entity(display_name: str, country: Country, node_kind: str = "company") -> str:
-        override_name = overrides.get(normalize_name(display_name), display_name)
+        raw_key = normalize_name(display_name)
+        override_name = overrides.get(raw_key, display_name)
         canonical_key = normalize_name(override_name)
         if canonical_key in name_to_entity_id:
+            name_to_entity_id[raw_key] = name_to_entity_id[canonical_key]
             return name_to_entity_id[canonical_key]
         entity_id = f"ent-{hashlib.md5(f'{country.value}:{canonical_key}'.encode('utf-8')).hexdigest()[:12]}"
         entity = NormalizedEntity(
@@ -63,6 +65,7 @@ def build_entities(evidence_items: list[ParsedEvidence], overrides: dict[str, st
         )
         entities[entity_id] = entity
         name_to_entity_id[canonical_key] = entity_id
+        name_to_entity_id[raw_key] = entity_id
         return entity_id
 
     for item in evidence_items:

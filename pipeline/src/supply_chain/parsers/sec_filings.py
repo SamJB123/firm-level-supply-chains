@@ -8,22 +8,28 @@ from pathlib import Path
 from supply_chain.models import ConfidenceBand, Country, ParsedEvidence, RelationType, SourceDocument
 
 
-SUPPLIER_PATTERNS = [
+COMPANY_NAME_PATTERN = re.compile(
+    r"(?:[A-Z][A-Za-z0-9&'().-]*\s){2,8}(?:Limited|Ltd\.|Ltd|Inc\.|Inc|Corporation|Corp\.|Corp|Company|Co\.|LLC|Group|Technologies|Technology|Semiconductor|Electronics)"
+)
+
+SUPPLIER_CONTEXT_PATTERNS = [
     re.compile(
-        r"(?P<counterparty>[A-Z][A-Za-z0-9&.,'() -]{2,}(?:Inc\.|Inc|Corporation|Corp\.|Corp|Ltd\.|Ltd|Limited|Company|Co\.|LLC|Group|Technologies|Technology|Semiconductor|Electronics))"
-        r".{0,120}?(?:manufactur|supply|foundry|assembly|fabricat)",
+        r"(?:utilize|use|purchase(?: memory)? from|engage with|engage|rely on|depend on).{0,120}?(?:such as|from)\s(?P<context>[^.]{0,420})",
         re.I,
     ),
     re.compile(
-        r"(?:depend on|rely on|purchase from|sourced from).{0,80}?(?P<counterparty>[A-Z][A-Za-z0-9&.,'() -]{2,}(?:Inc\.|Inc|Corporation|Corp\.|Corp|Ltd\.|Ltd|Limited|Company|Co\.|LLC|Group|Technologies|Technology|Semiconductor|Electronics))",
+        r"(?:rely on|depend on)\s(?P<context>[^.]{0,220})\s(?:to manufacture|to supply|for manufacturing)",
+        re.I,
+    ),
+    re.compile(
+        r"(?:foundries|contract manufacturers|subcontractors|assembly partners).{0,80}?(?:such as|include)\s(?P<context>[^.]{0,420})",
         re.I,
     ),
 ]
 
-CUSTOMER_PATTERNS = [
+CUSTOMER_CONTEXT_PATTERNS = [
     re.compile(
-        r"(?P<counterparty>[A-Z][A-Za-z0-9&.,'() -]{2,}(?:Inc\.|Inc|Corporation|Corp\.|Corp|Ltd\.|Ltd|Limited|Company|Co\.|LLC|Group|Technologies|Technology))"
-        r".{0,80}?(?:customer|customers)",
+        r"(?:customers include|direct customers include).{0,20}(?P<context>[^.]{0,420})",
         re.I,
     )
 ]
@@ -39,53 +45,53 @@ def parse_document(document: SourceDocument) -> list[ParsedEvidence]:
     normalized_text = _html_to_text(text)
     evidence: list[ParsedEvidence] = []
 
-    for pattern in SUPPLIER_PATTERNS:
+    for pattern in SUPPLIER_CONTEXT_PATTERNS:
         for match in pattern.finditer(normalized_text):
-            counterparty_name = match.group("counterparty").strip()
-            if counterparty_name == document.company_name:
-                continue
-            evidence.append(
-                ParsedEvidence(
-                    evidence_id=_make_evidence_id(document.document_id, match.group(0)),
-                    country=Country.UNITED_STATES,
-                    relation_type=RelationType.SUPPLIER,
-                    reporter_name=document.company_name,
-                    counterparty_name=counterparty_name,
-                    confidence=ConfidenceBand.MEDIUM,
-                    source_system=document.source_system,
-                    document_id=document.document_id,
-                    document_title=document.title,
-                    excerpt=match.group(0).strip(),
-                    filing_year=document.filing_year,
-                    parser_method="sec_supplier_regex",
-                    download_url=document.download_url,
-                    local_path=document.local_path,
+            for counterparty_name in _extract_company_names(match.group("context")):
+                if counterparty_name == document.company_name:
+                    continue
+                evidence.append(
+                    ParsedEvidence(
+                        evidence_id=_make_evidence_id(document.document_id, f"{match.group(0)}::{counterparty_name}"),
+                        country=Country.UNITED_STATES,
+                        relation_type=RelationType.SUPPLIER,
+                        reporter_name=document.company_name,
+                        counterparty_name=counterparty_name,
+                        confidence=ConfidenceBand.MEDIUM,
+                        source_system=document.source_system,
+                        document_id=document.document_id,
+                        document_title=document.title,
+                        excerpt=match.group(0).strip(),
+                        filing_year=document.filing_year,
+                        parser_method="sec_supplier_regex",
+                        download_url=document.download_url,
+                        local_path=document.local_path,
+                    )
                 )
-            )
 
-    for pattern in CUSTOMER_PATTERNS:
+    for pattern in CUSTOMER_CONTEXT_PATTERNS:
         for match in pattern.finditer(normalized_text):
-            counterparty_name = match.group("counterparty").strip()
-            if counterparty_name == document.company_name:
-                continue
-            evidence.append(
-                ParsedEvidence(
-                    evidence_id=_make_evidence_id(document.document_id, match.group(0)),
-                    country=Country.UNITED_STATES,
-                    relation_type=RelationType.CUSTOMER,
-                    reporter_name=document.company_name,
-                    counterparty_name=counterparty_name,
-                    confidence=ConfidenceBand.LOW,
-                    source_system=document.source_system,
-                    document_id=document.document_id,
-                    document_title=document.title,
-                    excerpt=match.group(0).strip(),
-                    filing_year=document.filing_year,
-                    parser_method="sec_customer_regex",
-                    download_url=document.download_url,
-                    local_path=document.local_path,
+            for counterparty_name in _extract_company_names(match.group("context")):
+                if counterparty_name == document.company_name:
+                    continue
+                evidence.append(
+                    ParsedEvidence(
+                        evidence_id=_make_evidence_id(document.document_id, f"{match.group(0)}::{counterparty_name}"),
+                        country=Country.UNITED_STATES,
+                        relation_type=RelationType.CUSTOMER,
+                        reporter_name=document.company_name,
+                        counterparty_name=counterparty_name,
+                        confidence=ConfidenceBand.LOW,
+                        source_system=document.source_system,
+                        document_id=document.document_id,
+                        document_title=document.title,
+                        excerpt=match.group(0).strip(),
+                        filing_year=document.filing_year,
+                        parser_method="sec_customer_regex",
+                        download_url=document.download_url,
+                        local_path=document.local_path,
+                    )
                 )
-            )
 
     if not evidence:
         for match in UNDISCLOSED_PATTERN.finditer(normalized_text):
@@ -120,6 +126,27 @@ def _html_to_text(value: str) -> str:
     without_styles = re.sub(r"<style.*?</style>", " ", without_scripts, flags=re.S | re.I)
     without_tags = re.sub(r"<[^>]+>", " ", without_styles)
     return re.sub(r"\s+", " ", unescape(without_tags))
+
+
+def _extract_company_names(value: str) -> list[str]:
+    cleaned_value = re.sub(r",\s+or\s+[A-Z0-9&'().-]+", "", value)
+    found = [match.group(0).strip(" ,;") for match in COMPANY_NAME_PATTERN.finditer(cleaned_value)]
+    deduped: list[str] = []
+    for name in found:
+        if _is_plausible_company_name(name) and name not in deduped:
+            deduped.append(name)
+    return deduped
+
+
+def _is_plausible_company_name(value: str) -> bool:
+    stripped = value.strip()
+    if "Table of Contents" in stripped:
+        return False
+    if len(stripped.split()) < 3:
+        return False
+    if stripped.endswith(("technology", "technologies", "electronics", "semiconductor")):
+        return False
+    return True
 
 
 def _make_evidence_id(document_id: str, payload: str) -> str:

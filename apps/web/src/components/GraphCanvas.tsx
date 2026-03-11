@@ -27,6 +27,7 @@ export function GraphCanvas({ bundle, onSelectNode, onSelectEdge }: GraphCanvasP
       labelDensity: 0.08,
       labelSize: 12,
       defaultEdgeType: 'arrow',
+      enableEdgeEvents: true,
     })
     sigmaRef.current = sigma
 

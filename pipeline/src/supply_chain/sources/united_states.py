@@ -80,24 +80,26 @@ def fetch_documents(seeds: list[CompanySeed], years_back: int = 3) -> list[Sourc
             )
             local_path = local_dir / f"{filing_year}-{form.lower()}.html"
             metadata_path = local_dir / f"{filing_year}-{form.lower()}.json"
-            document_response = requests.get(
-                download_url,
-                headers=REQUEST_HEADERS["sec"],
-                timeout=60,
-            )
-            document_response.raise_for_status()
-            local_path.write_text(document_response.text)
-            metadata_path.write_text(
-                json.dumps(
-                    {
-                        "cik": cik,
-                        "ticker": ticker,
-                        "filing_date": filing_date,
-                        "form": form,
-                    },
-                    indent=2,
+            if not local_path.exists():
+                document_response = requests.get(
+                    download_url,
+                    headers=REQUEST_HEADERS["sec"],
+                    timeout=60,
                 )
-            )
+                document_response.raise_for_status()
+                local_path.write_text(document_response.text)
+            if not metadata_path.exists():
+                metadata_path.write_text(
+                    json.dumps(
+                        {
+                            "cik": cik,
+                            "ticker": ticker,
+                            "filing_date": filing_date,
+                            "form": form,
+                        },
+                        indent=2,
+                    )
+                )
             documents.append(
                 SourceDocument(
                     document_id=f"us-{_safe_slug(seed.name)}-{filing_year}",

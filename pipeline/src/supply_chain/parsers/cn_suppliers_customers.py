@@ -13,6 +13,7 @@ SUPPLIER_MARKERS = ["前五名供应商", "前五名供應商", "主要供应商
 MASKED_COUNTERPARTY_PATTERN = re.compile(r"(客户|供应商)[一二三四五12345]")
 PERCENTAGE_PATTERN = re.compile(r"(\d+(?:\.\d+)?)%")
 NAMED_ENTITY_PATTERN = re.compile(r"[\u4e00-\u9fffA-Za-z0-9（）()·&]{3,}(?:公司|集团|股份|有限|银行|大学|厂|矿业|能源)")
+TABLE_ROW_PATTERN = re.compile(r"^\d+\s+")
 
 
 def parse_document(document: SourceDocument) -> list[ParsedEvidence]:
@@ -32,11 +33,13 @@ def parse_document(document: SourceDocument) -> list[ParsedEvidence]:
                 continue
             if relation_type is None:
                 continue
+            if not TABLE_ROW_PATTERN.match(line):
+                continue
             named_match = NAMED_ENTITY_PATTERN.search(line)
             percentage_match = PERCENTAGE_PATTERN.search(line)
             if named_match:
                 counterparty_name = named_match.group(0)
-                if counterparty_name == document.company_name:
+                if counterparty_name == document.company_name or "年度报告" in line:
                     continue
                 evidence.append(
                     ParsedEvidence(

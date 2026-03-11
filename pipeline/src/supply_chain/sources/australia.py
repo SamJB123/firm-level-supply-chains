@@ -66,23 +66,25 @@ def fetch_statement_document(seed: CompanySeed, limit: int = 3) -> list[SourceDo
         local_dir.mkdir(parents=True, exist_ok=True)
         pdf_path = local_dir / f"statement-{index}.pdf"
         metadata_path = local_dir / f"statement-{index}.json"
-        pdf_response = requests.get(
-            download_url,
-            headers=REQUEST_HEADERS["browser"],
-            timeout=60,
-        )
-        pdf_response.raise_for_status()
-        pdf_path.write_bytes(pdf_response.content)
-        metadata_path.write_text(
-            json.dumps(
-                {
-                    "statement_url": statement_url,
-                    "download_url": download_url,
-                    "company_name": seed.name,
-                },
-                indent=2,
+        if not pdf_path.exists():
+            pdf_response = requests.get(
+                download_url,
+                headers=REQUEST_HEADERS["browser"],
+                timeout=60,
             )
-        )
+            pdf_response.raise_for_status()
+            pdf_path.write_bytes(pdf_response.content)
+        if not metadata_path.exists():
+            metadata_path.write_text(
+                json.dumps(
+                    {
+                        "statement_url": statement_url,
+                        "download_url": download_url,
+                        "company_name": seed.name,
+                    },
+                    indent=2,
+                )
+            )
         results.append(
             SourceDocument(
                 document_id=f"au-{company_slug}-statement-{index}",

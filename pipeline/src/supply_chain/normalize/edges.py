@@ -52,17 +52,25 @@ def build_edges(
         relation_type = item.relation_type
         source_id, target_id = _directed_pair(item, reporter_id, counterparty_id)
         placeholder_edge_id = _edge_id(source_id, target_id, relation_type)
-        explicit_edges[placeholder_edge_id] = NormalizedEdge(
-            edge_id=placeholder_edge_id,
-            source_entity_id=source_id,
-            target_entity_id=target_id,
-            relation_type=relation_type,
-            confidence=item.confidence,
-            evidence_ids=[item.evidence_id],
-            countries=[item.country],
-            source_systems=[item.source_system],
-            explicit=False,
-        )
+        existing = explicit_edges.get(placeholder_edge_id)
+        if existing is None:
+            explicit_edges[placeholder_edge_id] = NormalizedEdge(
+                edge_id=placeholder_edge_id,
+                source_entity_id=source_id,
+                target_entity_id=target_id,
+                relation_type=relation_type,
+                confidence=item.confidence,
+                evidence_ids=[item.evidence_id],
+                countries=[item.country],
+                source_systems=[item.source_system],
+                explicit=False,
+            )
+        else:
+            existing.evidence_ids.append(item.evidence_id)
+            if item.source_system not in existing.source_systems:
+                existing.source_systems.append(item.source_system)
+            if item.country not in existing.countries:
+                existing.countries.append(item.country)
 
         candidates.extend(
             _infer_candidates(

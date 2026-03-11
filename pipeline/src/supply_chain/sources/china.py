@@ -75,24 +75,26 @@ def fetch_documents(seeds: list[CompanySeed], years_back: int = 3) -> list[Sourc
             file_name = f"{filing_year}-annual-report.pdf"
             pdf_path = local_dir / file_name
             metadata_path = local_dir / f"{filing_year}-annual-report.json"
-            pdf_response = requests.get(
-                download_url,
-                headers=REQUEST_HEADERS["browser"],
-                timeout=90,
-            )
-            pdf_response.raise_for_status()
-            pdf_path.write_bytes(pdf_response.content)
-            metadata_path.write_text(
-                json.dumps(
-                    {
-                        "seed_name": seed.name,
-                        "query_name": seed.name,
-                        "announcement": announcement,
-                    },
-                    ensure_ascii=False,
-                    indent=2,
+            if not pdf_path.exists():
+                pdf_response = requests.get(
+                    download_url,
+                    headers=REQUEST_HEADERS["browser"],
+                    timeout=90,
                 )
-            )
+                pdf_response.raise_for_status()
+                pdf_path.write_bytes(pdf_response.content)
+            if not metadata_path.exists():
+                metadata_path.write_text(
+                    json.dumps(
+                        {
+                            "seed_name": seed.name,
+                            "query_name": seed.name,
+                            "announcement": announcement,
+                        },
+                        ensure_ascii=False,
+                        indent=2,
+                    )
+                )
             documents.append(
                 SourceDocument(
                     document_id=f"cn-{company_slug}-{filing_year}",

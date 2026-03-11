@@ -23,9 +23,9 @@ from supply_chain.sources.united_states import fetch_documents as fetch_us_docum
 
 
 DEMO_SELECTIONS = {
-    Country.AUSTRALIA: ["BHP", "Fortescue", "Commonwealth Bank"],
-    Country.CHINA: ["比亚迪", "宁德时代", "贵州茅台"],
-    Country.UNITED_STATES: ["NVIDIA", "Apple", "Broadcom"],
+    Country.AUSTRALIA: ["BHP", "Wesfarmers", "Qantas"],
+    Country.CHINA: ["BYD", "Foxconn", "China Shenhua"],
+    Country.UNITED_STATES: ["NVIDIA", "Apple", "Tesla"],
 }
 
 

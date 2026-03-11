@@ -1,0 +1,12 @@
+entity_id,display_name,country,aliases,source_ids,node_kind
+ent-7179ecc5f47f,BHP Group,AU,[],{},company
+ent-fa7cf1ac8486,Undisclosed Supplier,OTHER,[],{},placeholder
+ent-f2202d662dbc,Wesfarmers,AU,[],{},company
+ent-1e0623b2d6b2,Qantas Airways,AU,[],{},company
+ent-3d6b89b0f79b,BYD,CN,[],{},company
+ent-6329a40108a4,Undisclosed Customer,OTHER,[],{},placeholder
+ent-4a748db66120,NVIDIA,US,[],{},company
+ent-aa7fa45ade35,TSMC,OTHER,"[""Taiwan Semiconductor Manufacturing Company Limited""]",{},company
+ent-ff0a15d82a3d,Apple,US,[],{},company
+ent-69aa5d0c4034,Tesla,US,[],{},company
+ent-6f6a27f6fbaf,CATL,OTHER,"[""Contemporary Amperex Technology""]",{},company

@@ -17,9 +17,9 @@ const COUNTRY_COLOR: Record<GraphNodeRecord['country'], string> = {
 }
 
 const CONFIDENCE_SIZE: Record<ConfidenceBand, number> = {
-  high: 4,
-  medium: 3,
-  low: 2,
+  high: 8,
+  medium: 6,
+  low: 5,
 }
 
 export function createDefaultFilters(bundle: GraphBundle): FilterState {

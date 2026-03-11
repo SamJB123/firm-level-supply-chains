@@ -9,11 +9,11 @@ def test_cn_parser_extracts_named_and_masked_counterparties(monkeypatch):
         lambda *args, **kwargs: "\n".join(
             [
                 "前五名客户",
-                "比亚迪股份有限公司 12.4%",
-                "客户一 10.2%",
+                "1 比亚迪股份有限公司 12.4%",
+                "2 客户一 10.2%",
                 "前五名供应商",
-                "宁德时代新能源科技股份有限公司 8.8%",
-                "供应商一 4.1%",
+                "1 宁德时代新能源科技股份有限公司 8.8%",
+                "2 供应商一 4.1%",
             ]
         ),
     )
