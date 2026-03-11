@@ -6,6 +6,7 @@
   "scripts": {
     "dev": "pnpm --filter web dev",
     "build": "pnpm --filter web build",
+    "deploy": "pnpm --filter web deploy",
     "lint": "pnpm --filter web lint",
     "test": "pnpm --filter web test",
     "pipeline:help": "python3 -m supply_chain.cli --help"

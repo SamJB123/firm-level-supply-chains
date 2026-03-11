@@ -120,6 +120,24 @@ Build:
 pnpm build
 ```
 
+## Deploy to Cloudflare Workers
+
+The web app is configured for static asset deployment with Wrangler.
+
+Required environment variable:
+
+```sh
+export CLOUDFLARE_API_TOKEN=...
+```
+
+Deploy:
+
+```sh
+pnpm deploy
+```
+
+This runs the production build and deploys the static site using `apps/web/wrangler.toml`.
+
 ## Testing
 
 ### Pipeline tests
