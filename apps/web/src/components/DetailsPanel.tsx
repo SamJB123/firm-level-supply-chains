@@ -4,9 +4,10 @@ interface DetailsPanelProps {
   bundle: GraphBundle
   selectedNode: GraphNodeRecord | null
   selectedEdge: GraphEdgeRecord | null
+  onSelectEdge: (edgeId: string | null) => void
 }
 
-export function DetailsPanel({ bundle, selectedNode, selectedEdge }: DetailsPanelProps) {
+export function DetailsPanel({ bundle, selectedNode, selectedEdge, onSelectEdge }: DetailsPanelProps) {
   const nodeMap = new Map(bundle.nodes.map((node) => [node.id, node]))
 
   if (selectedEdge) {
@@ -56,6 +57,9 @@ export function DetailsPanel({ bundle, selectedNode, selectedEdge }: DetailsPane
             ))}
           </ul>
         </section>
+        <button className="edge-shortcut-button" onClick={() => onSelectEdge(null)} type="button">
+          Clear selected link
+        </button>
       </aside>
     )
   }
@@ -108,6 +112,29 @@ export function DetailsPanel({ bundle, selectedNode, selectedEdge }: DetailsPane
           </section>
         ) : null}
 
+        {linkedEdges.length > 0 ? (
+          <section>
+            <h3>Linked edges</h3>
+            <ul className="edge-shortcut-list">
+              {linkedEdges.map((edge) => {
+                const source = nodeMap.get(edge.source)
+                const target = nodeMap.get(edge.target)
+                return (
+                  <li key={edge.id}>
+                    <button
+                      className="edge-shortcut-button"
+                      onClick={() => onSelectEdge(edge.id)}
+                      type="button"
+                    >
+                      {source?.label ?? edge.source} → {target?.label ?? edge.target}
+                    </button>
+                  </li>
+                )
+              })}
+            </ul>
+          </section>
+        ) : null}
+
         <section>
           <h3>Source manifest</h3>
           <div className="source-manifest">
@@ -131,11 +158,33 @@ export function DetailsPanel({ bundle, selectedNode, selectedEdge }: DetailsPane
     <aside className="panel details-panel">
       <div className="panel__header">
         <h2>Details</h2>
-        <p>Select a node or edge to inspect provenance.</p>
+        <p>Select a node, click a graph edge, or use the edge shortcuts below.</p>
       </div>
       <p className="muted">
         Confirmed named links, undisclosed placeholders, and ranked candidate hints are intentionally separated.
       </p>
+      {bundle.edges.length > 0 ? (
+        <section>
+          <h3>Edge shortcuts</h3>
+          <ul className="edge-shortcut-list">
+            {bundle.edges.slice(0, 8).map((edge) => {
+              const source = nodeMap.get(edge.source)
+              const target = nodeMap.get(edge.target)
+              return (
+                <li key={edge.id}>
+                  <button
+                    className="edge-shortcut-button"
+                    onClick={() => onSelectEdge(edge.id)}
+                    type="button"
+                  >
+                    {source?.label ?? edge.source} → {target?.label ?? edge.target}
+                  </button>
+                </li>
+              )
+            })}
+          </ul>
+        </section>
+      ) : null}
     </aside>
   )
 }

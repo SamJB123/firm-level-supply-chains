@@ -96,6 +96,7 @@ function IndexRoute() {
             bundle={filteredBundle}
             selectedNode={selectedNode}
             selectedEdge={selectedEdge}
+            onSelectEdge={setSelectedEdgeId}
           />
         </div>
       </div>
