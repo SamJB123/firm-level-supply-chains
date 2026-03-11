@@ -1,0 +1,13 @@
+{
+  "name": "firm-level-supply-chains",
+  "private": true,
+  "version": "0.1.0",
+  "packageManager": "pnpm@10.30.3",
+  "scripts": {
+    "dev": "pnpm --filter web dev",
+    "build": "pnpm --filter web build",
+    "lint": "pnpm --filter web lint",
+    "test": "pnpm --filter web test",
+    "pipeline:help": "python3 -m supply_chain.cli --help"
+  }
+}

@@ -1,0 +1,2 @@
+[console_scripts]
+supply-chain = supply_chain.cli:main

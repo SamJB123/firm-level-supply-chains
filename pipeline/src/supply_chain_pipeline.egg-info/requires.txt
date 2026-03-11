@@ -1,0 +1,9 @@
+pandas>=2.2.3
+pyarrow>=18.1.0
+pydantic>=2.10.6
+pypdf>=5.1.0
+rapidfuzz>=3.10.1
+requests>=2.32.3
+
+[dev]
+pytest>=8.3.4
