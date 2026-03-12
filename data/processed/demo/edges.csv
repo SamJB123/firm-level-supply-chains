@@ -1,0 +1,113 @@
+edge_id,source_entity_id,target_entity_id,relation_type,confidence,evidence_ids,countries,source_systems,explicit
+edge-f6e1d51f292a,ent-c94ad312fbfc,ent-13e23534eb8e,undisclosed_supplier,low,"[""au-commonwealth-bank-statement-1-ev-91246b92ed""]","[""AU""]","[""Modern Slavery Statements Register""]",False
+edge-bf4a4e76f3f3,ent-79faffaaa636,ent-13e23534eb8e,undisclosed_supplier,low,"[""au-commonwealth-bank-statement-2-ev-91246b92ed""]","[""AU""]","[""Modern Slavery Statements Register""]",False
+edge-b071b292adf9,ent-1047c80c439f,ent-13e23534eb8e,undisclosed_supplier,low,"[""au-commonwealth-bank-2025-annual-report-ev-8908b74ea7""]","[""AU""]","[""Australian Annual Report""]",False
+edge-e767e63c89a6,ent-7da5f29e9c3c,ent-7179ecc5f47f,undisclosed_supplier,low,"[""au-bhp-group-statement-1-ev-91246b92ed""]","[""AU""]","[""Modern Slavery Statements Register""]",False
+edge-ae071f41dfd4,ent-1cc8a4bba936,ent-7179ecc5f47f,undisclosed_supplier,low,"[""au-bhp-group-statement-2-ev-91246b92ed""]","[""AU""]","[""Modern Slavery Statements Register""]",False
+edge-f849a74abead,ent-c3bf9001b626,ent-3f2a9664a364,undisclosed_supplier,low,"[""au-national-australia-bank-statement-1-ev-91246b92ed""]","[""AU""]","[""Modern Slavery Statements Register""]",False
+edge-4dffad969f63,ent-9372762fcab4,ent-3f2a9664a364,undisclosed_supplier,low,"[""au-national-australia-bank-statement-2-ev-91246b92ed""]","[""AU""]","[""Modern Slavery Statements Register""]",False
+edge-34c74859b083,ent-1fce686e0be4,ent-3f2a9664a364,undisclosed_supplier,low,"[""au-national-australia-bank-2024-annual-report-ev-8908b74ea7""]","[""AU""]","[""Australian Annual Report""]",False
+edge-42b6b5c77456,ent-4d8e4acaf378,ent-035b2439d6fd,undisclosed_supplier,low,"[""au-westpac-banking-statement-1-ev-91246b92ed""]","[""AU""]","[""Modern Slavery Statements Register""]",False
+edge-1fd956b0e22a,ent-59994dd6440c,ent-035b2439d6fd,undisclosed_supplier,low,"[""au-westpac-banking-statement-2-ev-91246b92ed""]","[""AU""]","[""Modern Slavery Statements Register""]",False
+edge-9f765e546994,ent-cdbdd0c81a8e,ent-035b2439d6fd,undisclosed_supplier,low,"[""au-westpac-banking-2024-annual-report-ev-8908b74ea7""]","[""AU""]","[""Australian Annual Report""]",False
+edge-a6d5ec52b1eb,ent-f7e6340da899,ent-cd7449b31e36,undisclosed_supplier,low,"[""au-anz-bank-statement-1-ev-91246b92ed""]","[""AU""]","[""Modern Slavery Statements Register""]",False
+edge-7ad79112d133,ent-a583efc08bd6,ent-cd7449b31e36,undisclosed_supplier,low,"[""au-anz-bank-2024-annual-report-ev-8908b74ea7""]","[""AU""]","[""Australian Annual Report""]",False
+edge-f874e8ea0200,ent-91cfc801a29a,ent-f2202d662dbc,undisclosed_supplier,low,"[""au-wesfarmers-statement-1-ev-91246b92ed""]","[""AU""]","[""Modern Slavery Statements Register""]",False
+edge-10faa5ecf965,ent-2e2f50e65dfc,ent-f2202d662dbc,undisclosed_supplier,low,"[""au-wesfarmers-statement-2-ev-91246b92ed""]","[""AU""]","[""Modern Slavery Statements Register""]",False
+edge-0fcc3b6241ed,ent-29a1338cedc3,ent-f2202d662dbc,undisclosed_supplier,low,"[""au-wesfarmers-2024-annual-report-ev-8908b74ea7""]","[""AU""]","[""Australian Annual Report""]",False
+edge-629be2811bca,ent-9800606c5597,ent-4ba0de8959cc,undisclosed_supplier,low,"[""au-macquarie-group-limited-statement-1-ev-91246b92ed""]","[""AU""]","[""Modern Slavery Statements Register""]",False
+edge-71d431fac628,ent-cee48ffe61c3,ent-4ba0de8959cc,undisclosed_supplier,low,"[""au-macquarie-group-limited-statement-2-ev-91246b92ed""]","[""AU""]","[""Modern Slavery Statements Register""]",False
+edge-24acdb8a154d,ent-4cc577642779,ent-4ba0de8959cc,undisclosed_supplier,low,"[""au-macquarie-group-limited-2025-annual-report-ev-8908b74ea7""]","[""AU""]","[""Australian Annual Report""]",False
+edge-73a85837b5ca,ent-89d569ebcffe,ent-07029de96d24,undisclosed_supplier,low,"[""au-csl-statement-1-ev-91246b92ed""]","[""AU""]","[""Modern Slavery Statements Register""]",False
+edge-8d14108eebda,ent-20708056584e,ent-07029de96d24,undisclosed_supplier,low,"[""au-csl-statement-2-ev-91246b92ed""]","[""AU""]","[""Modern Slavery Statements Register""]",False
+edge-5ca20418ae51,ent-edeced9d8194,ent-07029de96d24,undisclosed_supplier,low,"[""au-csl-2025-annual-report-ev-8908b74ea7""]","[""AU""]","[""Australian Annual Report""]",False
+edge-60e1426f9b43,ent-01ffbaf31493,ent-2ebdcf52c86f,undisclosed_supplier,low,"[""au-fortescue-statement-1-ev-91246b92ed""]","[""AU""]","[""Modern Slavery Statements Register""]",False
+edge-df902ae8beb7,ent-414b207c9f25,ent-2ebdcf52c86f,undisclosed_supplier,low,"[""au-fortescue-statement-2-ev-91246b92ed""]","[""AU""]","[""Modern Slavery Statements Register""]",False
+edge-14730a9aa7d7,ent-9bfe361a2959,ent-22c5f0f7d2a9,undisclosed_supplier,low,"[""au-goodman-group-2024-annual-report-ev-8908b74ea7""]","[""AU""]","[""Australian Annual Report""]",False
+edge-6d59bb3dc585,ent-2531f35fb211,ent-b6c5a455eecc,undisclosed_supplier,low,"[""au-transurban-statement-1-ev-91246b92ed""]","[""AU""]","[""Modern Slavery Statements Register""]",False
+edge-ad2ef586f5de,ent-582983fbbea8,ent-b6c5a455eecc,undisclosed_supplier,low,"[""au-transurban-statement-2-ev-91246b92ed""]","[""AU""]","[""Modern Slavery Statements Register""]",False
+edge-c00101000798,ent-233ae35b9cd3,ent-b6c5a455eecc,undisclosed_supplier,low,"[""au-transurban-2025-annual-report-ev-8908b74ea7""]","[""AU""]","[""Australian Annual Report""]",False
+edge-33cc06ee6dc2,ent-af8fae49fb60,ent-c004e3aac2c3,undisclosed_supplier,low,"[""au-woolworths-group-statement-1-ev-91246b92ed""]","[""AU""]","[""Modern Slavery Statements Register""]",False
+edge-5cf3dc3196e9,ent-86aca71a709e,ent-c004e3aac2c3,undisclosed_supplier,low,"[""au-woolworths-group-statement-2-ev-91246b92ed""]","[""AU""]","[""Modern Slavery Statements Register""]",False
+edge-87c0d20af503,ent-233788b23023,ent-c004e3aac2c3,undisclosed_supplier,low,"[""au-woolworths-group-2025-annual-report-ev-8908b74ea7""]","[""AU""]","[""Australian Annual Report""]",False
+edge-4941324a13df,ent-da40ae340aae,ent-6cbeed2835e4,undisclosed_supplier,low,"[""au-northern-star-statement-1-ev-91246b92ed""]","[""AU""]","[""Modern Slavery Statements Register""]",False
+edge-e256a275135a,ent-01e6904a3663,ent-6cbeed2835e4,undisclosed_supplier,low,"[""au-northern-star-statement-2-ev-91246b92ed""]","[""AU""]","[""Modern Slavery Statements Register""]",False
+edge-9758083da41f,ent-8b5a6c04d624,ent-6cbeed2835e4,undisclosed_supplier,low,"[""au-northern-star-2024-annual-report-ev-8908b74ea7""]","[""AU""]","[""Australian Annual Report""]",False
+edge-b84043f0cbb9,ent-2b4d989df8cc,ent-529455b9c239,undisclosed_supplier,low,"[""au-coles-group-statement-1-ev-91246b92ed""]","[""AU""]","[""Modern Slavery Statements Register""]",False
+edge-eca933cde5ad,ent-d56b547c1287,ent-529455b9c239,undisclosed_supplier,low,"[""au-coles-group-statement-2-ev-91246b92ed""]","[""AU""]","[""Modern Slavery Statements Register""]",False
+edge-4a737601e8e0,ent-5862d35d9a93,ent-d879fc587d05,undisclosed_supplier,low,"[""au-santos-statement-1-ev-91246b92ed""]","[""AU""]","[""Modern Slavery Statements Register""]",False
+edge-992956a60a87,ent-97e4b01471ff,ent-d879fc587d05,undisclosed_supplier,low,"[""au-santos-statement-2-ev-91246b92ed""]","[""AU""]","[""Modern Slavery Statements Register""]",False
+edge-3094eece51e5,ent-98f68d8fbd57,ent-d879fc587d05,undisclosed_supplier,low,"[""au-santos-2025-annual-report-ev-8908b74ea7""]","[""AU""]","[""Australian Annual Report""]",False
+edge-e0f54dc6a40c,ent-66049380137d,ent-55d17ac422bc,undisclosed_supplier,low,"[""au-rea-group-statement-1-ev-91246b92ed""]","[""AU""]","[""Modern Slavery Statements Register""]",False
+edge-ef7b4eadb1eb,ent-85961d2debbd,ent-55d17ac422bc,undisclosed_supplier,low,"[""au-rea-group-statement-2-ev-91246b92ed""]","[""AU""]","[""Modern Slavery Statements Register""]",False
+edge-cd1ec460ef8a,ent-9fca882fceb4,ent-55d17ac422bc,undisclosed_supplier,low,"[""au-rea-group-2024-annual-report-ev-8908b74ea7""]","[""AU""]","[""Australian Annual Report""]",False
+edge-54159230d63e,ent-36ad8cad7e1b,ent-77eb052b7b46,undisclosed_supplier,low,"[""au-south32-statement-1-ev-91246b92ed""]","[""AU""]","[""Modern Slavery Statements Register""]",False
+edge-fc31822856a3,ent-1b07152821d8,ent-77eb052b7b46,undisclosed_supplier,low,"[""au-south32-statement-2-ev-91246b92ed""]","[""AU""]","[""Modern Slavery Statements Register""]",False
+edge-2daa25b6a1bf,ent-25185c584175,ent-77eb052b7b46,undisclosed_supplier,low,"[""au-south32-2024-annual-report-ev-8908b74ea7""]","[""AU""]","[""Australian Annual Report""]",False
+edge-56d044fc9d40,ent-89721fa4a6e0,ent-331bd5c5fc22,undisclosed_supplier,low,"[""au-computershare-statement-1-ev-91246b92ed""]","[""AU""]","[""Modern Slavery Statements Register""]",False
+edge-8612ac6da76c,ent-4475f759fbd0,ent-331bd5c5fc22,undisclosed_supplier,low,"[""au-computershare-statement-2-ev-91246b92ed""]","[""AU""]","[""Modern Slavery Statements Register""]",False
+edge-3e9045519e5b,ent-9869f7cce665,ent-e79a8c41fe36,undisclosed_supplier,low,"[""au-pilbara-minerals-statement-1-ev-91246b92ed""]","[""AU""]","[""Modern Slavery Statements Register""]",False
+edge-6c93380876fd,ent-a3315edb216f,ent-e79a8c41fe36,undisclosed_supplier,low,"[""au-pilbara-minerals-statement-2-ev-91246b92ed""]","[""AU""]","[""Modern Slavery Statements Register""]",False
+edge-fa352ebf83f9,ent-f7fbac5050b8,ent-1e0623b2d6b2,undisclosed_supplier,low,"[""au-qantas-airways-statement-1-ev-91246b92ed""]","[""AU""]","[""Modern Slavery Statements Register""]",False
+edge-8cce91bdb10f,ent-3503bfdc476e,ent-1e0623b2d6b2,undisclosed_supplier,low,"[""au-qantas-airways-statement-2-ev-91246b92ed""]","[""AU""]","[""Modern Slavery Statements Register""]",False
+edge-6056b3bf66f8,ent-7b12b898eec3,ent-1e0623b2d6b2,undisclosed_supplier,low,"[""au-qantas-airways-2025-annual-report-ev-8908b74ea7""]","[""AU""]","[""Australian Annual Report""]",False
+edge-f294b10f1afb,ent-6f86e4d33957,ent-a6a8ae9fa5bc,customer,high,"[""cn-foxconn-industrial-internet-2023-ev-ecb6a4b2ff""]","[""CN""]","[""CNINFO""]",True
+edge-970135bd46b2,ent-98b73f85d5e7,ent-3dd78aae15d6,supplier,medium,"[""cn-pdd-holdings-pinduoduo-2025-adr-ev-9657bcda14"", ""cn-pdd-holdings-pinduoduo-2024-adr-ev-7a9ca2f9bd"", ""cn-pdd-holdings-pinduoduo-2023-adr-ev-9a269ccdb2""]","[""US""]","[""SEC EDGAR (China ADR)""]",True
+edge-79fe9bb6782a,ent-3d6b89b0f79b,ent-60b74b2eb970,undisclosed_customer,medium,"[""cn-byd-2024-ev-aa54fe0fad""]","[""CN""]","[""CNINFO""]",False
+edge-157b499a3967,ent-3d6b89b0f79b,ent-72a4952e5023,undisclosed_customer,medium,"[""cn-byd-2024-ev-6a2a82be81""]","[""CN""]","[""CNINFO""]",False
+edge-6e2bfadb8e26,ent-3d6b89b0f79b,ent-3e3511d59940,undisclosed_customer,medium,"[""cn-byd-2024-ev-cf0efdb359""]","[""CN""]","[""CNINFO""]",False
+edge-7714d71fe874,ent-3d6b89b0f79b,ent-f8238114d644,undisclosed_customer,medium,"[""cn-byd-2024-ev-89201daefe""]","[""CN""]","[""CNINFO""]",False
+edge-e02fa198fbf5,ent-3d6b89b0f79b,ent-edd13622c61c,undisclosed_customer,medium,"[""cn-byd-2024-ev-508ed25637""]","[""CN""]","[""CNINFO""]",False
+edge-97d45015d12a,ent-e76b91fdf2d4,ent-3d6b89b0f79b,undisclosed_supplier,medium,"[""cn-byd-2024-ev-2315df91e3""]","[""CN""]","[""CNINFO""]",False
+edge-046752084d46,ent-80ccdb60bd95,ent-3d6b89b0f79b,undisclosed_supplier,medium,"[""cn-byd-2024-ev-f1d9c63c2e""]","[""CN""]","[""CNINFO""]",False
+edge-3e57e87fda4b,ent-5f1cb462f105,ent-3d6b89b0f79b,undisclosed_supplier,medium,"[""cn-byd-2024-ev-9476ff5e31""]","[""CN""]","[""CNINFO""]",False
+edge-61384a673abc,ent-5c865ebad642,ent-3d6b89b0f79b,undisclosed_supplier,medium,"[""cn-byd-2024-ev-9a32e08e89""]","[""CN""]","[""CNINFO""]",False
+edge-70910495f1ea,ent-5a0b47c4cf5a,ent-3d6b89b0f79b,undisclosed_supplier,medium,"[""cn-byd-2024-ev-39926e55a4""]","[""CN""]","[""CNINFO""]",False
+edge-1824fbf70f24,ent-3d6b89b0f79b,ent-9e20590e0049,undisclosed_customer,medium,"[""cn-byd-2023-ev-7a2b540c1b""]","[""CN""]","[""CNINFO""]",False
+edge-81c4296dedd8,ent-3d6b89b0f79b,ent-3895a3fc5681,undisclosed_customer,medium,"[""cn-byd-2023-ev-e709a2ed44""]","[""CN""]","[""CNINFO""]",False
+edge-1ab9ca870c1d,ent-3d6b89b0f79b,ent-525021b4367d,undisclosed_customer,medium,"[""cn-byd-2023-ev-40689ad3ef""]","[""CN""]","[""CNINFO""]",False
+edge-1b588b92624c,ent-3d6b89b0f79b,ent-6cf68d59f0f9,undisclosed_customer,medium,"[""cn-byd-2023-ev-42d36cdfd0""]","[""CN""]","[""CNINFO""]",False
+edge-f224b676ef5b,ent-3d6b89b0f79b,ent-32b494ebaf1f,undisclosed_customer,medium,"[""cn-byd-2023-ev-2ff5d0aa5a""]","[""CN""]","[""CNINFO""]",False
+edge-f475c3b42ef8,ent-a1854423f33f,ent-3d6b89b0f79b,undisclosed_supplier,medium,"[""cn-byd-2023-ev-e74ab2bd1c""]","[""CN""]","[""CNINFO""]",False
+edge-42ac8dc31c15,ent-a15268d55b6c,ent-3d6b89b0f79b,undisclosed_supplier,medium,"[""cn-byd-2023-ev-85c0baf5ec""]","[""CN""]","[""CNINFO""]",False
+edge-928263026c7f,ent-0c4fdc432fbf,ent-3d6b89b0f79b,undisclosed_supplier,medium,"[""cn-byd-2023-ev-9d1f052032""]","[""CN""]","[""CNINFO""]",False
+edge-4d52ead31cb1,ent-d51f72f7a8bd,ent-3d6b89b0f79b,undisclosed_supplier,medium,"[""cn-byd-2023-ev-6f4e8ed774""]","[""CN""]","[""CNINFO""]",False
+edge-d0866a6ee6ba,ent-c06fdfb7d8f9,ent-3d6b89b0f79b,undisclosed_supplier,medium,"[""cn-byd-2023-ev-b0392f8100""]","[""CN""]","[""CNINFO""]",False
+edge-ab29667dfa0f,ent-3d6b89b0f79b,ent-348e39a17553,undisclosed_customer,medium,"[""cn-byd-2022-ev-66199d941f""]","[""CN""]","[""CNINFO""]",False
+edge-5283ed745993,ent-3d6b89b0f79b,ent-4f19d05ba133,undisclosed_customer,medium,"[""cn-byd-2022-ev-7408f68729""]","[""CN""]","[""CNINFO""]",False
+edge-5a0974263996,ent-3d6b89b0f79b,ent-921361a240c7,undisclosed_customer,medium,"[""cn-byd-2022-ev-92168e9874""]","[""CN""]","[""CNINFO""]",False
+edge-9b82811f704b,ent-3d6b89b0f79b,ent-842d8964b8e4,undisclosed_customer,medium,"[""cn-byd-2022-ev-773d3918f6""]","[""CN""]","[""CNINFO""]",False
+edge-ca739c027247,ent-3d6b89b0f79b,ent-6ee9b567a47d,undisclosed_customer,medium,"[""cn-byd-2022-ev-09253a9e71""]","[""CN""]","[""CNINFO""]",False
+edge-21476500178c,ent-dfc8e4cfff0b,ent-3d6b89b0f79b,undisclosed_supplier,medium,"[""cn-byd-2022-ev-f5290008c2""]","[""CN""]","[""CNINFO""]",False
+edge-c1238c48e8f2,ent-832d1ca2eb75,ent-3d6b89b0f79b,undisclosed_supplier,medium,"[""cn-byd-2022-ev-7e9bdfb91b""]","[""CN""]","[""CNINFO""]",False
+edge-d1a13cdc001c,ent-110dddab3bd8,ent-3d6b89b0f79b,undisclosed_supplier,medium,"[""cn-byd-2022-ev-af83698572""]","[""CN""]","[""CNINFO""]",False
+edge-ecfaf0f057db,ent-c0db19a558d1,ent-3d6b89b0f79b,undisclosed_supplier,medium,"[""cn-byd-2022-ev-99e710b7ab""]","[""CN""]","[""CNINFO""]",False
+edge-686de6a06e01,ent-1da9849edf35,ent-3d6b89b0f79b,undisclosed_supplier,medium,"[""cn-byd-2022-ev-e0752be710""]","[""CN""]","[""CNINFO""]",False
+edge-87138ac13310,ent-027f1972f7f2,ent-6ac4ef6eabc4,customer,high,"[""cn-china-yangtze-power-2024-ev-537374125a"", ""cn-china-yangtze-power-2024-ev-2004f96960"", ""cn-china-yangtze-power-2023-ev-94ac79a487"", ""cn-china-yangtze-power-2023-ev-3dd9bd98a2""]","[""CN""]","[""CNINFO""]",True
+edge-001356ee9029,ent-027f1972f7f2,ent-b6f6e4bf5b2c,customer,high,"[""cn-china-yangtze-power-2024-ev-f81935162e""]","[""CN""]","[""CNINFO""]",True
+edge-06ed29acd2c6,ent-027f1972f7f2,ent-58ab7db982f7,customer,high,"[""cn-china-yangtze-power-2024-ev-4f226e3697"", ""cn-china-yangtze-power-2023-ev-00bef1cbd6""]","[""CN""]","[""CNINFO""]",True
+edge-f12a4e96b49b,ent-027f1972f7f2,ent-ceb27ac07b15,customer,high,"[""cn-china-yangtze-power-2024-ev-076e6c493d"", ""cn-china-yangtze-power-2023-ev-525768c6f9"", ""cn-china-yangtze-power-2023-ev-5a57116866""]","[""CN""]","[""CNINFO""]",True
+edge-18a443db757c,ent-58bc39db15b2,ent-027f1972f7f2,supplier,high,"[""cn-china-yangtze-power-2024-ev-2c74a42116""]","[""CN""]","[""CNINFO""]",True
+edge-2804fcc96726,ent-694b32cf4c4c,ent-027f1972f7f2,supplier,high,"[""cn-china-yangtze-power-2024-ev-0600587f33""]","[""CN""]","[""CNINFO""]",True
+edge-a71f8c361dd2,ent-3c1dfb3f4b19,ent-027f1972f7f2,supplier,high,"[""cn-china-yangtze-power-2024-ev-88ed9a55c7""]","[""CN""]","[""CNINFO""]",True
+edge-f8e27c67fbd3,ent-224dc4f2246b,ent-027f1972f7f2,supplier,high,"[""cn-china-yangtze-power-2024-ev-b9c9d4d887""]","[""CN""]","[""CNINFO""]",True
+edge-83ce59709aaa,ent-63f4f4b68a2e,ent-027f1972f7f2,supplier,high,"[""cn-china-yangtze-power-2023-ev-a28ba5ba37""]","[""CN""]","[""CNINFO""]",True
+edge-5cdc04f0549d,ent-aa0c3335acf9,ent-027f1972f7f2,supplier,high,"[""cn-china-yangtze-power-2023-ev-6cc682cc9b""]","[""CN""]","[""CNINFO""]",True
+edge-ca3f41a8dc3e,ent-aa7fa45ade35,ent-4a748db66120,supplier,medium,"[""us-nvidia-2026-ev-b38f17632a"", ""us-nvidia-2025-ev-b38f17632a"", ""us-nvidia-2024-ev-b38f17632a""]","[""US""]","[""SEC EDGAR""]",True
+edge-8e764c6fcc3a,ent-072e02ab52b3,ent-4a748db66120,supplier,medium,"[""us-nvidia-2026-ev-8570f6f1b8"", ""us-nvidia-2025-ev-8570f6f1b8"", ""us-nvidia-2024-ev-8570f6f1b8""]","[""US""]","[""SEC EDGAR""]",True
+edge-afc43a7b3aff,ent-cdd02a82fea8,ent-4a748db66120,supplier,medium,"[""us-nvidia-2026-ev-8c7e38e07a"", ""us-nvidia-2025-ev-8c7e38e07a"", ""us-nvidia-2024-ev-8c7e38e07a""]","[""US""]","[""SEC EDGAR""]",True
+edge-6b699deb9fef,ent-3e61397b98db,ent-4a748db66120,supplier,medium,"[""us-nvidia-2026-ev-54cee458f1"", ""us-nvidia-2025-ev-712703f41d"", ""us-nvidia-2024-ev-a054971a04""]","[""US""]","[""SEC EDGAR""]",True
+edge-02c00d4d9c7e,ent-71e72180a2a7,ent-ff0a15d82a3d,supplier,medium,"[""us-apple-2025-ev-aecc6d9e0a"", ""us-apple-2024-ev-aecc6d9e0a"", ""us-apple-2023-ev-aecc6d9e0a""]","[""US""]","[""SEC EDGAR""]",True
+edge-9779e20c35d4,ent-463f441657aa,ent-ff0a15d82a3d,supplier,medium,"[""us-apple-2025-ev-66768473c9"", ""us-apple-2024-ev-66768473c9"", ""us-apple-2023-ev-66768473c9""]","[""US""]","[""SEC EDGAR""]",True
+edge-c5f93173f90d,ent-aa7fa45ade35,ent-e8bcd432550d,supplier,medium,"[""us-broadcom-2025-ev-e72c907722"", ""us-broadcom-2024-ev-e72c907722"", ""us-broadcom-2023-ev-e72c907722""]","[""US""]","[""SEC EDGAR""]",True
+edge-826d25562252,ent-cdd02a82fea8,ent-e8bcd432550d,supplier,medium,"[""us-broadcom-2025-ev-b025435f21"", ""us-broadcom-2024-ev-6b9e03edaf"", ""us-broadcom-2023-ev-6b9e03edaf""]","[""US""]","[""SEC EDGAR""]",True
+edge-2655006d2508,ent-6f6a27f6fbaf,ent-69aa5d0c4034,supplier,medium,"[""us-tesla-2026-ev-c0e3ef7179"", ""us-tesla-2025-ev-c0e3ef7179"", ""us-tesla-2024-ev-c0e3ef7179""]","[""US""]","[""SEC EDGAR""]",True
+edge-d34dd298e203,ent-01674ee1fc95,ent-2451c73ce022,undisclosed_customer,low,"[""us-berkshire-hathaway-2026-ev-db435a27a0""]","[""US""]","[""SEC EDGAR""]",False
+edge-e5c0cb0223fa,ent-01674ee1fc95,ent-173730230d0e,undisclosed_customer,low,"[""us-berkshire-hathaway-2025-ev-db435a27a0""]","[""US""]","[""SEC EDGAR""]",False
+edge-934c19e60d62,ent-01674ee1fc95,ent-b398640fbcd7,undisclosed_customer,low,"[""us-berkshire-hathaway-2024-ev-3b9d9a4b9f""]","[""US""]","[""SEC EDGAR""]",False
+edge-ba87915808b2,ent-666360474399,ent-029076555719,supplier,medium,"[""us-walmart-2025-ev-14cf236c85"", ""us-walmart-2024-ev-14cf236c85"", ""us-walmart-2023-ev-14cf236c85""]","[""US""]","[""SEC EDGAR""]",True
+edge-5f7bfddebf42,ent-08a4b2cc0b0b,ent-47a3b2d19ca8,supplier,medium,"[""us-jpmorgan-chase-2026-ev-b020552c97""]","[""US""]","[""SEC EDGAR""]",True
+edge-bd63cdd6b9db,ent-5c398419db2c,ent-116ac06dd5a1,customer,medium,"[""us-cisco-2025-ev-65efb97f88"", ""us-cisco-2024-ev-da5375ee24""]","[""US""]","[""SEC EDGAR""]",True
+edge-274ee7721a62,ent-5c398419db2c,ent-3790604d1a57,undisclosed_customer,low,"[""us-cisco-2023-ev-8100467c63""]","[""US""]","[""SEC EDGAR""]",False
+edge-eb38bb877078,ent-57e564dedfe4,ent-7488611ecfb3,supplier,medium,"[""us-merck-2026-ev-36aef939a0"", ""us-merck-2025-ev-36aef939a0"", ""us-merck-2024-ev-36aef939a0""]","[""US""]","[""SEC EDGAR""]",True
+edge-cb66ddb36be7,ent-3e61397b98db,ent-e8bcd432550d,supplier,medium,"[""us-broadcom-2024-ev-a388e6f7d9"", ""us-broadcom-2023-ev-8580e00f74""]","[""US""]","[""SEC EDGAR""]",True
