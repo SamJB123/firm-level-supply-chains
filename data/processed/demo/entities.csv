@@ -1,12 +1,120 @@
 entity_id,display_name,country,aliases,source_ids,node_kind
+ent-13e23534eb8e,Commonwealth Bank,AU,[],{},company
+ent-c94ad312fbfc,Undisclosed Supplier · Commonwealth Bank · au-commonwealth-bank-statement-1,OTHER,[],{},placeholder
+ent-79faffaaa636,Undisclosed Supplier · Commonwealth Bank · au-commonwealth-bank-statement-2,OTHER,[],{},placeholder
 ent-7179ecc5f47f,BHP Group,AU,[],{},company
-ent-fa7cf1ac8486,Undisclosed Supplier,OTHER,[],{},placeholder
+ent-7da5f29e9c3c,Undisclosed Supplier · BHP Group · au-bhp-group-statement-1,OTHER,[],{},placeholder
+ent-1cc8a4bba936,Undisclosed Supplier · BHP Group · au-bhp-group-statement-2,OTHER,[],{},placeholder
+ent-3f2a9664a364,National Australia Bank,AU,[],{},company
+ent-c3bf9001b626,Undisclosed Supplier · National Australia Bank · au-national-australia-bank-statement-1,OTHER,[],{},placeholder
+ent-9372762fcab4,Undisclosed Supplier · National Australia Bank · au-national-australia-bank-statement-2,OTHER,[],{},placeholder
+ent-035b2439d6fd,Westpac Banking,AU,[],{},company
+ent-4d8e4acaf378,Undisclosed Supplier · Westpac Banking · au-westpac-banking-statement-1,OTHER,[],{},placeholder
+ent-59994dd6440c,Undisclosed Supplier · Westpac Banking · au-westpac-banking-statement-2,OTHER,[],{},placeholder
+ent-cd7449b31e36,ANZ Bank,AU,[],{},company
+ent-f7e6340da899,Undisclosed Supplier · ANZ Bank · au-anz-bank-statement-1,OTHER,[],{},placeholder
 ent-f2202d662dbc,Wesfarmers,AU,[],{},company
+ent-91cfc801a29a,Undisclosed Supplier · Wesfarmers · au-wesfarmers-statement-1,OTHER,[],{},placeholder
+ent-2e2f50e65dfc,Undisclosed Supplier · Wesfarmers · au-wesfarmers-statement-2,OTHER,[],{},placeholder
+ent-4ba0de8959cc,Macquarie Group Limited,AU,[],{},company
+ent-9800606c5597,Undisclosed Supplier · Macquarie Group Limited · au-macquarie-group-limited-statement-1,OTHER,[],{},placeholder
+ent-cee48ffe61c3,Undisclosed Supplier · Macquarie Group Limited · au-macquarie-group-limited-statement-2,OTHER,[],{},placeholder
+ent-07029de96d24,CSL,AU,[],{},company
+ent-89d569ebcffe,Undisclosed Supplier · CSL · au-csl-statement-1,OTHER,[],{},placeholder
+ent-20708056584e,Undisclosed Supplier · CSL · au-csl-statement-2,OTHER,[],{},placeholder
+ent-2ebdcf52c86f,Fortescue,AU,[],{},company
+ent-01ffbaf31493,Undisclosed Supplier · Fortescue · au-fortescue-statement-1,OTHER,[],{},placeholder
+ent-414b207c9f25,Undisclosed Supplier · Fortescue · au-fortescue-statement-2,OTHER,[],{},placeholder
+ent-b6c5a455eecc,Transurban,AU,[],{},company
+ent-2531f35fb211,Undisclosed Supplier · Transurban · au-transurban-statement-1,OTHER,[],{},placeholder
+ent-582983fbbea8,Undisclosed Supplier · Transurban · au-transurban-statement-2,OTHER,[],{},placeholder
+ent-c004e3aac2c3,Woolworths Group,AU,[],{},company
+ent-af8fae49fb60,Undisclosed Supplier · Woolworths Group · au-woolworths-group-statement-1,OTHER,[],{},placeholder
+ent-86aca71a709e,Undisclosed Supplier · Woolworths Group · au-woolworths-group-statement-2,OTHER,[],{},placeholder
+ent-6cbeed2835e4,Northern Star,AU,[],{},company
+ent-da40ae340aae,Undisclosed Supplier · Northern Star · au-northern-star-statement-1,OTHER,[],{},placeholder
+ent-01e6904a3663,Undisclosed Supplier · Northern Star · au-northern-star-statement-2,OTHER,[],{},placeholder
+ent-529455b9c239,Coles Group,AU,[],{},company
+ent-2b4d989df8cc,Undisclosed Supplier · Coles Group · au-coles-group-statement-1,OTHER,[],{},placeholder
+ent-d56b547c1287,Undisclosed Supplier · Coles Group · au-coles-group-statement-2,OTHER,[],{},placeholder
+ent-d879fc587d05,Santos,AU,[],{},company
+ent-5862d35d9a93,Undisclosed Supplier · Santos · au-santos-statement-1,OTHER,[],{},placeholder
+ent-97e4b01471ff,Undisclosed Supplier · Santos · au-santos-statement-2,OTHER,[],{},placeholder
+ent-55d17ac422bc,REA Group,AU,[],{},company
+ent-66049380137d,Undisclosed Supplier · REA Group · au-rea-group-statement-1,OTHER,[],{},placeholder
+ent-85961d2debbd,Undisclosed Supplier · REA Group · au-rea-group-statement-2,OTHER,[],{},placeholder
+ent-77eb052b7b46,South32,AU,[],{},company
+ent-36ad8cad7e1b,Undisclosed Supplier · South32 · au-south32-statement-1,OTHER,[],{},placeholder
+ent-1b07152821d8,Undisclosed Supplier · South32 · au-south32-statement-2,OTHER,[],{},placeholder
+ent-331bd5c5fc22,Computershare,AU,[],{},company
+ent-89721fa4a6e0,Undisclosed Supplier · Computershare · au-computershare-statement-1,OTHER,[],{},placeholder
+ent-4475f759fbd0,Undisclosed Supplier · Computershare · au-computershare-statement-2,OTHER,[],{},placeholder
+ent-e79a8c41fe36,Pilbara Minerals,AU,[],{},company
+ent-9869f7cce665,Undisclosed Supplier · Pilbara Minerals · au-pilbara-minerals-statement-1,OTHER,[],{},placeholder
+ent-a3315edb216f,Undisclosed Supplier · Pilbara Minerals · au-pilbara-minerals-statement-2,OTHER,[],{},placeholder
 ent-1e0623b2d6b2,Qantas Airways,AU,[],{},company
+ent-f7fbac5050b8,Undisclosed Supplier · Qantas Airways · au-qantas-airways-statement-1,OTHER,[],{},placeholder
+ent-3503bfdc476e,Undisclosed Supplier · Qantas Airways · au-qantas-airways-statement-2,OTHER,[],{},placeholder
+ent-6f86e4d33957,Foxconn Industrial Internet,CN,[],{},company
+ent-a6a8ae9fa5bc,服务器工厂,OTHER,[],{},company
 ent-3d6b89b0f79b,BYD,CN,[],{},company
-ent-6329a40108a4,Undisclosed Customer,OTHER,[],{},placeholder
+ent-60b74b2eb970,Undisclosed Customer · BYD · cn-byd-2024 · #1,OTHER,[],{},placeholder
+ent-72a4952e5023,Undisclosed Customer · BYD · cn-byd-2024 · #2,OTHER,[],{},placeholder
+ent-3e3511d59940,Undisclosed Customer · BYD · cn-byd-2024 · #3,OTHER,[],{},placeholder
+ent-f8238114d644,Undisclosed Customer · BYD · cn-byd-2024 · #4,OTHER,[],{},placeholder
+ent-edd13622c61c,Undisclosed Customer · BYD · cn-byd-2024 · #5,OTHER,[],{},placeholder
+ent-e76b91fdf2d4,Undisclosed Supplier · BYD · cn-byd-2024 · #1,OTHER,[],{},placeholder
+ent-80ccdb60bd95,Undisclosed Supplier · BYD · cn-byd-2024 · #2,OTHER,[],{},placeholder
+ent-5f1cb462f105,Undisclosed Supplier · BYD · cn-byd-2024 · #3,OTHER,[],{},placeholder
+ent-5c865ebad642,Undisclosed Supplier · BYD · cn-byd-2024 · #4,OTHER,[],{},placeholder
+ent-5a0b47c4cf5a,Undisclosed Supplier · BYD · cn-byd-2024 · #5,OTHER,[],{},placeholder
+ent-9e20590e0049,Undisclosed Customer · BYD · cn-byd-2023 · #1,OTHER,[],{},placeholder
+ent-3895a3fc5681,Undisclosed Customer · BYD · cn-byd-2023 · #2,OTHER,[],{},placeholder
+ent-525021b4367d,Undisclosed Customer · BYD · cn-byd-2023 · #3,OTHER,[],{},placeholder
+ent-6cf68d59f0f9,Undisclosed Customer · BYD · cn-byd-2023 · #4,OTHER,[],{},placeholder
+ent-32b494ebaf1f,Undisclosed Customer · BYD · cn-byd-2023 · #5,OTHER,[],{},placeholder
+ent-a1854423f33f,Undisclosed Supplier · BYD · cn-byd-2023 · #1,OTHER,[],{},placeholder
+ent-a15268d55b6c,Undisclosed Supplier · BYD · cn-byd-2023 · #2,OTHER,[],{},placeholder
+ent-0c4fdc432fbf,Undisclosed Supplier · BYD · cn-byd-2023 · #3,OTHER,[],{},placeholder
+ent-d51f72f7a8bd,Undisclosed Supplier · BYD · cn-byd-2023 · #4,OTHER,[],{},placeholder
+ent-c06fdfb7d8f9,Undisclosed Supplier · BYD · cn-byd-2023 · #5,OTHER,[],{},placeholder
+ent-348e39a17553,Undisclosed Customer · BYD · cn-byd-2022 · #1,OTHER,[],{},placeholder
+ent-4f19d05ba133,Undisclosed Customer · BYD · cn-byd-2022 · #2,OTHER,[],{},placeholder
+ent-921361a240c7,Undisclosed Customer · BYD · cn-byd-2022 · #3,OTHER,[],{},placeholder
+ent-842d8964b8e4,Undisclosed Customer · BYD · cn-byd-2022 · #4,OTHER,[],{},placeholder
+ent-6ee9b567a47d,Undisclosed Customer · BYD · cn-byd-2022 · #5,OTHER,[],{},placeholder
+ent-dfc8e4cfff0b,Undisclosed Supplier · BYD · cn-byd-2022 · #1,OTHER,[],{},placeholder
+ent-832d1ca2eb75,Undisclosed Supplier · BYD · cn-byd-2022 · #2,OTHER,[],{},placeholder
+ent-110dddab3bd8,Undisclosed Supplier · BYD · cn-byd-2022 · #3,OTHER,[],{},placeholder
+ent-c0db19a558d1,Undisclosed Supplier · BYD · cn-byd-2022 · #4,OTHER,[],{},placeholder
+ent-1da9849edf35,Undisclosed Supplier · BYD · cn-byd-2022 · #5,OTHER,[],{},placeholder
+ent-027f1972f7f2,China Yangtze Power,CN,[],{},company
+ent-6ac4ef6eabc4,国家电网有限公司,OTHER,[],{},company
+ent-b6f6e4bf5b2c,中国南方电网有限责任公司超高压输电公司,OTHER,[],{},company
+ent-58ab7db982f7,广东电网有限责任公司,OTHER,[],{},company
+ent-ceb27ac07b15,中国南方电网有限责任公司,OTHER,[],{},company
+ent-58bc39db15b2,武汉联发瑞盛置业有限公司,OTHER,[],{},company
+ent-694b32cf4c4c,中国能源建设集团山西省电力勘测设计院有限公司,OTHER,[],{},company
+ent-3c1dfb3f4b19,中国电建集团华东勘测设计研究院有限公司,OTHER,[],{},company
+ent-224dc4f2246b,中国能源建设集团江苏省电力设计院有限公司,OTHER,[],{},company
+ent-63f4f4b68a2e,长江三峡实业有限公司,OTHER,[],{},company
+ent-aa0c3335acf9,三峡基地发展有限公司,OTHER,[],{},company
 ent-4a748db66120,NVIDIA,US,[],{},company
 ent-aa7fa45ade35,TSMC,OTHER,"[""Taiwan Semiconductor Manufacturing Company Limited""]",{},company
 ent-ff0a15d82a3d,Apple,US,[],{},company
+ent-67626106d193,Undisclosed Customer · Apple · us-apple-2025,OTHER,[],{},placeholder
+ent-98a47b91398a,Undisclosed Customer · Apple · us-apple-2023,OTHER,[],{},placeholder
+ent-e8bcd432550d,Broadcom,US,[],{},company
+ent-1624a4589ebe,BMC Software Inc,OTHER,[],{},company
 ent-69aa5d0c4034,Tesla,US,[],{},company
 ent-6f6a27f6fbaf,CATL,OTHER,"[""Contemporary Amperex Technology""]",{},company
+ent-01674ee1fc95,Berkshire Hathaway,US,[],{},company
+ent-2451c73ce022,Undisclosed Customer · Berkshire Hathaway · us-berkshire-hathaway-2026,OTHER,[],{},placeholder
+ent-173730230d0e,Undisclosed Customer · Berkshire Hathaway · us-berkshire-hathaway-2025,OTHER,[],{},placeholder
+ent-b398640fbcd7,Undisclosed Customer · Berkshire Hathaway · us-berkshire-hathaway-2024,OTHER,[],{},placeholder
+ent-be87b76c2961,General Electric,US,[],{},company
+ent-3867d9c8a100,Electric Insurance Company,OTHER,[],{},company
+ent-5c398419db2c,Cisco,US,[],{},company
+ent-26380f5190e1,Undisclosed Customer · Cisco · us-cisco-2025,OTHER,[],{},placeholder
+ent-ece5af217d85,Undisclosed Customer · Cisco · us-cisco-2024,OTHER,[],{},placeholder
+ent-3790604d1a57,Undisclosed Customer · Cisco · us-cisco-2023,OTHER,[],{},placeholder

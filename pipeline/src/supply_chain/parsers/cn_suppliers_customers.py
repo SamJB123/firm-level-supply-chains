@@ -67,9 +67,9 @@ def parse_document(document: SourceDocument) -> list[ParsedEvidence]:
                 row_rank_match = ROW_RANK_PATTERN.match(line)
                 row_rank = row_rank_match.group("rank") if row_rank_match else "?"
                 masked_name = (
-                    f"Undisclosed Customer · {document.company_name} · {document.filing_year or document.document_id} · #{row_rank}"
+                    f"Undisclosed Customer · {document.company_name} · {document.document_id} · #{row_rank}"
                     if relation_type == RelationType.CUSTOMER
-                    else f"Undisclosed Supplier · {document.company_name} · {document.filing_year or document.document_id} · #{row_rank}"
+                    else f"Undisclosed Supplier · {document.company_name} · {document.document_id} · #{row_rank}"
                 )
                 evidence.append(
                     ParsedEvidence(

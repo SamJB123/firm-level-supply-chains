@@ -6,6 +6,7 @@ from html import unescape
 from pathlib import Path
 
 from supply_chain.models import ConfidenceBand, Country, ParsedEvidence, RelationType, SourceDocument
+from supply_chain.normalize.entities import normalize_name
 
 
 COMPANY_NAME_PATTERN = re.compile(
@@ -44,11 +45,12 @@ def parse_document(document: SourceDocument) -> list[ParsedEvidence]:
     text = Path(document.local_path).read_text(errors="ignore")
     normalized_text = _html_to_text(text)
     evidence: list[ParsedEvidence] = []
+    reporter_name_key = normalize_name(document.company_name)
 
     for pattern in SUPPLIER_CONTEXT_PATTERNS:
         for match in pattern.finditer(normalized_text):
             for counterparty_name in _extract_company_names(match.group("context")):
-                if counterparty_name == document.company_name:
+                if _same_company_name(counterparty_name, reporter_name_key):
                     continue
                 evidence.append(
                     ParsedEvidence(
@@ -72,7 +74,7 @@ def parse_document(document: SourceDocument) -> list[ParsedEvidence]:
     for pattern in CUSTOMER_CONTEXT_PATTERNS:
         for match in pattern.finditer(normalized_text):
             for counterparty_name in _extract_company_names(match.group("context")):
-                if counterparty_name == document.company_name:
+                if _same_company_name(counterparty_name, reporter_name_key):
                     continue
                 evidence.append(
                     ParsedEvidence(
@@ -95,7 +97,7 @@ def parse_document(document: SourceDocument) -> list[ParsedEvidence]:
 
     if not evidence:
         for match in UNDISCLOSED_PATTERN.finditer(normalized_text):
-            placeholder_name = f"Undisclosed Customer · {document.company_name} · {document.filing_year or document.document_id}"
+            placeholder_name = f"Undisclosed Customer · {document.company_name} · {document.document_id}"
             evidence.append(
                 ParsedEvidence(
                     evidence_id=_make_evidence_id(document.document_id, match.group(0)),
@@ -153,3 +155,8 @@ def _is_plausible_company_name(value: str) -> bool:
 def _make_evidence_id(document_id: str, payload: str) -> str:
     digest = hashlib.md5(payload.encode("utf-8")).hexdigest()[:10]
     return f"{document_id}-ev-{digest}"
+
+
+def _same_company_name(candidate_name: str, reporter_name_key: str) -> bool:
+    candidate_key = normalize_name(candidate_name)
+    return candidate_key == reporter_name_key or candidate_key in reporter_name_key or reporter_name_key in candidate_key

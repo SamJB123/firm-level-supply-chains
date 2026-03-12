@@ -100,18 +100,19 @@ def _index_named_relationships(evidence_items: list[ParsedEvidence]) -> dict[str
 
 def _index_role_candidates(evidence_items: list[ParsedEvidence]) -> dict[str, dict[str, list[str]]]:
     indexed: dict[str, dict[str, list[str]]] = {
-        "supplier": defaultdict(list),
-        "customer": defaultdict(list),
+        "supplier": defaultdict(lambda: defaultdict(list)),
+        "customer": defaultdict(lambda: defaultdict(list)),
     }
     for item in evidence_items:
         if not item.named_counterparty:
             continue
+        source_family = _source_family(item.source_system)
         if item.relation_type == RelationType.SUPPLIER:
-            indexed["supplier"][item.counterparty_name].append(item.evidence_id)
-            indexed["customer"][item.reporter_name].append(item.evidence_id)
+            indexed["supplier"][source_family][item.counterparty_name].append(item.evidence_id)
+            indexed["customer"][source_family][item.reporter_name].append(item.evidence_id)
         elif item.relation_type == RelationType.CUSTOMER:
-            indexed["customer"][item.counterparty_name].append(item.evidence_id)
-            indexed["supplier"][item.reporter_name].append(item.evidence_id)
+            indexed["customer"][source_family][item.counterparty_name].append(item.evidence_id)
+            indexed["supplier"][source_family][item.reporter_name].append(item.evidence_id)
     return indexed
 
 
@@ -155,7 +156,8 @@ def _infer_candidates(
             )
 
     fallback_role = "customer" if item.relation_type == RelationType.UNDISCLOSED_CUSTOMER else "supplier"
-    for candidate_name, evidence_ids in role_candidates[fallback_role].items():
+    source_family = _source_family(item.source_system)
+    for candidate_name, evidence_ids in role_candidates[fallback_role].get(source_family, {}).items():
         if normalize_name(candidate_name) == reporter_key:
             continue
         _record_candidate(
@@ -233,3 +235,9 @@ def _record_candidate(
     if reciprocal:
         existing["reciprocal"] = True
         existing["rationale"] = rationale
+
+
+def _source_family(source_system: str) -> str:
+    if source_system.startswith("SEC EDGAR"):
+        return "SEC EDGAR"
+    return source_system
