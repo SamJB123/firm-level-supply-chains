@@ -593,6 +593,22 @@
       "source_ids": {}
     },
     {
+      "id": "ent-3dd78aae15d6",
+      "label": "PDD Holdings (Pinduoduo)",
+      "country": "US",
+      "node_kind": "company",
+      "aliases": [],
+      "source_ids": {}
+    },
+    {
+      "id": "ent-98b73f85d5e7",
+      "label": "PRC Enterprise Inc",
+      "country": "OTHER",
+      "node_kind": "company",
+      "aliases": [],
+      "source_ids": {}
+    },
+    {
       "id": "ent-3d6b89b0f79b",
       "label": "BYD",
       "country": "CN",
@@ -947,6 +963,34 @@
       "source_ids": {}
     },
     {
+      "id": "ent-072e02ab52b3",
+      "label": "Samsung Electronics",
+      "country": "OTHER",
+      "node_kind": "company",
+      "aliases": [
+        "Samsung Electronics Co."
+      ],
+      "source_ids": {}
+    },
+    {
+      "id": "ent-cdd02a82fea8",
+      "label": "Foxconn",
+      "country": "OTHER",
+      "node_kind": "company",
+      "aliases": [
+        "Hon Hai Precision Industry Co."
+      ],
+      "source_ids": {}
+    },
+    {
+      "id": "ent-3e61397b98db",
+      "label": "Renesas Electronics Corporation",
+      "country": "OTHER",
+      "node_kind": "company",
+      "aliases": [],
+      "source_ids": {}
+    },
+    {
       "id": "ent-ff0a15d82a3d",
       "label": "Apple",
       "country": "US",
@@ -955,18 +999,18 @@
       "source_ids": {}
     },
     {
-      "id": "ent-67626106d193",
-      "label": "Undisclosed Customer · Apple · us-apple-2025",
+      "id": "ent-71e72180a2a7",
+      "label": "Manufacturing Purchase Obligations The Company",
       "country": "OTHER",
-      "node_kind": "placeholder",
+      "node_kind": "company",
       "aliases": [],
       "source_ids": {}
     },
     {
-      "id": "ent-98a47b91398a",
-      "label": "Undisclosed Customer · Apple · us-apple-2023",
+      "id": "ent-463f441657aa",
+      "label": "Other Purchase Obligations The Company",
       "country": "OTHER",
-      "node_kind": "placeholder",
+      "node_kind": "company",
       "aliases": [],
       "source_ids": {}
     },
@@ -974,14 +1018,6 @@
       "id": "ent-e8bcd432550d",
       "label": "Broadcom",
       "country": "US",
-      "node_kind": "company",
-      "aliases": [],
-      "source_ids": {}
-    },
-    {
-      "id": "ent-1624a4589ebe",
-      "label": "BMC Software Inc",
-      "country": "OTHER",
       "node_kind": "company",
       "aliases": [],
       "source_ids": {}
@@ -1000,7 +1036,7 @@
       "country": "OTHER",
       "node_kind": "company",
       "aliases": [
-        "Contemporary Amperex Technology"
+        "Contemporary Amperex Technology Co."
       ],
       "source_ids": {}
     },
@@ -1037,16 +1073,32 @@
       "source_ids": {}
     },
     {
-      "id": "ent-be87b76c2961",
-      "label": "General Electric",
+      "id": "ent-029076555719",
+      "label": "Walmart",
       "country": "US",
       "node_kind": "company",
       "aliases": [],
       "source_ids": {}
     },
     {
-      "id": "ent-3867d9c8a100",
-      "label": "Electric Insurance Company",
+      "id": "ent-666360474399",
+      "label": "Suppliers The Company",
+      "country": "OTHER",
+      "node_kind": "company",
+      "aliases": [],
+      "source_ids": {}
+    },
+    {
+      "id": "ent-47a3b2d19ca8",
+      "label": "JPMorgan Chase",
+      "country": "US",
+      "node_kind": "company",
+      "aliases": [],
+      "source_ids": {}
+    },
+    {
+      "id": "ent-08a4b2cc0b0b",
+      "label": "Employee Retirement Inc",
       "country": "OTHER",
       "node_kind": "company",
       "aliases": [],
@@ -1061,18 +1113,10 @@
       "source_ids": {}
     },
     {
-      "id": "ent-26380f5190e1",
-      "label": "Undisclosed Customer · Cisco · us-cisco-2025",
+      "id": "ent-116ac06dd5a1",
+      "label": "Accumulated Other Comprehensive Inc",
       "country": "OTHER",
-      "node_kind": "placeholder",
-      "aliases": [],
-      "source_ids": {}
-    },
-    {
-      "id": "ent-ece5af217d85",
-      "label": "Undisclosed Customer · Cisco · us-cisco-2024",
-      "country": "OTHER",
-      "node_kind": "placeholder",
+      "node_kind": "company",
       "aliases": [],
       "source_ids": {}
     },
@@ -1081,6 +1125,22 @@
       "label": "Undisclosed Customer · Cisco · us-cisco-2023",
       "country": "OTHER",
       "node_kind": "placeholder",
+      "aliases": [],
+      "source_ids": {}
+    },
+    {
+      "id": "ent-7488611ecfb3",
+      "label": "Merck",
+      "country": "US",
+      "node_kind": "company",
+      "aliases": [],
+      "source_ids": {}
+    },
+    {
+      "id": "ent-57e564dedfe4",
+      "label": "Wuxi Apptech Co.",
+      "country": "OTHER",
+      "node_kind": "company",
       "aliases": [],
       "source_ids": {}
     }
@@ -1670,6 +1730,19 @@
       ]
     },
     {
+      "id": "edge-970135bd46b2",
+      "source": "ent-98b73f85d5e7",
+      "target": "ent-3dd78aae15d6",
+      "relation_type": "supplier",
+      "confidence": "medium",
+      "explicit": true,
+      "evidence_ids": [
+        "cn-pdd-holdings-pinduoduo-2025-adr-ev-9657bcda14",
+        "cn-pdd-holdings-pinduoduo-2024-adr-ev-7a9ca2f9bd",
+        "cn-pdd-holdings-pinduoduo-2023-adr-ev-9a269ccdb2"
+      ]
+    },
+    {
       "id": "edge-79fe9bb6782a",
       "source": "ent-3d6b89b0f79b",
       "target": "ent-60b74b2eb970",
@@ -2123,45 +2196,100 @@
       "confidence": "medium",
       "explicit": true,
       "evidence_ids": [
-        "us-nvidia-2026-ev-eccc778823",
-        "us-nvidia-2026-ev-92f3023bbe",
-        "us-nvidia-2025-ev-eccc778823",
-        "us-nvidia-2025-ev-92f3023bbe",
-        "us-nvidia-2024-ev-eccc778823",
-        "us-nvidia-2024-ev-92f3023bbe"
+        "us-nvidia-2026-ev-b38f17632a",
+        "us-nvidia-2025-ev-b38f17632a",
+        "us-nvidia-2024-ev-b38f17632a"
       ]
     },
     {
-      "id": "edge-28f4107902e0",
-      "source": "ent-ff0a15d82a3d",
-      "target": "ent-67626106d193",
-      "relation_type": "undisclosed_customer",
-      "confidence": "low",
-      "explicit": false,
+      "id": "edge-8e764c6fcc3a",
+      "source": "ent-072e02ab52b3",
+      "target": "ent-4a748db66120",
+      "relation_type": "supplier",
+      "confidence": "medium",
+      "explicit": true,
       "evidence_ids": [
-        "us-apple-2025-ev-68da4c240a"
+        "us-nvidia-2026-ev-8570f6f1b8",
+        "us-nvidia-2025-ev-8570f6f1b8",
+        "us-nvidia-2024-ev-8570f6f1b8"
       ]
     },
     {
-      "id": "edge-f98d1f82c458",
-      "source": "ent-ff0a15d82a3d",
-      "target": "ent-98a47b91398a",
-      "relation_type": "undisclosed_customer",
-      "confidence": "low",
-      "explicit": false,
+      "id": "edge-afc43a7b3aff",
+      "source": "ent-cdd02a82fea8",
+      "target": "ent-4a748db66120",
+      "relation_type": "supplier",
+      "confidence": "medium",
+      "explicit": true,
       "evidence_ids": [
-        "us-apple-2023-ev-68da4c240a"
+        "us-nvidia-2026-ev-8c7e38e07a",
+        "us-nvidia-2025-ev-8c7e38e07a",
+        "us-nvidia-2024-ev-8c7e38e07a"
       ]
     },
     {
-      "id": "edge-b477b192a700",
-      "source": "ent-1624a4589ebe",
+      "id": "edge-6b699deb9fef",
+      "source": "ent-3e61397b98db",
+      "target": "ent-4a748db66120",
+      "relation_type": "supplier",
+      "confidence": "medium",
+      "explicit": true,
+      "evidence_ids": [
+        "us-nvidia-2026-ev-54cee458f1",
+        "us-nvidia-2025-ev-712703f41d",
+        "us-nvidia-2024-ev-a054971a04"
+      ]
+    },
+    {
+      "id": "edge-02c00d4d9c7e",
+      "source": "ent-71e72180a2a7",
+      "target": "ent-ff0a15d82a3d",
+      "relation_type": "supplier",
+      "confidence": "medium",
+      "explicit": true,
+      "evidence_ids": [
+        "us-apple-2025-ev-aecc6d9e0a",
+        "us-apple-2024-ev-aecc6d9e0a",
+        "us-apple-2023-ev-aecc6d9e0a"
+      ]
+    },
+    {
+      "id": "edge-9779e20c35d4",
+      "source": "ent-463f441657aa",
+      "target": "ent-ff0a15d82a3d",
+      "relation_type": "supplier",
+      "confidence": "medium",
+      "explicit": true,
+      "evidence_ids": [
+        "us-apple-2025-ev-66768473c9",
+        "us-apple-2024-ev-66768473c9",
+        "us-apple-2023-ev-66768473c9"
+      ]
+    },
+    {
+      "id": "edge-c5f93173f90d",
+      "source": "ent-aa7fa45ade35",
       "target": "ent-e8bcd432550d",
       "relation_type": "supplier",
       "confidence": "medium",
       "explicit": true,
       "evidence_ids": [
-        "us-broadcom-2024-ev-3baff8ce17"
+        "us-broadcom-2025-ev-e72c907722",
+        "us-broadcom-2024-ev-e72c907722",
+        "us-broadcom-2023-ev-e72c907722"
+      ]
+    },
+    {
+      "id": "edge-826d25562252",
+      "source": "ent-cdd02a82fea8",
+      "target": "ent-e8bcd432550d",
+      "relation_type": "supplier",
+      "confidence": "medium",
+      "explicit": true,
+      "evidence_ids": [
+        "us-broadcom-2025-ev-b025435f21",
+        "us-broadcom-2024-ev-6b9e03edaf",
+        "us-broadcom-2023-ev-6b9e03edaf"
       ]
     },
     {
@@ -2172,9 +2300,9 @@
       "confidence": "medium",
       "explicit": true,
       "evidence_ids": [
-        "us-tesla-2026-ev-34e2cf896f",
-        "us-tesla-2025-ev-34e2cf896f",
-        "us-tesla-2024-ev-34e2cf896f"
+        "us-tesla-2026-ev-c0e3ef7179",
+        "us-tesla-2025-ev-c0e3ef7179",
+        "us-tesla-2024-ev-c0e3ef7179"
       ]
     },
     {
@@ -2211,36 +2339,39 @@
       ]
     },
     {
-      "id": "edge-e0b5c85dc823",
-      "source": "ent-3867d9c8a100",
-      "target": "ent-be87b76c2961",
+      "id": "edge-ba87915808b2",
+      "source": "ent-666360474399",
+      "target": "ent-029076555719",
       "relation_type": "supplier",
       "confidence": "medium",
       "explicit": true,
       "evidence_ids": [
-        "us-general-electric-2025-ev-a0f42ce5cb"
+        "us-walmart-2025-ev-14cf236c85",
+        "us-walmart-2024-ev-14cf236c85",
+        "us-walmart-2023-ev-14cf236c85"
       ]
     },
     {
-      "id": "edge-03ed713507aa",
-      "source": "ent-5c398419db2c",
-      "target": "ent-26380f5190e1",
-      "relation_type": "undisclosed_customer",
-      "confidence": "low",
-      "explicit": false,
+      "id": "edge-5f7bfddebf42",
+      "source": "ent-08a4b2cc0b0b",
+      "target": "ent-47a3b2d19ca8",
+      "relation_type": "supplier",
+      "confidence": "medium",
+      "explicit": true,
       "evidence_ids": [
-        "us-cisco-2025-ev-8100467c63"
+        "us-jpmorgan-chase-2026-ev-b020552c97"
       ]
     },
     {
-      "id": "edge-30a100984c92",
+      "id": "edge-bd63cdd6b9db",
       "source": "ent-5c398419db2c",
-      "target": "ent-ece5af217d85",
-      "relation_type": "undisclosed_customer",
-      "confidence": "low",
-      "explicit": false,
+      "target": "ent-116ac06dd5a1",
+      "relation_type": "customer",
+      "confidence": "medium",
+      "explicit": true,
       "evidence_ids": [
-        "us-cisco-2024-ev-8100467c63"
+        "us-cisco-2025-ev-65efb97f88",
+        "us-cisco-2024-ev-da5375ee24"
       ]
     },
     {
@@ -2255,16 +2386,28 @@
       ]
     },
     {
-      "id": "edge-c5f93173f90d",
-      "source": "ent-aa7fa45ade35",
+      "id": "edge-eb38bb877078",
+      "source": "ent-57e564dedfe4",
+      "target": "ent-7488611ecfb3",
+      "relation_type": "supplier",
+      "confidence": "medium",
+      "explicit": true,
+      "evidence_ids": [
+        "us-merck-2026-ev-36aef939a0",
+        "us-merck-2025-ev-36aef939a0",
+        "us-merck-2024-ev-36aef939a0"
+      ]
+    },
+    {
+      "id": "edge-cb66ddb36be7",
+      "source": "ent-3e61397b98db",
       "target": "ent-e8bcd432550d",
       "relation_type": "supplier",
       "confidence": "medium",
       "explicit": true,
       "evidence_ids": [
-        "us-broadcom-2025-ev-9130b59c01",
-        "us-broadcom-2024-ev-9130b59c01",
-        "us-broadcom-2023-ev-9130b59c01"
+        "us-broadcom-2024-ev-a388e6f7d9",
+        "us-broadcom-2023-ev-8580e00f74"
       ]
     }
   ],
@@ -3383,6 +3526,69 @@
       "local_path": "/workspace/data/raw/cn/foxconn-industrial-internet/2023-annual-report.pdf"
     },
     {
+      "evidence_id": "cn-pdd-holdings-pinduoduo-2025-adr-ev-9657bcda14",
+      "country": "US",
+      "relation_type": "supplier",
+      "reporter_name": "PDD Holdings (Pinduoduo)",
+      "counterparty_name": "PRC Enterprise Inc",
+      "counterparty_country": null,
+      "confidence": "medium",
+      "source_system": "SEC EDGAR (China ADR)",
+      "document_id": "cn-pdd-holdings-pinduoduo-2025-adr",
+      "document_title": "PDD Holdings (Pinduoduo) 20-F 2025",
+      "excerpt": "Risk Factors—Risks Related to Doing Business in China—We may rely on distributions and advances paid by our mainland China subsidiaries to fund any cash and financing requirements we may have, and any limitation on the ability of our mainland China subsidiaries to make payments to us could have a material and adverse effect on our ability to conduct our business.” If our holding company in the Cayman Islands or any of our subsidiaries outside of mainland China were deemed to be a “resident enterprise” under the PRC Enterprise Income Tax Law, it would be subject to enterprise income tax on its worldwide income at a rate of 25%.",
+      "page_reference": "",
+      "filing_year": 2025,
+      "amount_text": "",
+      "percentage_text": "",
+      "parser_method": "sec_supplier_sentence_scan",
+      "named_counterparty": true,
+      "download_url": "https://www.sec.gov/Archives/edgar/data/1737806/000141057825000951/pdd-20241231x20f.htm",
+      "local_path": "/workspace/data/raw/cn/pdd-holdings-pinduoduo/2025-20-f-adr.html"
+    },
+    {
+      "evidence_id": "cn-pdd-holdings-pinduoduo-2024-adr-ev-7a9ca2f9bd",
+      "country": "US",
+      "relation_type": "supplier",
+      "reporter_name": "PDD Holdings (Pinduoduo)",
+      "counterparty_name": "PRC Enterprise Inc",
+      "counterparty_country": null,
+      "confidence": "medium",
+      "source_system": "SEC EDGAR (China ADR)",
+      "document_id": "cn-pdd-holdings-pinduoduo-2024-adr",
+      "document_title": "PDD Holdings (Pinduoduo) 20-F 2024",
+      "excerpt": "Risk Factors—Risks Related to Our Multi-jurisdictional Operations—We may rely on distributions and advances paid by our mainland China subsidiaries to fund any cash and financing requirements we may have, and any limitation on the ability of our mainland China subsidiaries to make payments to us could have a material and adverse effect on our ability to conduct our business.” If our holding company in the Cayman Islands or any of our subsidiaries outside of mainland China were deemed to be a “resident enterprise” under the PRC Enterprise Income Tax Law, it would be subject to enterprise income tax on its worldwide income at a rate of 25%.",
+      "page_reference": "",
+      "filing_year": 2024,
+      "amount_text": "",
+      "percentage_text": "",
+      "parser_method": "sec_supplier_sentence_scan",
+      "named_counterparty": true,
+      "download_url": "https://www.sec.gov/Archives/edgar/data/1737806/000110465924051610/pdd-20231231x20f.htm",
+      "local_path": "/workspace/data/raw/cn/pdd-holdings-pinduoduo/2024-20-f-adr.html"
+    },
+    {
+      "evidence_id": "cn-pdd-holdings-pinduoduo-2023-adr-ev-9a269ccdb2",
+      "country": "US",
+      "relation_type": "supplier",
+      "reporter_name": "PDD Holdings (Pinduoduo)",
+      "counterparty_name": "PRC Enterprise Inc",
+      "counterparty_country": null,
+      "confidence": "medium",
+      "source_system": "SEC EDGAR (China ADR)",
+      "document_id": "cn-pdd-holdings-pinduoduo-2023-adr",
+      "document_title": "PDD Holdings (Pinduoduo) 20-F 2023",
+      "excerpt": "Risk Factors—Risks Related to Our Multi-jurisdictional Operations—We may rely on dividends and other distributions on equity paid by our PRC subsidiaries to fund any cash and financing requirements we may have, and any limitation on the ability of our PRC subsidiaries to make payments to us could have a material and adverse effect on our ability to conduct our business.” If our holding company in the Cayman Islands or any of our subsidiaries outside of China were deemed to be a “resident enterprise” under the PRC Enterprise Income Tax Law, it would be subject to enterprise income tax on its worldwide income at a rate of 25%.",
+      "page_reference": "",
+      "filing_year": 2023,
+      "amount_text": "",
+      "percentage_text": "",
+      "parser_method": "sec_supplier_sentence_scan",
+      "named_counterparty": true,
+      "download_url": "https://www.sec.gov/Archives/edgar/data/1737806/000110465923049927/pdd-20221231x20f.htm",
+      "local_path": "/workspace/data/raw/cn/pdd-holdings-pinduoduo/2023-20-f-adr.html"
+    },
+    {
       "evidence_id": "cn-byd-2024-ev-aa54fe0fad",
       "country": "CN",
       "relation_type": "undisclosed_customer",
@@ -4349,7 +4555,7 @@
       "local_path": "/workspace/data/raw/cn/china-yangtze-power/2023-annual-report.pdf"
     },
     {
-      "evidence_id": "us-nvidia-2026-ev-eccc778823",
+      "evidence_id": "us-nvidia-2026-ev-b38f17632a",
       "country": "US",
       "relation_type": "supplier",
       "reporter_name": "NVIDIA",
@@ -4359,39 +4565,81 @@
       "source_system": "SEC EDGAR",
       "document_id": "us-nvidia-2026",
       "document_title": "NVIDIA 10-K 2026",
-      "excerpt": "utilize foundries, such as Taiwan Semiconductor Manufacturing Company Limited, or TSMC, and Samsung Electronics Co",
+      "excerpt": "We utilize foundries, such as Taiwan Semiconductor Manufacturing Company Limited, or TSMC, and Samsung Electronics Co., Ltd., or Samsung, to produce our semiconductor wafers.",
       "page_reference": "",
       "filing_year": 2026,
       "amount_text": "",
       "percentage_text": "",
-      "parser_method": "sec_supplier_regex",
+      "parser_method": "sec_supplier_sentence_scan",
       "named_counterparty": true,
       "download_url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000021/nvda-20260125.htm",
       "local_path": "/workspace/data/raw/us/nvidia/2026-10-k.html"
     },
     {
-      "evidence_id": "us-nvidia-2026-ev-92f3023bbe",
+      "evidence_id": "us-nvidia-2026-ev-8570f6f1b8",
       "country": "US",
       "relation_type": "supplier",
       "reporter_name": "NVIDIA",
-      "counterparty_name": "Taiwan Semiconductor Manufacturing Company Limited",
+      "counterparty_name": "Samsung Electronics Co.",
       "counterparty_country": null,
       "confidence": "medium",
       "source_system": "SEC EDGAR",
       "document_id": "us-nvidia-2026",
       "document_title": "NVIDIA 10-K 2026",
-      "excerpt": "foundries, such as Taiwan Semiconductor Manufacturing Company Limited, or TSMC, and Samsung Electronics Co",
+      "excerpt": "We utilize foundries, such as Taiwan Semiconductor Manufacturing Company Limited, or TSMC, and Samsung Electronics Co., Ltd., or Samsung, to produce our semiconductor wafers.",
       "page_reference": "",
       "filing_year": 2026,
       "amount_text": "",
       "percentage_text": "",
-      "parser_method": "sec_supplier_regex",
+      "parser_method": "sec_supplier_sentence_scan",
       "named_counterparty": true,
       "download_url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000021/nvda-20260125.htm",
       "local_path": "/workspace/data/raw/us/nvidia/2026-10-k.html"
     },
     {
-      "evidence_id": "us-nvidia-2025-ev-eccc778823",
+      "evidence_id": "us-nvidia-2026-ev-8c7e38e07a",
+      "country": "US",
+      "relation_type": "supplier",
+      "reporter_name": "NVIDIA",
+      "counterparty_name": "Hon Hai Precision Industry Co.",
+      "counterparty_country": null,
+      "confidence": "medium",
+      "source_system": "SEC EDGAR",
+      "document_id": "us-nvidia-2026",
+      "document_title": "NVIDIA 10-K 2026",
+      "excerpt": "We engage with independent subcontractors and contract manufacturers such as Hon Hai Precision Industry Co., Ltd., Wistron Corporation, and Fabrinet to perform assembly, testing and packaging of our final products.",
+      "page_reference": "",
+      "filing_year": 2026,
+      "amount_text": "",
+      "percentage_text": "",
+      "parser_method": "sec_supplier_sentence_scan",
+      "named_counterparty": true,
+      "download_url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000021/nvda-20260125.htm",
+      "local_path": "/workspace/data/raw/us/nvidia/2026-10-k.html"
+    },
+    {
+      "evidence_id": "us-nvidia-2026-ev-54cee458f1",
+      "country": "US",
+      "relation_type": "supplier",
+      "reporter_name": "NVIDIA",
+      "counterparty_name": "Renesas Electronics Corporation",
+      "counterparty_country": null,
+      "confidence": "medium",
+      "source_system": "SEC EDGAR",
+      "document_id": "us-nvidia-2026",
+      "document_title": "NVIDIA 10-K 2026",
+      "excerpt": "• suppliers of hardware and software for SoC products that are used in servers or embedded into automobiles, autonomous machines, and gaming devices, such as Ambarella, Inc., AMD, Broadcom, Intel, Qualcomm Incorporated, Renesas Electronics Corporation, and Samsung, or companies with internal teams designing SoC products for their own products and services, such as Tesla, Inc.;",
+      "page_reference": "",
+      "filing_year": 2026,
+      "amount_text": "",
+      "percentage_text": "",
+      "parser_method": "sec_supplier_sentence_scan",
+      "named_counterparty": true,
+      "download_url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000021/nvda-20260125.htm",
+      "local_path": "/workspace/data/raw/us/nvidia/2026-10-k.html"
+    },
+    {
+      "evidence_id": "us-nvidia-2025-ev-b38f17632a",
       "country": "US",
       "relation_type": "supplier",
       "reporter_name": "NVIDIA",
@@ -4401,39 +4649,81 @@
       "source_system": "SEC EDGAR",
       "document_id": "us-nvidia-2025",
       "document_title": "NVIDIA 10-K 2025",
-      "excerpt": "utilize foundries, such as Taiwan Semiconductor Manufacturing Company Limited, or TSMC, and Samsung Electronics Co",
+      "excerpt": "We utilize foundries, such as Taiwan Semiconductor Manufacturing Company Limited, or TSMC, and Samsung Electronics Co., Ltd., or Samsung, to produce our semiconductor wafers.",
       "page_reference": "",
       "filing_year": 2025,
       "amount_text": "",
       "percentage_text": "",
-      "parser_method": "sec_supplier_regex",
+      "parser_method": "sec_supplier_sentence_scan",
       "named_counterparty": true,
       "download_url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581025000023/nvda-20250126.htm",
       "local_path": "/workspace/data/raw/us/nvidia/2025-10-k.html"
     },
     {
-      "evidence_id": "us-nvidia-2025-ev-92f3023bbe",
+      "evidence_id": "us-nvidia-2025-ev-8570f6f1b8",
       "country": "US",
       "relation_type": "supplier",
       "reporter_name": "NVIDIA",
-      "counterparty_name": "Taiwan Semiconductor Manufacturing Company Limited",
+      "counterparty_name": "Samsung Electronics Co.",
       "counterparty_country": null,
       "confidence": "medium",
       "source_system": "SEC EDGAR",
       "document_id": "us-nvidia-2025",
       "document_title": "NVIDIA 10-K 2025",
-      "excerpt": "foundries, such as Taiwan Semiconductor Manufacturing Company Limited, or TSMC, and Samsung Electronics Co",
+      "excerpt": "We utilize foundries, such as Taiwan Semiconductor Manufacturing Company Limited, or TSMC, and Samsung Electronics Co., Ltd., or Samsung, to produce our semiconductor wafers.",
       "page_reference": "",
       "filing_year": 2025,
       "amount_text": "",
       "percentage_text": "",
-      "parser_method": "sec_supplier_regex",
+      "parser_method": "sec_supplier_sentence_scan",
       "named_counterparty": true,
       "download_url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581025000023/nvda-20250126.htm",
       "local_path": "/workspace/data/raw/us/nvidia/2025-10-k.html"
     },
     {
-      "evidence_id": "us-nvidia-2024-ev-eccc778823",
+      "evidence_id": "us-nvidia-2025-ev-8c7e38e07a",
+      "country": "US",
+      "relation_type": "supplier",
+      "reporter_name": "NVIDIA",
+      "counterparty_name": "Hon Hai Precision Industry Co.",
+      "counterparty_country": null,
+      "confidence": "medium",
+      "source_system": "SEC EDGAR",
+      "document_id": "us-nvidia-2025",
+      "document_title": "NVIDIA 10-K 2025",
+      "excerpt": "We engage with independent subcontractors and contract manufacturers such as Hon Hai Precision Industry Co., Ltd., Wistron Corporation, and Fabrinet to perform assembly, testing and packaging of our final products.",
+      "page_reference": "",
+      "filing_year": 2025,
+      "amount_text": "",
+      "percentage_text": "",
+      "parser_method": "sec_supplier_sentence_scan",
+      "named_counterparty": true,
+      "download_url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581025000023/nvda-20250126.htm",
+      "local_path": "/workspace/data/raw/us/nvidia/2025-10-k.html"
+    },
+    {
+      "evidence_id": "us-nvidia-2025-ev-712703f41d",
+      "country": "US",
+      "relation_type": "supplier",
+      "reporter_name": "NVIDIA",
+      "counterparty_name": "Renesas Electronics Corporation",
+      "counterparty_country": null,
+      "confidence": "medium",
+      "source_system": "SEC EDGAR",
+      "document_id": "us-nvidia-2025",
+      "document_title": "NVIDIA 10-K 2025",
+      "excerpt": "• suppliers of hardware and software for SoC products that are used in servers or embedded into automobiles, autonomous machines, and gaming devices, such as Ambarella, Inc., AMD, Broadcom, Inc., or Broadcom, Intel, Qualcomm Incorporated, Renesas Electronics Corporation, and Samsung, or companies with internal teams designing SoC products for their own products and services, such as Tesla, Inc.;",
+      "page_reference": "",
+      "filing_year": 2025,
+      "amount_text": "",
+      "percentage_text": "",
+      "parser_method": "sec_supplier_sentence_scan",
+      "named_counterparty": true,
+      "download_url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581025000023/nvda-20250126.htm",
+      "local_path": "/workspace/data/raw/us/nvidia/2025-10-k.html"
+    },
+    {
+      "evidence_id": "us-nvidia-2024-ev-b38f17632a",
       "country": "US",
       "relation_type": "supplier",
       "reporter_name": "NVIDIA",
@@ -4443,159 +4733,390 @@
       "source_system": "SEC EDGAR",
       "document_id": "us-nvidia-2024",
       "document_title": "NVIDIA 10-K 2024",
-      "excerpt": "utilize foundries, such as Taiwan Semiconductor Manufacturing Company Limited, or TSMC, and Samsung Electronics Co",
+      "excerpt": "We utilize foundries, such as Taiwan Semiconductor Manufacturing Company Limited, or TSMC, and Samsung Electronics Co., Ltd., or Samsung, to produce our semiconductor wafers.",
       "page_reference": "",
       "filing_year": 2024,
       "amount_text": "",
       "percentage_text": "",
-      "parser_method": "sec_supplier_regex",
+      "parser_method": "sec_supplier_sentence_scan",
       "named_counterparty": true,
       "download_url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581024000029/nvda-20240128.htm",
       "local_path": "/workspace/data/raw/us/nvidia/2024-10-k.html"
     },
     {
-      "evidence_id": "us-nvidia-2024-ev-92f3023bbe",
+      "evidence_id": "us-nvidia-2024-ev-8570f6f1b8",
       "country": "US",
       "relation_type": "supplier",
       "reporter_name": "NVIDIA",
-      "counterparty_name": "Taiwan Semiconductor Manufacturing Company Limited",
+      "counterparty_name": "Samsung Electronics Co.",
       "counterparty_country": null,
       "confidence": "medium",
       "source_system": "SEC EDGAR",
       "document_id": "us-nvidia-2024",
       "document_title": "NVIDIA 10-K 2024",
-      "excerpt": "foundries, such as Taiwan Semiconductor Manufacturing Company Limited, or TSMC, and Samsung Electronics Co",
+      "excerpt": "We utilize foundries, such as Taiwan Semiconductor Manufacturing Company Limited, or TSMC, and Samsung Electronics Co., Ltd., or Samsung, to produce our semiconductor wafers.",
       "page_reference": "",
       "filing_year": 2024,
       "amount_text": "",
       "percentage_text": "",
-      "parser_method": "sec_supplier_regex",
+      "parser_method": "sec_supplier_sentence_scan",
       "named_counterparty": true,
       "download_url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581024000029/nvda-20240128.htm",
       "local_path": "/workspace/data/raw/us/nvidia/2024-10-k.html"
     },
     {
-      "evidence_id": "us-apple-2025-ev-68da4c240a",
+      "evidence_id": "us-nvidia-2024-ev-8c7e38e07a",
       "country": "US",
-      "relation_type": "undisclosed_customer",
+      "relation_type": "supplier",
+      "reporter_name": "NVIDIA",
+      "counterparty_name": "Hon Hai Precision Industry Co.",
+      "counterparty_country": null,
+      "confidence": "medium",
+      "source_system": "SEC EDGAR",
+      "document_id": "us-nvidia-2024",
+      "document_title": "NVIDIA 10-K 2024",
+      "excerpt": "We engage with independent subcontractors and contract manufacturers such as Hon Hai Precision Industry Co., Ltd., Wistron Corporation, and Fabrinet to perform assembly, testing and packaging of our final products.",
+      "page_reference": "",
+      "filing_year": 2024,
+      "amount_text": "",
+      "percentage_text": "",
+      "parser_method": "sec_supplier_sentence_scan",
+      "named_counterparty": true,
+      "download_url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581024000029/nvda-20240128.htm",
+      "local_path": "/workspace/data/raw/us/nvidia/2024-10-k.html"
+    },
+    {
+      "evidence_id": "us-nvidia-2024-ev-a054971a04",
+      "country": "US",
+      "relation_type": "supplier",
+      "reporter_name": "NVIDIA",
+      "counterparty_name": "Renesas Electronics Corporation",
+      "counterparty_country": null,
+      "confidence": "medium",
+      "source_system": "SEC EDGAR",
+      "document_id": "us-nvidia-2024",
+      "document_title": "NVIDIA 10-K 2024",
+      "excerpt": "• suppliers of hardware and software for SoC products that are used in servers or embedded into automobiles, autonomous machines, and gaming devices, such as Ambarella, Inc., AMD, Broadcom Inc., or Broadcom, Intel, Qualcomm Incorporated, Renesas Electronics Corporation, and Samsung, or companies with internal teams designing SoC products for their own products and services, such as Tesla, Inc.;",
+      "page_reference": "",
+      "filing_year": 2024,
+      "amount_text": "",
+      "percentage_text": "",
+      "parser_method": "sec_supplier_sentence_scan",
+      "named_counterparty": true,
+      "download_url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581024000029/nvda-20240128.htm",
+      "local_path": "/workspace/data/raw/us/nvidia/2024-10-k.html"
+    },
+    {
+      "evidence_id": "us-apple-2025-ev-aecc6d9e0a",
+      "country": "US",
+      "relation_type": "supplier",
       "reporter_name": "Apple",
-      "counterparty_name": "Undisclosed Customer · Apple · us-apple-2025",
+      "counterparty_name": "Manufacturing Purchase Obligations The Company",
       "counterparty_country": null,
-      "confidence": "low",
+      "confidence": "medium",
       "source_system": "SEC EDGAR",
       "document_id": "us-apple-2025",
       "document_title": "Apple 10-K 2025",
-      "excerpt": "one customer that represented 10%",
+      "excerpt": "Manufacturing Purchase Obligations The Company utilizes several outsourcing partners to manufacture subassemblies for the Company’s products and to perform final assembly and testing of finished products.",
       "page_reference": "",
       "filing_year": 2025,
       "amount_text": "",
       "percentage_text": "",
-      "parser_method": "sec_undisclosed_customer_regex",
-      "named_counterparty": false,
+      "parser_method": "sec_supplier_sentence_scan",
+      "named_counterparty": true,
       "download_url": "https://www.sec.gov/Archives/edgar/data/320193/000032019325000079/aapl-20250927.htm",
       "local_path": "/workspace/data/raw/us/apple/2025-10-k.html"
     },
     {
-      "evidence_id": "us-apple-2023-ev-68da4c240a",
+      "evidence_id": "us-apple-2025-ev-66768473c9",
       "country": "US",
-      "relation_type": "undisclosed_customer",
+      "relation_type": "supplier",
       "reporter_name": "Apple",
-      "counterparty_name": "Undisclosed Customer · Apple · us-apple-2023",
+      "counterparty_name": "Other Purchase Obligations The Company",
       "counterparty_country": null,
-      "confidence": "low",
+      "confidence": "medium",
+      "source_system": "SEC EDGAR",
+      "document_id": "us-apple-2025",
+      "document_title": "Apple 10-K 2025",
+      "excerpt": "Other Purchase Obligations The Company’s other purchase obligations primarily consist of noncancelable obligations to acquire capital assets, including assets related to product manufacturing, and noncancelable obligations related to supplier arrangements, licensed intellectual property and content, and distribution rights.",
+      "page_reference": "",
+      "filing_year": 2025,
+      "amount_text": "",
+      "percentage_text": "",
+      "parser_method": "sec_supplier_sentence_scan",
+      "named_counterparty": true,
+      "download_url": "https://www.sec.gov/Archives/edgar/data/320193/000032019325000079/aapl-20250927.htm",
+      "local_path": "/workspace/data/raw/us/apple/2025-10-k.html"
+    },
+    {
+      "evidence_id": "us-apple-2024-ev-aecc6d9e0a",
+      "country": "US",
+      "relation_type": "supplier",
+      "reporter_name": "Apple",
+      "counterparty_name": "Manufacturing Purchase Obligations The Company",
+      "counterparty_country": null,
+      "confidence": "medium",
+      "source_system": "SEC EDGAR",
+      "document_id": "us-apple-2024",
+      "document_title": "Apple 10-K 2024",
+      "excerpt": "Manufacturing Purchase Obligations The Company utilizes several outsourcing partners to manufacture subassemblies for the Company’s products and to perform final assembly and testing of finished products.",
+      "page_reference": "",
+      "filing_year": 2024,
+      "amount_text": "",
+      "percentage_text": "",
+      "parser_method": "sec_supplier_sentence_scan",
+      "named_counterparty": true,
+      "download_url": "https://www.sec.gov/Archives/edgar/data/320193/000032019324000123/aapl-20240928.htm",
+      "local_path": "/workspace/data/raw/us/apple/2024-10-k.html"
+    },
+    {
+      "evidence_id": "us-apple-2024-ev-66768473c9",
+      "country": "US",
+      "relation_type": "supplier",
+      "reporter_name": "Apple",
+      "counterparty_name": "Other Purchase Obligations The Company",
+      "counterparty_country": null,
+      "confidence": "medium",
+      "source_system": "SEC EDGAR",
+      "document_id": "us-apple-2024",
+      "document_title": "Apple 10-K 2024",
+      "excerpt": "Other Purchase Obligations The Company’s other purchase obligations primarily consist of noncancelable obligations to acquire capital assets, including assets related to product manufacturing, and noncancelable obligations related to supplier arrangements, licensed intellectual property and content, and distribution rights.",
+      "page_reference": "",
+      "filing_year": 2024,
+      "amount_text": "",
+      "percentage_text": "",
+      "parser_method": "sec_supplier_sentence_scan",
+      "named_counterparty": true,
+      "download_url": "https://www.sec.gov/Archives/edgar/data/320193/000032019324000123/aapl-20240928.htm",
+      "local_path": "/workspace/data/raw/us/apple/2024-10-k.html"
+    },
+    {
+      "evidence_id": "us-apple-2023-ev-aecc6d9e0a",
+      "country": "US",
+      "relation_type": "supplier",
+      "reporter_name": "Apple",
+      "counterparty_name": "Manufacturing Purchase Obligations The Company",
+      "counterparty_country": null,
+      "confidence": "medium",
       "source_system": "SEC EDGAR",
       "document_id": "us-apple-2023",
       "document_title": "Apple 10-K 2023",
-      "excerpt": "one customer that represented 10%",
+      "excerpt": "Manufacturing Purchase Obligations The Company utilizes several outsourcing partners to manufacture subassemblies for the Company’s products and to perform final assembly and testing of finished products.",
       "page_reference": "",
       "filing_year": 2023,
       "amount_text": "",
       "percentage_text": "",
-      "parser_method": "sec_undisclosed_customer_regex",
-      "named_counterparty": false,
+      "parser_method": "sec_supplier_sentence_scan",
+      "named_counterparty": true,
       "download_url": "https://www.sec.gov/Archives/edgar/data/320193/000032019323000106/aapl-20230930.htm",
       "local_path": "/workspace/data/raw/us/apple/2023-10-k.html"
     },
     {
-      "evidence_id": "us-broadcom-2024-ev-3baff8ce17",
+      "evidence_id": "us-apple-2023-ev-66768473c9",
+      "country": "US",
+      "relation_type": "supplier",
+      "reporter_name": "Apple",
+      "counterparty_name": "Other Purchase Obligations The Company",
+      "counterparty_country": null,
+      "confidence": "medium",
+      "source_system": "SEC EDGAR",
+      "document_id": "us-apple-2023",
+      "document_title": "Apple 10-K 2023",
+      "excerpt": "Other Purchase Obligations The Company’s other purchase obligations primarily consist of noncancelable obligations to acquire capital assets, including assets related to product manufacturing, and noncancelable obligations related to supplier arrangements, licensed intellectual property and content, and distribution rights.",
+      "page_reference": "",
+      "filing_year": 2023,
+      "amount_text": "",
+      "percentage_text": "",
+      "parser_method": "sec_supplier_sentence_scan",
+      "named_counterparty": true,
+      "download_url": "https://www.sec.gov/Archives/edgar/data/320193/000032019323000106/aapl-20230930.htm",
+      "local_path": "/workspace/data/raw/us/apple/2023-10-k.html"
+    },
+    {
+      "evidence_id": "us-broadcom-2025-ev-e72c907722",
       "country": "US",
       "relation_type": "supplier",
       "reporter_name": "Broadcom",
-      "counterparty_name": "BMC Software Inc",
+      "counterparty_name": "Taiwan Semiconductor Manufacturing Company Limited",
+      "counterparty_country": null,
+      "confidence": "medium",
+      "source_system": "SEC EDGAR",
+      "document_id": "us-broadcom-2025",
+      "document_title": "Broadcom 10-K 2025",
+      "excerpt": "The majority of our front-end wafer manufacturing operations is outsourced to external foundries, including Taiwan Semiconductor Manufacturing Company Limited (“TSMC”).",
+      "page_reference": "",
+      "filing_year": 2025,
+      "amount_text": "",
+      "percentage_text": "",
+      "parser_method": "sec_supplier_sentence_scan",
+      "named_counterparty": true,
+      "download_url": "https://www.sec.gov/Archives/edgar/data/1730168/000173016825000121/avgo-20251102.htm",
+      "local_path": "/workspace/data/raw/us/broadcom/2025-10-k.html"
+    },
+    {
+      "evidence_id": "us-broadcom-2025-ev-b025435f21",
+      "country": "US",
+      "relation_type": "supplier",
+      "reporter_name": "Broadcom",
+      "counterparty_name": "Foxconn Technology Group",
+      "counterparty_country": null,
+      "confidence": "medium",
+      "source_system": "SEC EDGAR",
+      "document_id": "us-broadcom-2025",
+      "document_title": "Broadcom 10-K 2025",
+      "excerpt": "We use third-party CMs for a significant majority of our assembly and test operations, including TSMC, Advanced Semiconductor Engineering, Inc., Foxconn Technology Group, Amkor Technology, Inc.",
+      "page_reference": "",
+      "filing_year": 2025,
+      "amount_text": "",
+      "percentage_text": "",
+      "parser_method": "sec_supplier_sentence_scan",
+      "named_counterparty": true,
+      "download_url": "https://www.sec.gov/Archives/edgar/data/1730168/000173016825000121/avgo-20251102.htm",
+      "local_path": "/workspace/data/raw/us/broadcom/2025-10-k.html"
+    },
+    {
+      "evidence_id": "us-broadcom-2024-ev-e72c907722",
+      "country": "US",
+      "relation_type": "supplier",
+      "reporter_name": "Broadcom",
+      "counterparty_name": "Taiwan Semiconductor Manufacturing Company Limited",
       "counterparty_country": null,
       "confidence": "medium",
       "source_system": "SEC EDGAR",
       "document_id": "us-broadcom-2024",
       "document_title": "Broadcom 10-K 2024",
-      "excerpt": "used on specific markets, such as Atlassian Corporation, Plc, BeyondTrust Corporation, BMC Software Inc",
+      "excerpt": "The majority of our front-end wafer manufacturing operations is outsourced to external foundries, including Taiwan Semiconductor Manufacturing Company Limited (“TSMC”).",
       "page_reference": "",
       "filing_year": 2024,
       "amount_text": "",
       "percentage_text": "",
-      "parser_method": "sec_supplier_regex",
+      "parser_method": "sec_supplier_sentence_scan",
       "named_counterparty": true,
       "download_url": "https://www.sec.gov/Archives/edgar/data/1730168/000173016824000139/avgo-20241103.htm",
       "local_path": "/workspace/data/raw/us/broadcom/2024-10-k.html"
     },
     {
-      "evidence_id": "us-tesla-2026-ev-34e2cf896f",
+      "evidence_id": "us-broadcom-2024-ev-6b9e03edaf",
+      "country": "US",
+      "relation_type": "supplier",
+      "reporter_name": "Broadcom",
+      "counterparty_name": "Foxconn Technology Group",
+      "counterparty_country": null,
+      "confidence": "medium",
+      "source_system": "SEC EDGAR",
+      "document_id": "us-broadcom-2024",
+      "document_title": "Broadcom 10-K 2024",
+      "excerpt": "We use third-party contract manufacturers for a significant majority of our assembly and test operations, including TSMC, Advanced Semiconductor Engineering, Inc., Foxconn Technology Group, Amkor Technology, Inc.",
+      "page_reference": "",
+      "filing_year": 2024,
+      "amount_text": "",
+      "percentage_text": "",
+      "parser_method": "sec_supplier_sentence_scan",
+      "named_counterparty": true,
+      "download_url": "https://www.sec.gov/Archives/edgar/data/1730168/000173016824000139/avgo-20241103.htm",
+      "local_path": "/workspace/data/raw/us/broadcom/2024-10-k.html"
+    },
+    {
+      "evidence_id": "us-broadcom-2023-ev-e72c907722",
+      "country": "US",
+      "relation_type": "supplier",
+      "reporter_name": "Broadcom",
+      "counterparty_name": "Taiwan Semiconductor Manufacturing Company Limited",
+      "counterparty_country": null,
+      "confidence": "medium",
+      "source_system": "SEC EDGAR",
+      "document_id": "us-broadcom-2023",
+      "document_title": "Broadcom 10-K 2023",
+      "excerpt": "The majority of our front-end wafer manufacturing operations is outsourced to external foundries, including Taiwan Semiconductor Manufacturing Company Limited (“TSMC”).",
+      "page_reference": "",
+      "filing_year": 2023,
+      "amount_text": "",
+      "percentage_text": "",
+      "parser_method": "sec_supplier_sentence_scan",
+      "named_counterparty": true,
+      "download_url": "https://www.sec.gov/Archives/edgar/data/1730168/000173016823000096/avgo-20231029.htm",
+      "local_path": "/workspace/data/raw/us/broadcom/2023-10-k.html"
+    },
+    {
+      "evidence_id": "us-broadcom-2023-ev-6b9e03edaf",
+      "country": "US",
+      "relation_type": "supplier",
+      "reporter_name": "Broadcom",
+      "counterparty_name": "Foxconn Technology Group",
+      "counterparty_country": null,
+      "confidence": "medium",
+      "source_system": "SEC EDGAR",
+      "document_id": "us-broadcom-2023",
+      "document_title": "Broadcom 10-K 2023",
+      "excerpt": "We use third-party contract manufacturers for a significant majority of our assembly and test operations, including TSMC, Advanced Semiconductor Engineering, Inc., Foxconn Technology Group, Amkor Technology, Inc.",
+      "page_reference": "",
+      "filing_year": 2023,
+      "amount_text": "",
+      "percentage_text": "",
+      "parser_method": "sec_supplier_sentence_scan",
+      "named_counterparty": true,
+      "download_url": "https://www.sec.gov/Archives/edgar/data/1730168/000173016823000096/avgo-20231029.htm",
+      "local_path": "/workspace/data/raw/us/broadcom/2023-10-k.html"
+    },
+    {
+      "evidence_id": "us-tesla-2026-ev-c0e3ef7179",
       "country": "US",
       "relation_type": "supplier",
       "reporter_name": "Tesla",
-      "counterparty_name": "Contemporary Amperex Technology",
+      "counterparty_name": "Contemporary Amperex Technology Co.",
       "counterparty_country": null,
       "confidence": "medium",
       "source_system": "SEC EDGAR",
       "document_id": "us-tesla-2026",
       "document_title": "Tesla 10-K 2026",
-      "excerpt": "rely on suppliers such as Panasonic and Contemporary Amperex Technology Co",
+      "excerpt": "Currently, we rely on suppliers such as Panasonic and Contemporary Amperex Technology Co.",
       "page_reference": "",
       "filing_year": 2026,
       "amount_text": "",
       "percentage_text": "",
-      "parser_method": "sec_supplier_regex",
+      "parser_method": "sec_supplier_sentence_scan",
       "named_counterparty": true,
       "download_url": "https://www.sec.gov/Archives/edgar/data/1318605/000162828026003952/tsla-20251231.htm",
       "local_path": "/workspace/data/raw/us/tesla/2026-10-k.html"
     },
     {
-      "evidence_id": "us-tesla-2025-ev-34e2cf896f",
+      "evidence_id": "us-tesla-2025-ev-c0e3ef7179",
       "country": "US",
       "relation_type": "supplier",
       "reporter_name": "Tesla",
-      "counterparty_name": "Contemporary Amperex Technology",
+      "counterparty_name": "Contemporary Amperex Technology Co.",
       "counterparty_country": null,
       "confidence": "medium",
       "source_system": "SEC EDGAR",
       "document_id": "us-tesla-2025",
       "document_title": "Tesla 10-K 2025",
-      "excerpt": "rely on suppliers such as Panasonic and Contemporary Amperex Technology Co",
+      "excerpt": "Currently, we rely on suppliers such as Panasonic and Contemporary Amperex Technology Co.",
       "page_reference": "",
       "filing_year": 2025,
       "amount_text": "",
       "percentage_text": "",
-      "parser_method": "sec_supplier_regex",
+      "parser_method": "sec_supplier_sentence_scan",
       "named_counterparty": true,
       "download_url": "https://www.sec.gov/Archives/edgar/data/1318605/000162828025003063/tsla-20241231.htm",
       "local_path": "/workspace/data/raw/us/tesla/2025-10-k.html"
     },
     {
-      "evidence_id": "us-tesla-2024-ev-34e2cf896f",
+      "evidence_id": "us-tesla-2024-ev-c0e3ef7179",
       "country": "US",
       "relation_type": "supplier",
       "reporter_name": "Tesla",
-      "counterparty_name": "Contemporary Amperex Technology",
+      "counterparty_name": "Contemporary Amperex Technology Co.",
       "counterparty_country": null,
       "confidence": "medium",
       "source_system": "SEC EDGAR",
       "document_id": "us-tesla-2024",
       "document_title": "Tesla 10-K 2024",
-      "excerpt": "rely on suppliers such as Panasonic and Contemporary Amperex Technology Co",
+      "excerpt": "Currently, we rely on suppliers such as Panasonic and Contemporary Amperex Technology Co.",
       "page_reference": "",
       "filing_year": 2024,
       "amount_text": "",
       "percentage_text": "",
-      "parser_method": "sec_supplier_regex",
+      "parser_method": "sec_supplier_sentence_scan",
       "named_counterparty": true,
       "download_url": "https://www.sec.gov/Archives/edgar/data/1318605/000162828024002390/tsla-20231231.htm",
       "local_path": "/workspace/data/raw/us/tesla/2024-10-k.html"
@@ -4664,65 +5185,128 @@
       "local_path": "/workspace/data/raw/us/berkshire-hathaway/2024-10-k.html"
     },
     {
-      "evidence_id": "us-general-electric-2025-ev-a0f42ce5cb",
+      "evidence_id": "us-walmart-2025-ev-14cf236c85",
       "country": "US",
       "relation_type": "supplier",
-      "reporter_name": "General Electric",
-      "counterparty_name": "Electric Insurance Company",
+      "reporter_name": "Walmart",
+      "counterparty_name": "Suppliers The Company",
       "counterparty_country": null,
       "confidence": "medium",
       "source_system": "SEC EDGAR",
-      "document_id": "us-general-electric-2025",
-      "document_title": "General Electric 10-K 2025",
-      "excerpt": "used were partially offset by proceeds received from the dispositions of our non-core licensing business and Electric Insurance Company of $0",
+      "document_id": "us-walmart-2025",
+      "document_title": "Walmart 10-K 2025",
+      "excerpt": "Payments from Suppliers The Company receives consideration from suppliers for various programs, primarily volume incentives, warehouse allowances and reimbursements for specific programs such as markdowns, margin protection, certain advertising arrangements and supplier-specific fixtures.",
       "page_reference": "",
       "filing_year": 2025,
       "amount_text": "",
       "percentage_text": "",
-      "parser_method": "sec_supplier_regex",
+      "parser_method": "sec_supplier_sentence_scan",
       "named_counterparty": true,
-      "download_url": "https://www.sec.gov/Archives/edgar/data/40545/000004054525000015/ge-20241231.htm",
-      "local_path": "/workspace/data/raw/us/general-electric/2025-10-k.html"
+      "download_url": "https://www.sec.gov/Archives/edgar/data/104169/000010416925000021/wmt-20250131.htm",
+      "local_path": "/workspace/data/raw/us/walmart/2025-10-k.html"
     },
     {
-      "evidence_id": "us-cisco-2025-ev-8100467c63",
+      "evidence_id": "us-walmart-2024-ev-14cf236c85",
       "country": "US",
-      "relation_type": "undisclosed_customer",
-      "reporter_name": "Cisco",
-      "counterparty_name": "Undisclosed Customer · Cisco · us-cisco-2025",
+      "relation_type": "supplier",
+      "reporter_name": "Walmart",
+      "counterparty_name": "Suppliers The Company",
       "counterparty_country": null,
-      "confidence": "low",
+      "confidence": "medium",
       "source_system": "SEC EDGAR",
-      "document_id": "us-cisco-2025",
-      "document_title": "Cisco 10-K 2025",
-      "excerpt": "single customer accounted for 10%",
-      "page_reference": "",
-      "filing_year": 2025,
-      "amount_text": "",
-      "percentage_text": "",
-      "parser_method": "sec_undisclosed_customer_regex",
-      "named_counterparty": false,
-      "download_url": "https://www.sec.gov/Archives/edgar/data/858877/000085887725000111/csco-20250726.htm",
-      "local_path": "/workspace/data/raw/us/cisco/2025-10-k.html"
-    },
-    {
-      "evidence_id": "us-cisco-2024-ev-8100467c63",
-      "country": "US",
-      "relation_type": "undisclosed_customer",
-      "reporter_name": "Cisco",
-      "counterparty_name": "Undisclosed Customer · Cisco · us-cisco-2024",
-      "counterparty_country": null,
-      "confidence": "low",
-      "source_system": "SEC EDGAR",
-      "document_id": "us-cisco-2024",
-      "document_title": "Cisco 10-K 2024",
-      "excerpt": "single customer accounted for 10%",
+      "document_id": "us-walmart-2024",
+      "document_title": "Walmart 10-K 2024",
+      "excerpt": "Payments from Suppliers The Company receives consideration from suppliers for various programs, primarily volume incentives, warehouse allowances and reimbursements for specific programs such as markdowns, margin protection, certain advertising arrangements and supplier-specific fixtures.",
       "page_reference": "",
       "filing_year": 2024,
       "amount_text": "",
       "percentage_text": "",
-      "parser_method": "sec_undisclosed_customer_regex",
-      "named_counterparty": false,
+      "parser_method": "sec_supplier_sentence_scan",
+      "named_counterparty": true,
+      "download_url": "https://www.sec.gov/Archives/edgar/data/104169/000010416924000056/wmt-20240131.htm",
+      "local_path": "/workspace/data/raw/us/walmart/2024-10-k.html"
+    },
+    {
+      "evidence_id": "us-walmart-2023-ev-14cf236c85",
+      "country": "US",
+      "relation_type": "supplier",
+      "reporter_name": "Walmart",
+      "counterparty_name": "Suppliers The Company",
+      "counterparty_country": null,
+      "confidence": "medium",
+      "source_system": "SEC EDGAR",
+      "document_id": "us-walmart-2023",
+      "document_title": "Walmart 10-K 2023",
+      "excerpt": "Payments from Suppliers The Company receives consideration from suppliers for various programs, primarily volume incentives, warehouse allowances and reimbursements for specific programs such as markdowns, margin protection, certain advertising arrangements and supplier-specific fixtures.",
+      "page_reference": "",
+      "filing_year": 2023,
+      "amount_text": "",
+      "percentage_text": "",
+      "parser_method": "sec_supplier_sentence_scan",
+      "named_counterparty": true,
+      "download_url": "https://www.sec.gov/Archives/edgar/data/104169/000010416923000020/wmt-20230131.htm",
+      "local_path": "/workspace/data/raw/us/walmart/2023-10-k.html"
+    },
+    {
+      "evidence_id": "us-jpmorgan-chase-2026-ev-b020552c97",
+      "country": "US",
+      "relation_type": "supplier",
+      "reporter_name": "JPMorgan Chase",
+      "counterparty_name": "Employee Retirement Inc",
+      "counterparty_country": null,
+      "confidence": "medium",
+      "source_system": "SEC EDGAR",
+      "document_id": "us-jpmorgan-chase-2026",
+      "document_title": "JPMorgan Chase 10-K 2026",
+      "excerpt": "The Department of Labor (\"DOL\") granted the Firm exemptions that permit the Firm and its affiliates to continue to rely on the Qualified Professional Asset Manager exemption under the Employee Retirement Income Security Act (“ERISA”) through the ten-year disqualification period, which began in January 2017.",
+      "page_reference": "",
+      "filing_year": 2026,
+      "amount_text": "",
+      "percentage_text": "",
+      "parser_method": "sec_supplier_sentence_scan",
+      "named_counterparty": true,
+      "download_url": "https://www.sec.gov/Archives/edgar/data/19617/000162828026008131/jpm-20251231.htm",
+      "local_path": "/workspace/data/raw/us/jpmorgan-chase/2026-10-k.html"
+    },
+    {
+      "evidence_id": "us-cisco-2025-ev-65efb97f88",
+      "country": "US",
+      "relation_type": "customer",
+      "reporter_name": "Cisco",
+      "counterparty_name": "Accumulated Other Comprehensive Inc",
+      "counterparty_country": null,
+      "confidence": "medium",
+      "source_system": "SEC EDGAR",
+      "document_id": "us-cisco-2025",
+      "document_title": "Cisco 10-K 2025",
+      "excerpt": "Financial Statements and Supplementary Data Index to Consolidated Financial Statements Report of Independent Registered Public Accounting Firm (PCAOB ID 238 ) 53 Reports of Management 55 Consolidated Balance Sheets 56 Consolidated Statements of Operations 57 Consolidated Statements of Comprehensive Income 58 Consolidated Statements of Cash Flows 59 Consolidated Statements of Equity 60 Notes to Consolidated Financial Statements 61 Note 1: Basis of Presentation 61 Note 2: Summary of Significant Accounting Policies 61 Note 3: Revenue 67 Note 4: Acquisitions 69 Note 5: Goodwill and Purchased Intangible Assets 72 Note 6: Restructuring and Other Charges 74 Note 7: Balance Sheet and Other Details 74 Note 8: Leases 76 Note 9: Financing Receivables 78 Note 10: Investments 81 Note 11: Fair Value 83 Note 12: Borrowings 84 Note 13: Derivative Instruments 86 Note 14: Commitments and Contingencies 88 Note 15: Stockholders’ Equity 91 Note 16: Employee Benefit Plans 92 Note 17: Accumulated Other Comprehensive Income (Loss) 95 Note 18: Income Taxes 96 Note 19: Segment Information and Major Customers 99 Note 20: Net Income per Share 100 Note 21: Subsequent Event 101 52 Table of Contents Report of Independent Registered Public Accounting Firm To the Board of Directors and Stockholders of Cisco Systems, Inc.",
+      "page_reference": "",
+      "filing_year": 2025,
+      "amount_text": "",
+      "percentage_text": "",
+      "parser_method": "sec_customer_sentence_scan",
+      "named_counterparty": true,
+      "download_url": "https://www.sec.gov/Archives/edgar/data/858877/000085887725000111/csco-20250726.htm",
+      "local_path": "/workspace/data/raw/us/cisco/2025-10-k.html"
+    },
+    {
+      "evidence_id": "us-cisco-2024-ev-da5375ee24",
+      "country": "US",
+      "relation_type": "customer",
+      "reporter_name": "Cisco",
+      "counterparty_name": "Accumulated Other Comprehensive Inc",
+      "counterparty_country": null,
+      "confidence": "medium",
+      "source_system": "SEC EDGAR",
+      "document_id": "us-cisco-2024",
+      "document_title": "Cisco 10-K 2024",
+      "excerpt": "Financial Statements and Supplementary Data Index to Consolidated Financial Statements Report of Independent Registered Public Accounting Firm (PCAOB ID 238 ) 54 Reports of Management 57 Consolidated Balance Sheets 58 Consolidated Statements of Operations 59 Consolidated Statements of Comprehensive Income 60 Consolidated Statements of Cash Flows 61 Consolidated Statements of Equity 62 Notes to Consolidated Financial Statements 63 Note 1: Basis of Presentation 63 Note 2: Summary of Significant Accounting Policies 63 Note 3: Revenue 69 Note 4: Acquisitions 71 Note 5: Goodwill and Purchased Intangible Assets 74 Note 6: Restructuring and Other Charges 76 Note 7: Balance Sheet and Other Details 77 Note 8: Leases 78 Note 9: Financing Receivables 80 Note 10: Investments 83 Note 11: Fair Value 85 Note 12: Borrowings 86 Note 13: Derivative Instruments 88 Note 14: Commitments and Contingencies 91 Note 15: Stockholders’ Equity 93 Note 16: Employee Benefit Plans 94 Note 17: Accumulated Other Comprehensive Income (Loss) 98 Note 18: Income Taxes 99 Note 19: Segment Information and Major Customers 102 Note 20: Net Income per Share 103 53 Table of Contents Report of Independent Registered Public Accounting Firm To the Board of Directors and Stockholders of Cisco Systems, Inc.",
+      "page_reference": "",
+      "filing_year": 2024,
+      "amount_text": "",
+      "percentage_text": "",
+      "parser_method": "sec_customer_sentence_scan",
+      "named_counterparty": true,
       "download_url": "https://www.sec.gov/Archives/edgar/data/858877/000085887724000017/csco-20240727.htm",
       "local_path": "/workspace/data/raw/us/cisco/2024-10-k.html"
     },
@@ -4748,38 +5332,80 @@
       "local_path": "/workspace/data/raw/us/cisco/2023-10-k.html"
     },
     {
-      "evidence_id": "us-broadcom-2025-ev-9130b59c01",
+      "evidence_id": "us-merck-2026-ev-36aef939a0",
       "country": "US",
       "relation_type": "supplier",
-      "reporter_name": "Broadcom",
-      "counterparty_name": "Taiwan Semiconductor Manufacturing Company Limited",
+      "reporter_name": "Merck",
+      "counterparty_name": "Wuxi Apptech Co.",
       "counterparty_country": null,
       "confidence": "medium",
       "source_system": "SEC EDGAR",
-      "document_id": "us-broadcom-2025",
-      "document_title": "Broadcom 10-K 2025",
-      "excerpt": "The majority of our front-end wafer manufacturing operations is outsourced to external foundries, including Taiwan Semiconductor Manufacturing Company Limited (&#8220;TSMC&#8221;).",
+      "document_id": "us-merck-2026",
+      "document_title": "Merck 10-K 2026",
+      "excerpt": "In addition to its commercial operations, the Company has significant research and manufacturing operations in China, including working with Chinese entities such as Wuxi Apptech Co., Ltd.",
+      "page_reference": "",
+      "filing_year": 2026,
+      "amount_text": "",
+      "percentage_text": "",
+      "parser_method": "sec_supplier_sentence_scan",
+      "named_counterparty": true,
+      "download_url": "https://www.sec.gov/Archives/edgar/data/310158/000031015826000063/mrk-20251231.htm",
+      "local_path": "/workspace/data/raw/us/merck/2026-10-k.html"
+    },
+    {
+      "evidence_id": "us-merck-2025-ev-36aef939a0",
+      "country": "US",
+      "relation_type": "supplier",
+      "reporter_name": "Merck",
+      "counterparty_name": "Wuxi Apptech Co.",
+      "counterparty_country": null,
+      "confidence": "medium",
+      "source_system": "SEC EDGAR",
+      "document_id": "us-merck-2025",
+      "document_title": "Merck 10-K 2025",
+      "excerpt": "In addition to its commercial operations, the Company has significant research and manufacturing operations in China, including working with Chinese entities such as Wuxi Apptech Co., Ltd.",
       "page_reference": "",
       "filing_year": 2025,
       "amount_text": "",
       "percentage_text": "",
-      "parser_method": "cross_document_known_entity_probe",
+      "parser_method": "sec_supplier_sentence_scan",
       "named_counterparty": true,
-      "download_url": "https://www.sec.gov/Archives/edgar/data/1730168/000173016825000121/avgo-20251102.htm",
-      "local_path": "/workspace/data/raw/us/broadcom/2025-10-k.html"
+      "download_url": "https://www.sec.gov/Archives/edgar/data/310158/000162828025007732/mrk-20241231.htm",
+      "local_path": "/workspace/data/raw/us/merck/2025-10-k.html"
     },
     {
-      "evidence_id": "us-broadcom-2024-ev-9130b59c01",
+      "evidence_id": "us-merck-2024-ev-36aef939a0",
+      "country": "US",
+      "relation_type": "supplier",
+      "reporter_name": "Merck",
+      "counterparty_name": "Wuxi Apptech Co.",
+      "counterparty_country": null,
+      "confidence": "medium",
+      "source_system": "SEC EDGAR",
+      "document_id": "us-merck-2024",
+      "document_title": "Merck 10-K 2024",
+      "excerpt": "In addition to its commercial operations, the Company has significant research and manufacturing operations in China, including working with Chinese entities such as Wuxi Apptech Co., Ltd.",
+      "page_reference": "",
+      "filing_year": 2024,
+      "amount_text": "",
+      "percentage_text": "",
+      "parser_method": "sec_supplier_sentence_scan",
+      "named_counterparty": true,
+      "download_url": "https://www.sec.gov/Archives/edgar/data/310158/000162828024006850/mrk-20231231.htm",
+      "local_path": "/workspace/data/raw/us/merck/2024-10-k.html"
+    },
+    {
+      "evidence_id": "us-broadcom-2024-ev-a388e6f7d9",
       "country": "US",
       "relation_type": "supplier",
       "reporter_name": "Broadcom",
-      "counterparty_name": "Taiwan Semiconductor Manufacturing Company Limited",
+      "counterparty_name": "Renesas Electronics Corporation",
       "counterparty_country": null,
       "confidence": "medium",
       "source_system": "SEC EDGAR",
       "document_id": "us-broadcom-2024",
       "document_title": "Broadcom 10-K 2024",
-      "excerpt": "The majority of our front-end wafer manufacturing operations is outsourced to external foundries, including Taiwan Semiconductor Manufacturing Company Limited (&#8220;TSMC&#8221;).",
+      "excerpt": "In semiconductor solutions, we compete with integrated device manufacturers, fabless semiconductor companies and the internal resources of large integrated OEMs, such as Advanced Micro Devices, Inc., Amlogic Inc., Analog Devices, Inc., Cisco Systems, Inc., Coherent Corp., Hamamatsu Photonics K.K., Heidenhain Corporation, iC-Haus GmbH, Intel Corporation, Lumentum Holdings Inc., MACOM Technology Solutions Holdings, Inc., Marvell Technology, Inc., MaxLinear, Inc., MediaTek Inc., Microchip Technolog",
       "page_reference": "",
       "filing_year": 2024,
       "amount_text": "",
@@ -4790,17 +5416,17 @@
       "local_path": "/workspace/data/raw/us/broadcom/2024-10-k.html"
     },
     {
-      "evidence_id": "us-broadcom-2023-ev-9130b59c01",
+      "evidence_id": "us-broadcom-2023-ev-8580e00f74",
       "country": "US",
       "relation_type": "supplier",
       "reporter_name": "Broadcom",
-      "counterparty_name": "Taiwan Semiconductor Manufacturing Company Limited",
+      "counterparty_name": "Renesas Electronics Corporation",
       "counterparty_country": null,
       "confidence": "medium",
       "source_system": "SEC EDGAR",
       "document_id": "us-broadcom-2023",
       "document_title": "Broadcom 10-K 2023",
-      "excerpt": "The majority of our front-end wafer manufacturing operations is outsourced to external foundries, including Taiwan Semiconductor Manufacturing Company Limited (&#8220;TSMC&#8221;).",
+      "excerpt": "Our primary competitors are Advanced Micro Devices, Inc., Amlogic Inc., Analog Devices, Inc., Cisco Systems, Inc., GlobalFoundries Inc., Hamamatsu Photonics K.K., Heidenhain Corporation, iC-Haus GmbH, Intel Corporation, Lumentum Holdings Inc., MACOM Technology Solutions Holdings, Inc., Marvell Technology, Inc., MaxLinear, Inc., MediaTek Inc., Microchip Technology Incorporated, Mitsubishi Electric Corporation, Murata Manufacturing Co., Ltd., NVIDIA Corporation, NXP Semiconductors N.V., ON Semicon",
       "page_reference": "",
       "filing_year": 2023,
       "amount_text": "",
@@ -6763,114 +7389,6 @@
       ]
     },
     {
-      "candidate_link_id": "cand-0e154b8e1a2c",
-      "undisclosed_entity_id": "ent-67626106d193",
-      "candidate_entity_id": "ent-4a748db66120",
-      "rank": 1,
-      "confidence": "medium",
-      "rationale": "NVIDIA repeatedly appears as an explicit customer in the downloaded-source corpus.",
-      "supporting_evidence_ids": [
-        "us-nvidia-2024-ev-92f3023bbe",
-        "us-nvidia-2024-ev-eccc778823",
-        "us-nvidia-2025-ev-92f3023bbe",
-        "us-nvidia-2025-ev-eccc778823",
-        "us-nvidia-2026-ev-92f3023bbe",
-        "us-nvidia-2026-ev-eccc778823"
-      ]
-    },
-    {
-      "candidate_link_id": "cand-ec72c4f1e245",
-      "undisclosed_entity_id": "ent-67626106d193",
-      "candidate_entity_id": "ent-e8bcd432550d",
-      "rank": 2,
-      "confidence": "medium",
-      "rationale": "Broadcom repeatedly appears as an explicit customer in the downloaded-source corpus.",
-      "supporting_evidence_ids": [
-        "us-broadcom-2023-ev-9130b59c01",
-        "us-broadcom-2024-ev-3baff8ce17",
-        "us-broadcom-2024-ev-9130b59c01",
-        "us-broadcom-2025-ev-9130b59c01"
-      ]
-    },
-    {
-      "candidate_link_id": "cand-9180d365f6f3",
-      "undisclosed_entity_id": "ent-67626106d193",
-      "candidate_entity_id": "ent-69aa5d0c4034",
-      "rank": 3,
-      "confidence": "medium",
-      "rationale": "Tesla repeatedly appears as an explicit customer in the downloaded-source corpus.",
-      "supporting_evidence_ids": [
-        "us-tesla-2024-ev-34e2cf896f",
-        "us-tesla-2025-ev-34e2cf896f",
-        "us-tesla-2026-ev-34e2cf896f"
-      ]
-    },
-    {
-      "candidate_link_id": "cand-799d4bea6703",
-      "undisclosed_entity_id": "ent-67626106d193",
-      "candidate_entity_id": "ent-be87b76c2961",
-      "rank": 4,
-      "confidence": "low",
-      "rationale": "General Electric repeatedly appears as an explicit customer in the downloaded-source corpus.",
-      "supporting_evidence_ids": [
-        "us-general-electric-2025-ev-a0f42ce5cb"
-      ]
-    },
-    {
-      "candidate_link_id": "cand-af8d42d16926",
-      "undisclosed_entity_id": "ent-98a47b91398a",
-      "candidate_entity_id": "ent-4a748db66120",
-      "rank": 1,
-      "confidence": "medium",
-      "rationale": "NVIDIA repeatedly appears as an explicit customer in the downloaded-source corpus.",
-      "supporting_evidence_ids": [
-        "us-nvidia-2024-ev-92f3023bbe",
-        "us-nvidia-2024-ev-eccc778823",
-        "us-nvidia-2025-ev-92f3023bbe",
-        "us-nvidia-2025-ev-eccc778823",
-        "us-nvidia-2026-ev-92f3023bbe",
-        "us-nvidia-2026-ev-eccc778823"
-      ]
-    },
-    {
-      "candidate_link_id": "cand-34d210d242bf",
-      "undisclosed_entity_id": "ent-98a47b91398a",
-      "candidate_entity_id": "ent-e8bcd432550d",
-      "rank": 2,
-      "confidence": "medium",
-      "rationale": "Broadcom repeatedly appears as an explicit customer in the downloaded-source corpus.",
-      "supporting_evidence_ids": [
-        "us-broadcom-2023-ev-9130b59c01",
-        "us-broadcom-2024-ev-3baff8ce17",
-        "us-broadcom-2024-ev-9130b59c01",
-        "us-broadcom-2025-ev-9130b59c01"
-      ]
-    },
-    {
-      "candidate_link_id": "cand-fba4cfa7c98a",
-      "undisclosed_entity_id": "ent-98a47b91398a",
-      "candidate_entity_id": "ent-69aa5d0c4034",
-      "rank": 3,
-      "confidence": "medium",
-      "rationale": "Tesla repeatedly appears as an explicit customer in the downloaded-source corpus.",
-      "supporting_evidence_ids": [
-        "us-tesla-2024-ev-34e2cf896f",
-        "us-tesla-2025-ev-34e2cf896f",
-        "us-tesla-2026-ev-34e2cf896f"
-      ]
-    },
-    {
-      "candidate_link_id": "cand-5563d9b41700",
-      "undisclosed_entity_id": "ent-98a47b91398a",
-      "candidate_entity_id": "ent-be87b76c2961",
-      "rank": 4,
-      "confidence": "low",
-      "rationale": "General Electric repeatedly appears as an explicit customer in the downloaded-source corpus.",
-      "supporting_evidence_ids": [
-        "us-general-electric-2025-ev-a0f42ce5cb"
-      ]
-    },
-    {
       "candidate_link_id": "cand-70d22eca63f5",
       "undisclosed_entity_id": "ent-2451c73ce022",
       "candidate_entity_id": "ent-4a748db66120",
@@ -6878,12 +7396,18 @@
       "confidence": "medium",
       "rationale": "NVIDIA repeatedly appears as an explicit customer in the downloaded-source corpus.",
       "supporting_evidence_ids": [
-        "us-nvidia-2024-ev-92f3023bbe",
-        "us-nvidia-2024-ev-eccc778823",
-        "us-nvidia-2025-ev-92f3023bbe",
-        "us-nvidia-2025-ev-eccc778823",
-        "us-nvidia-2026-ev-92f3023bbe",
-        "us-nvidia-2026-ev-eccc778823"
+        "us-nvidia-2024-ev-8570f6f1b8",
+        "us-nvidia-2024-ev-8c7e38e07a",
+        "us-nvidia-2024-ev-a054971a04",
+        "us-nvidia-2024-ev-b38f17632a",
+        "us-nvidia-2025-ev-712703f41d",
+        "us-nvidia-2025-ev-8570f6f1b8",
+        "us-nvidia-2025-ev-8c7e38e07a",
+        "us-nvidia-2025-ev-b38f17632a",
+        "us-nvidia-2026-ev-54cee458f1",
+        "us-nvidia-2026-ev-8570f6f1b8",
+        "us-nvidia-2026-ev-8c7e38e07a",
+        "us-nvidia-2026-ev-b38f17632a"
       ]
     },
     {
@@ -6894,34 +7418,56 @@
       "confidence": "medium",
       "rationale": "Broadcom repeatedly appears as an explicit customer in the downloaded-source corpus.",
       "supporting_evidence_ids": [
-        "us-broadcom-2023-ev-9130b59c01",
-        "us-broadcom-2024-ev-3baff8ce17",
-        "us-broadcom-2024-ev-9130b59c01",
-        "us-broadcom-2025-ev-9130b59c01"
+        "us-broadcom-2023-ev-6b9e03edaf",
+        "us-broadcom-2023-ev-8580e00f74",
+        "us-broadcom-2023-ev-e72c907722",
+        "us-broadcom-2024-ev-6b9e03edaf",
+        "us-broadcom-2024-ev-a388e6f7d9",
+        "us-broadcom-2024-ev-e72c907722",
+        "us-broadcom-2025-ev-b025435f21",
+        "us-broadcom-2025-ev-e72c907722"
       ]
     },
     {
-      "candidate_link_id": "cand-8c9fcbed773b",
+      "candidate_link_id": "cand-c5db29c030e0",
       "undisclosed_entity_id": "ent-2451c73ce022",
-      "candidate_entity_id": "ent-69aa5d0c4034",
+      "candidate_entity_id": "ent-ff0a15d82a3d",
       "rank": 3,
       "confidence": "medium",
-      "rationale": "Tesla repeatedly appears as an explicit customer in the downloaded-source corpus.",
+      "rationale": "Apple repeatedly appears as an explicit customer in the downloaded-source corpus.",
       "supporting_evidence_ids": [
-        "us-tesla-2024-ev-34e2cf896f",
-        "us-tesla-2025-ev-34e2cf896f",
-        "us-tesla-2026-ev-34e2cf896f"
+        "us-apple-2023-ev-66768473c9",
+        "us-apple-2023-ev-aecc6d9e0a",
+        "us-apple-2024-ev-66768473c9",
+        "us-apple-2024-ev-aecc6d9e0a",
+        "us-apple-2025-ev-66768473c9",
+        "us-apple-2025-ev-aecc6d9e0a"
       ]
     },
     {
-      "candidate_link_id": "cand-96ffb121424f",
+      "candidate_link_id": "cand-f5452259bbaa",
       "undisclosed_entity_id": "ent-2451c73ce022",
-      "candidate_entity_id": "ent-be87b76c2961",
+      "candidate_entity_id": "ent-7488611ecfb3",
       "rank": 4,
-      "confidence": "low",
-      "rationale": "General Electric repeatedly appears as an explicit customer in the downloaded-source corpus.",
+      "confidence": "medium",
+      "rationale": "Merck repeatedly appears as an explicit customer in the downloaded-source corpus.",
       "supporting_evidence_ids": [
-        "us-general-electric-2025-ev-a0f42ce5cb"
+        "us-merck-2024-ev-36aef939a0",
+        "us-merck-2025-ev-36aef939a0",
+        "us-merck-2026-ev-36aef939a0"
+      ]
+    },
+    {
+      "candidate_link_id": "cand-7517e7356360",
+      "undisclosed_entity_id": "ent-2451c73ce022",
+      "candidate_entity_id": "ent-3dd78aae15d6",
+      "rank": 5,
+      "confidence": "medium",
+      "rationale": "PDD Holdings (Pinduoduo) repeatedly appears as an explicit customer in the downloaded-source corpus.",
+      "supporting_evidence_ids": [
+        "cn-pdd-holdings-pinduoduo-2023-adr-ev-9a269ccdb2",
+        "cn-pdd-holdings-pinduoduo-2024-adr-ev-7a9ca2f9bd",
+        "cn-pdd-holdings-pinduoduo-2025-adr-ev-9657bcda14"
       ]
     },
     {
@@ -6932,12 +7478,18 @@
       "confidence": "medium",
       "rationale": "NVIDIA repeatedly appears as an explicit customer in the downloaded-source corpus.",
       "supporting_evidence_ids": [
-        "us-nvidia-2024-ev-92f3023bbe",
-        "us-nvidia-2024-ev-eccc778823",
-        "us-nvidia-2025-ev-92f3023bbe",
-        "us-nvidia-2025-ev-eccc778823",
-        "us-nvidia-2026-ev-92f3023bbe",
-        "us-nvidia-2026-ev-eccc778823"
+        "us-nvidia-2024-ev-8570f6f1b8",
+        "us-nvidia-2024-ev-8c7e38e07a",
+        "us-nvidia-2024-ev-a054971a04",
+        "us-nvidia-2024-ev-b38f17632a",
+        "us-nvidia-2025-ev-712703f41d",
+        "us-nvidia-2025-ev-8570f6f1b8",
+        "us-nvidia-2025-ev-8c7e38e07a",
+        "us-nvidia-2025-ev-b38f17632a",
+        "us-nvidia-2026-ev-54cee458f1",
+        "us-nvidia-2026-ev-8570f6f1b8",
+        "us-nvidia-2026-ev-8c7e38e07a",
+        "us-nvidia-2026-ev-b38f17632a"
       ]
     },
     {
@@ -6948,34 +7500,56 @@
       "confidence": "medium",
       "rationale": "Broadcom repeatedly appears as an explicit customer in the downloaded-source corpus.",
       "supporting_evidence_ids": [
-        "us-broadcom-2023-ev-9130b59c01",
-        "us-broadcom-2024-ev-3baff8ce17",
-        "us-broadcom-2024-ev-9130b59c01",
-        "us-broadcom-2025-ev-9130b59c01"
+        "us-broadcom-2023-ev-6b9e03edaf",
+        "us-broadcom-2023-ev-8580e00f74",
+        "us-broadcom-2023-ev-e72c907722",
+        "us-broadcom-2024-ev-6b9e03edaf",
+        "us-broadcom-2024-ev-a388e6f7d9",
+        "us-broadcom-2024-ev-e72c907722",
+        "us-broadcom-2025-ev-b025435f21",
+        "us-broadcom-2025-ev-e72c907722"
       ]
     },
     {
-      "candidate_link_id": "cand-3c569c733a71",
+      "candidate_link_id": "cand-af408628440c",
       "undisclosed_entity_id": "ent-173730230d0e",
-      "candidate_entity_id": "ent-69aa5d0c4034",
+      "candidate_entity_id": "ent-ff0a15d82a3d",
       "rank": 3,
       "confidence": "medium",
-      "rationale": "Tesla repeatedly appears as an explicit customer in the downloaded-source corpus.",
+      "rationale": "Apple repeatedly appears as an explicit customer in the downloaded-source corpus.",
       "supporting_evidence_ids": [
-        "us-tesla-2024-ev-34e2cf896f",
-        "us-tesla-2025-ev-34e2cf896f",
-        "us-tesla-2026-ev-34e2cf896f"
+        "us-apple-2023-ev-66768473c9",
+        "us-apple-2023-ev-aecc6d9e0a",
+        "us-apple-2024-ev-66768473c9",
+        "us-apple-2024-ev-aecc6d9e0a",
+        "us-apple-2025-ev-66768473c9",
+        "us-apple-2025-ev-aecc6d9e0a"
       ]
     },
     {
-      "candidate_link_id": "cand-7aed71c4c813",
+      "candidate_link_id": "cand-dfbb252c8cbf",
       "undisclosed_entity_id": "ent-173730230d0e",
-      "candidate_entity_id": "ent-be87b76c2961",
+      "candidate_entity_id": "ent-7488611ecfb3",
       "rank": 4,
-      "confidence": "low",
-      "rationale": "General Electric repeatedly appears as an explicit customer in the downloaded-source corpus.",
+      "confidence": "medium",
+      "rationale": "Merck repeatedly appears as an explicit customer in the downloaded-source corpus.",
       "supporting_evidence_ids": [
-        "us-general-electric-2025-ev-a0f42ce5cb"
+        "us-merck-2024-ev-36aef939a0",
+        "us-merck-2025-ev-36aef939a0",
+        "us-merck-2026-ev-36aef939a0"
+      ]
+    },
+    {
+      "candidate_link_id": "cand-6959e0a6359d",
+      "undisclosed_entity_id": "ent-173730230d0e",
+      "candidate_entity_id": "ent-3dd78aae15d6",
+      "rank": 5,
+      "confidence": "medium",
+      "rationale": "PDD Holdings (Pinduoduo) repeatedly appears as an explicit customer in the downloaded-source corpus.",
+      "supporting_evidence_ids": [
+        "cn-pdd-holdings-pinduoduo-2023-adr-ev-9a269ccdb2",
+        "cn-pdd-holdings-pinduoduo-2024-adr-ev-7a9ca2f9bd",
+        "cn-pdd-holdings-pinduoduo-2025-adr-ev-9657bcda14"
       ]
     },
     {
@@ -6986,12 +7560,18 @@
       "confidence": "medium",
       "rationale": "NVIDIA repeatedly appears as an explicit customer in the downloaded-source corpus.",
       "supporting_evidence_ids": [
-        "us-nvidia-2024-ev-92f3023bbe",
-        "us-nvidia-2024-ev-eccc778823",
-        "us-nvidia-2025-ev-92f3023bbe",
-        "us-nvidia-2025-ev-eccc778823",
-        "us-nvidia-2026-ev-92f3023bbe",
-        "us-nvidia-2026-ev-eccc778823"
+        "us-nvidia-2024-ev-8570f6f1b8",
+        "us-nvidia-2024-ev-8c7e38e07a",
+        "us-nvidia-2024-ev-a054971a04",
+        "us-nvidia-2024-ev-b38f17632a",
+        "us-nvidia-2025-ev-712703f41d",
+        "us-nvidia-2025-ev-8570f6f1b8",
+        "us-nvidia-2025-ev-8c7e38e07a",
+        "us-nvidia-2025-ev-b38f17632a",
+        "us-nvidia-2026-ev-54cee458f1",
+        "us-nvidia-2026-ev-8570f6f1b8",
+        "us-nvidia-2026-ev-8c7e38e07a",
+        "us-nvidia-2026-ev-b38f17632a"
       ]
     },
     {
@@ -7002,142 +7582,56 @@
       "confidence": "medium",
       "rationale": "Broadcom repeatedly appears as an explicit customer in the downloaded-source corpus.",
       "supporting_evidence_ids": [
-        "us-broadcom-2023-ev-9130b59c01",
-        "us-broadcom-2024-ev-3baff8ce17",
-        "us-broadcom-2024-ev-9130b59c01",
-        "us-broadcom-2025-ev-9130b59c01"
+        "us-broadcom-2023-ev-6b9e03edaf",
+        "us-broadcom-2023-ev-8580e00f74",
+        "us-broadcom-2023-ev-e72c907722",
+        "us-broadcom-2024-ev-6b9e03edaf",
+        "us-broadcom-2024-ev-a388e6f7d9",
+        "us-broadcom-2024-ev-e72c907722",
+        "us-broadcom-2025-ev-b025435f21",
+        "us-broadcom-2025-ev-e72c907722"
       ]
     },
     {
-      "candidate_link_id": "cand-9e74fc5f78b9",
+      "candidate_link_id": "cand-fbd9de258f59",
       "undisclosed_entity_id": "ent-b398640fbcd7",
-      "candidate_entity_id": "ent-69aa5d0c4034",
+      "candidate_entity_id": "ent-ff0a15d82a3d",
       "rank": 3,
       "confidence": "medium",
-      "rationale": "Tesla repeatedly appears as an explicit customer in the downloaded-source corpus.",
+      "rationale": "Apple repeatedly appears as an explicit customer in the downloaded-source corpus.",
       "supporting_evidence_ids": [
-        "us-tesla-2024-ev-34e2cf896f",
-        "us-tesla-2025-ev-34e2cf896f",
-        "us-tesla-2026-ev-34e2cf896f"
+        "us-apple-2023-ev-66768473c9",
+        "us-apple-2023-ev-aecc6d9e0a",
+        "us-apple-2024-ev-66768473c9",
+        "us-apple-2024-ev-aecc6d9e0a",
+        "us-apple-2025-ev-66768473c9",
+        "us-apple-2025-ev-aecc6d9e0a"
       ]
     },
     {
-      "candidate_link_id": "cand-ce746d4e00e9",
+      "candidate_link_id": "cand-29b8555bae10",
       "undisclosed_entity_id": "ent-b398640fbcd7",
-      "candidate_entity_id": "ent-be87b76c2961",
+      "candidate_entity_id": "ent-7488611ecfb3",
       "rank": 4,
-      "confidence": "low",
-      "rationale": "General Electric repeatedly appears as an explicit customer in the downloaded-source corpus.",
-      "supporting_evidence_ids": [
-        "us-general-electric-2025-ev-a0f42ce5cb"
-      ]
-    },
-    {
-      "candidate_link_id": "cand-376d28fcbd8d",
-      "undisclosed_entity_id": "ent-26380f5190e1",
-      "candidate_entity_id": "ent-4a748db66120",
-      "rank": 1,
       "confidence": "medium",
-      "rationale": "NVIDIA repeatedly appears as an explicit customer in the downloaded-source corpus.",
+      "rationale": "Merck repeatedly appears as an explicit customer in the downloaded-source corpus.",
       "supporting_evidence_ids": [
-        "us-nvidia-2024-ev-92f3023bbe",
-        "us-nvidia-2024-ev-eccc778823",
-        "us-nvidia-2025-ev-92f3023bbe",
-        "us-nvidia-2025-ev-eccc778823",
-        "us-nvidia-2026-ev-92f3023bbe",
-        "us-nvidia-2026-ev-eccc778823"
+        "us-merck-2024-ev-36aef939a0",
+        "us-merck-2025-ev-36aef939a0",
+        "us-merck-2026-ev-36aef939a0"
       ]
     },
     {
-      "candidate_link_id": "cand-2057651ea2db",
-      "undisclosed_entity_id": "ent-26380f5190e1",
-      "candidate_entity_id": "ent-e8bcd432550d",
-      "rank": 2,
+      "candidate_link_id": "cand-d2c50de4871b",
+      "undisclosed_entity_id": "ent-b398640fbcd7",
+      "candidate_entity_id": "ent-3dd78aae15d6",
+      "rank": 5,
       "confidence": "medium",
-      "rationale": "Broadcom repeatedly appears as an explicit customer in the downloaded-source corpus.",
+      "rationale": "PDD Holdings (Pinduoduo) repeatedly appears as an explicit customer in the downloaded-source corpus.",
       "supporting_evidence_ids": [
-        "us-broadcom-2023-ev-9130b59c01",
-        "us-broadcom-2024-ev-3baff8ce17",
-        "us-broadcom-2024-ev-9130b59c01",
-        "us-broadcom-2025-ev-9130b59c01"
-      ]
-    },
-    {
-      "candidate_link_id": "cand-133d11032b39",
-      "undisclosed_entity_id": "ent-26380f5190e1",
-      "candidate_entity_id": "ent-69aa5d0c4034",
-      "rank": 3,
-      "confidence": "medium",
-      "rationale": "Tesla repeatedly appears as an explicit customer in the downloaded-source corpus.",
-      "supporting_evidence_ids": [
-        "us-tesla-2024-ev-34e2cf896f",
-        "us-tesla-2025-ev-34e2cf896f",
-        "us-tesla-2026-ev-34e2cf896f"
-      ]
-    },
-    {
-      "candidate_link_id": "cand-c415272d7998",
-      "undisclosed_entity_id": "ent-26380f5190e1",
-      "candidate_entity_id": "ent-be87b76c2961",
-      "rank": 4,
-      "confidence": "low",
-      "rationale": "General Electric repeatedly appears as an explicit customer in the downloaded-source corpus.",
-      "supporting_evidence_ids": [
-        "us-general-electric-2025-ev-a0f42ce5cb"
-      ]
-    },
-    {
-      "candidate_link_id": "cand-66a7d8fa7bcd",
-      "undisclosed_entity_id": "ent-ece5af217d85",
-      "candidate_entity_id": "ent-4a748db66120",
-      "rank": 1,
-      "confidence": "medium",
-      "rationale": "NVIDIA repeatedly appears as an explicit customer in the downloaded-source corpus.",
-      "supporting_evidence_ids": [
-        "us-nvidia-2024-ev-92f3023bbe",
-        "us-nvidia-2024-ev-eccc778823",
-        "us-nvidia-2025-ev-92f3023bbe",
-        "us-nvidia-2025-ev-eccc778823",
-        "us-nvidia-2026-ev-92f3023bbe",
-        "us-nvidia-2026-ev-eccc778823"
-      ]
-    },
-    {
-      "candidate_link_id": "cand-4807b09bc7d0",
-      "undisclosed_entity_id": "ent-ece5af217d85",
-      "candidate_entity_id": "ent-e8bcd432550d",
-      "rank": 2,
-      "confidence": "medium",
-      "rationale": "Broadcom repeatedly appears as an explicit customer in the downloaded-source corpus.",
-      "supporting_evidence_ids": [
-        "us-broadcom-2023-ev-9130b59c01",
-        "us-broadcom-2024-ev-3baff8ce17",
-        "us-broadcom-2024-ev-9130b59c01",
-        "us-broadcom-2025-ev-9130b59c01"
-      ]
-    },
-    {
-      "candidate_link_id": "cand-094236ca291b",
-      "undisclosed_entity_id": "ent-ece5af217d85",
-      "candidate_entity_id": "ent-69aa5d0c4034",
-      "rank": 3,
-      "confidence": "medium",
-      "rationale": "Tesla repeatedly appears as an explicit customer in the downloaded-source corpus.",
-      "supporting_evidence_ids": [
-        "us-tesla-2024-ev-34e2cf896f",
-        "us-tesla-2025-ev-34e2cf896f",
-        "us-tesla-2026-ev-34e2cf896f"
-      ]
-    },
-    {
-      "candidate_link_id": "cand-9e73d13f583d",
-      "undisclosed_entity_id": "ent-ece5af217d85",
-      "candidate_entity_id": "ent-be87b76c2961",
-      "rank": 4,
-      "confidence": "low",
-      "rationale": "General Electric repeatedly appears as an explicit customer in the downloaded-source corpus.",
-      "supporting_evidence_ids": [
-        "us-general-electric-2025-ev-a0f42ce5cb"
+        "cn-pdd-holdings-pinduoduo-2023-adr-ev-9a269ccdb2",
+        "cn-pdd-holdings-pinduoduo-2024-adr-ev-7a9ca2f9bd",
+        "cn-pdd-holdings-pinduoduo-2025-adr-ev-9657bcda14"
       ]
     },
     {
@@ -7148,12 +7642,18 @@
       "confidence": "medium",
       "rationale": "NVIDIA repeatedly appears as an explicit customer in the downloaded-source corpus.",
       "supporting_evidence_ids": [
-        "us-nvidia-2024-ev-92f3023bbe",
-        "us-nvidia-2024-ev-eccc778823",
-        "us-nvidia-2025-ev-92f3023bbe",
-        "us-nvidia-2025-ev-eccc778823",
-        "us-nvidia-2026-ev-92f3023bbe",
-        "us-nvidia-2026-ev-eccc778823"
+        "us-nvidia-2024-ev-8570f6f1b8",
+        "us-nvidia-2024-ev-8c7e38e07a",
+        "us-nvidia-2024-ev-a054971a04",
+        "us-nvidia-2024-ev-b38f17632a",
+        "us-nvidia-2025-ev-712703f41d",
+        "us-nvidia-2025-ev-8570f6f1b8",
+        "us-nvidia-2025-ev-8c7e38e07a",
+        "us-nvidia-2025-ev-b38f17632a",
+        "us-nvidia-2026-ev-54cee458f1",
+        "us-nvidia-2026-ev-8570f6f1b8",
+        "us-nvidia-2026-ev-8c7e38e07a",
+        "us-nvidia-2026-ev-b38f17632a"
       ]
     },
     {
@@ -7164,34 +7664,56 @@
       "confidence": "medium",
       "rationale": "Broadcom repeatedly appears as an explicit customer in the downloaded-source corpus.",
       "supporting_evidence_ids": [
-        "us-broadcom-2023-ev-9130b59c01",
-        "us-broadcom-2024-ev-3baff8ce17",
-        "us-broadcom-2024-ev-9130b59c01",
-        "us-broadcom-2025-ev-9130b59c01"
+        "us-broadcom-2023-ev-6b9e03edaf",
+        "us-broadcom-2023-ev-8580e00f74",
+        "us-broadcom-2023-ev-e72c907722",
+        "us-broadcom-2024-ev-6b9e03edaf",
+        "us-broadcom-2024-ev-a388e6f7d9",
+        "us-broadcom-2024-ev-e72c907722",
+        "us-broadcom-2025-ev-b025435f21",
+        "us-broadcom-2025-ev-e72c907722"
       ]
     },
     {
-      "candidate_link_id": "cand-c75c44118b70",
+      "candidate_link_id": "cand-5b3ce2a35d7c",
       "undisclosed_entity_id": "ent-3790604d1a57",
-      "candidate_entity_id": "ent-69aa5d0c4034",
+      "candidate_entity_id": "ent-ff0a15d82a3d",
       "rank": 3,
       "confidence": "medium",
-      "rationale": "Tesla repeatedly appears as an explicit customer in the downloaded-source corpus.",
+      "rationale": "Apple repeatedly appears as an explicit customer in the downloaded-source corpus.",
       "supporting_evidence_ids": [
-        "us-tesla-2024-ev-34e2cf896f",
-        "us-tesla-2025-ev-34e2cf896f",
-        "us-tesla-2026-ev-34e2cf896f"
+        "us-apple-2023-ev-66768473c9",
+        "us-apple-2023-ev-aecc6d9e0a",
+        "us-apple-2024-ev-66768473c9",
+        "us-apple-2024-ev-aecc6d9e0a",
+        "us-apple-2025-ev-66768473c9",
+        "us-apple-2025-ev-aecc6d9e0a"
       ]
     },
     {
-      "candidate_link_id": "cand-d8673bdaab9d",
+      "candidate_link_id": "cand-37ecf5197805",
       "undisclosed_entity_id": "ent-3790604d1a57",
-      "candidate_entity_id": "ent-be87b76c2961",
+      "candidate_entity_id": "ent-7488611ecfb3",
       "rank": 4,
-      "confidence": "low",
-      "rationale": "General Electric repeatedly appears as an explicit customer in the downloaded-source corpus.",
+      "confidence": "medium",
+      "rationale": "Merck repeatedly appears as an explicit customer in the downloaded-source corpus.",
       "supporting_evidence_ids": [
-        "us-general-electric-2025-ev-a0f42ce5cb"
+        "us-merck-2024-ev-36aef939a0",
+        "us-merck-2025-ev-36aef939a0",
+        "us-merck-2026-ev-36aef939a0"
+      ]
+    },
+    {
+      "candidate_link_id": "cand-3f99b7566e94",
+      "undisclosed_entity_id": "ent-3790604d1a57",
+      "candidate_entity_id": "ent-3dd78aae15d6",
+      "rank": 5,
+      "confidence": "medium",
+      "rationale": "PDD Holdings (Pinduoduo) repeatedly appears as an explicit customer in the downloaded-source corpus.",
+      "supporting_evidence_ids": [
+        "cn-pdd-holdings-pinduoduo-2023-adr-ev-9a269ccdb2",
+        "cn-pdd-holdings-pinduoduo-2024-adr-ev-7a9ca2f9bd",
+        "cn-pdd-holdings-pinduoduo-2025-adr-ev-9657bcda14"
       ]
     }
   ],

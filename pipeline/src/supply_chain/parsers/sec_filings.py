@@ -13,31 +13,61 @@ COMPANY_NAME_PATTERN = re.compile(
     r"(?:[A-Z][A-Za-z0-9&'().-]*\s){2,8}(?:Limited|Ltd\.|Ltd|Inc\.|Inc|Corporation|Corp\.|Corp|Company|Co\.|LLC|Group|Technologies|Technology|Semiconductor|Electronics)"
 )
 
-SUPPLIER_CONTEXT_PATTERNS = [
-    re.compile(
-        r"(?:utilize|use|purchase(?: memory)? from|engage with|engage|rely on|depend on).{0,120}?(?:such as|from)\s(?P<context>[^.]{0,420})",
-        re.I,
-    ),
-    re.compile(
-        r"(?:rely on|depend on)\s(?P<context>[^.]{0,220})\s(?:to manufacture|to supply|for manufacturing)",
-        re.I,
-    ),
-    re.compile(
-        r"(?:foundries|contract manufacturers|subcontractors|assembly partners).{0,80}?(?:such as|include)\s(?P<context>[^.]{0,420})",
-        re.I,
-    ),
-]
-
-CUSTOMER_CONTEXT_PATTERNS = [
-    re.compile(
-        r"(?:customers include|direct customers include).{0,20}(?P<context>[^.]{0,420})",
-        re.I,
-    )
-]
-
 UNDISCLOSED_PATTERN = re.compile(
     r"(?:single customer|one customer|major customer|largest customer).{0,120}?(?:10%|ten percent|significant portion)",
     re.I,
+)
+
+SUPPLIER_CONTEXT_KEYWORDS = (
+    "supplier",
+    "suppliers",
+    "rely on",
+    "depend on",
+    "foundries",
+    "foundry",
+    "assembly and test",
+    "assembly",
+    "testing",
+    "packaging",
+    "subcontractors",
+    "contract manufacturers",
+    "manufacturing operations",
+    "battery cells",
+    "wafer manufacturing",
+    "procurement",
+    "purchase materials from",
+    "rely on suppliers",
+    "depend on suppliers",
+    "use third-party",
+    "outsourced",
+)
+
+SUPPLIER_TRIGGER_KEYWORDS = (
+    "such as",
+    "including",
+    "rely on",
+    "depend on",
+    "to manufacture",
+    "to supply",
+    "outsourced to",
+    "we use",
+    "we utilize",
+    "we engage with",
+)
+
+SUPPLIER_NEGATIVE_KEYWORDS = (
+    "compete",
+    "competition",
+    "competitors",
+    "specific markets",
+    "market share",
+)
+
+CUSTOMER_CONTEXT_KEYWORDS = (
+    "customers include",
+    "direct customers include",
+    "customer represented",
+    "major customer",
 )
 
 
@@ -47,14 +77,15 @@ def parse_document(document: SourceDocument) -> list[ParsedEvidence]:
     evidence: list[ParsedEvidence] = []
     reporter_name_key = normalize_name(document.company_name)
 
-    for pattern in SUPPLIER_CONTEXT_PATTERNS:
-        for match in pattern.finditer(normalized_text):
-            for counterparty_name in _extract_company_names(match.group("context")):
+    for sentence in _split_sentences(normalized_text):
+        lowered = sentence.lower()
+        if _is_supplier_context(lowered):
+            for counterparty_name in _extract_company_names(sentence):
                 if _same_company_name(counterparty_name, reporter_name_key):
                     continue
                 evidence.append(
                     ParsedEvidence(
-                        evidence_id=_make_evidence_id(document.document_id, f"{match.group(0)}::{counterparty_name}"),
+                        evidence_id=_make_evidence_id(document.document_id, f"{sentence}::{counterparty_name}"),
                         country=Country.UNITED_STATES,
                         relation_type=RelationType.SUPPLIER,
                         reporter_name=document.company_name,
@@ -63,22 +94,20 @@ def parse_document(document: SourceDocument) -> list[ParsedEvidence]:
                         source_system=document.source_system,
                         document_id=document.document_id,
                         document_title=document.title,
-                        excerpt=match.group(0).strip(),
+                        excerpt=sentence.strip(),
                         filing_year=document.filing_year,
-                        parser_method="sec_supplier_regex",
+                        parser_method="sec_supplier_sentence_scan",
                         download_url=document.download_url,
                         local_path=document.local_path,
                     )
                 )
-
-    for pattern in CUSTOMER_CONTEXT_PATTERNS:
-        for match in pattern.finditer(normalized_text):
-            for counterparty_name in _extract_company_names(match.group("context")):
+        elif _is_customer_context(lowered):
+            for counterparty_name in _extract_company_names(sentence):
                 if _same_company_name(counterparty_name, reporter_name_key):
                     continue
                 evidence.append(
                     ParsedEvidence(
-                        evidence_id=_make_evidence_id(document.document_id, f"{match.group(0)}::{counterparty_name}"),
+                        evidence_id=_make_evidence_id(document.document_id, f"{sentence}::{counterparty_name}"),
                         country=Country.UNITED_STATES,
                         relation_type=RelationType.CUSTOMER,
                         reporter_name=document.company_name,
@@ -87,9 +116,9 @@ def parse_document(document: SourceDocument) -> list[ParsedEvidence]:
                         source_system=document.source_system,
                         document_id=document.document_id,
                         document_title=document.title,
-                        excerpt=match.group(0).strip(),
+                        excerpt=sentence.strip(),
                         filing_year=document.filing_year,
-                        parser_method="sec_customer_regex",
+                        parser_method="sec_customer_sentence_scan",
                         download_url=document.download_url,
                         local_path=document.local_path,
                     )
@@ -129,6 +158,22 @@ def _html_to_text(value: str) -> str:
     without_styles = re.sub(r"<style.*?</style>", " ", without_scripts, flags=re.S | re.I)
     without_tags = re.sub(r"<[^>]+>", " ", without_styles)
     return re.sub(r"\s+", " ", unescape(without_tags))
+
+
+def _split_sentences(value: str) -> list[str]:
+    return [segment.strip() for segment in re.split(r"(?<=[\.;])\s+", value) if segment.strip()]
+
+
+def _is_supplier_context(sentence: str) -> bool:
+    if any(keyword in sentence for keyword in SUPPLIER_NEGATIVE_KEYWORDS):
+        return False
+    return any(keyword in sentence for keyword in SUPPLIER_CONTEXT_KEYWORDS) and any(
+        trigger in sentence for trigger in SUPPLIER_TRIGGER_KEYWORDS
+    )
+
+
+def _is_customer_context(sentence: str) -> bool:
+    return any(keyword in sentence for keyword in CUSTOMER_CONTEXT_KEYWORDS)
 
 
 def _extract_company_names(value: str) -> list[str]:

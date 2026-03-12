@@ -173,6 +173,12 @@ def fetch_annual_report_documents(seed: CompanySeed, years_back: int = 1) -> lis
 def fetch_documents(seeds: list[CompanySeed], limit_per_company: int = 1) -> list[SourceDocument]:
     documents: list[SourceDocument] = []
     for seed in seeds:
-        documents.extend(fetch_statement_document(seed=seed, limit=limit_per_company))
-        documents.extend(fetch_annual_report_documents(seed=seed, years_back=1))
+        try:
+            documents.extend(fetch_statement_document(seed=seed, limit=limit_per_company))
+        except requests.RequestException:
+            pass
+        try:
+            documents.extend(fetch_annual_report_documents(seed=seed, years_back=1))
+        except requests.RequestException:
+            pass
     return documents

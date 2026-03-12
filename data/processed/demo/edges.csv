@@ -52,6 +52,7 @@ edge-fa352ebf83f9,ent-f7fbac5050b8,ent-1e0623b2d6b2,undisclosed_supplier,low,"["
 edge-8cce91bdb10f,ent-3503bfdc476e,ent-1e0623b2d6b2,undisclosed_supplier,low,"[""au-qantas-airways-statement-2-ev-91246b92ed""]","[""AU""]","[""Modern Slavery Statements Register""]",False
 edge-6056b3bf66f8,ent-7b12b898eec3,ent-1e0623b2d6b2,undisclosed_supplier,low,"[""au-qantas-airways-2025-annual-report-ev-8908b74ea7""]","[""AU""]","[""Australian Annual Report""]",False
 edge-f294b10f1afb,ent-6f86e4d33957,ent-a6a8ae9fa5bc,customer,high,"[""cn-foxconn-industrial-internet-2023-ev-ecb6a4b2ff""]","[""CN""]","[""CNINFO""]",True
+edge-970135bd46b2,ent-98b73f85d5e7,ent-3dd78aae15d6,supplier,medium,"[""cn-pdd-holdings-pinduoduo-2025-adr-ev-9657bcda14"", ""cn-pdd-holdings-pinduoduo-2024-adr-ev-7a9ca2f9bd"", ""cn-pdd-holdings-pinduoduo-2023-adr-ev-9a269ccdb2""]","[""US""]","[""SEC EDGAR (China ADR)""]",True
 edge-79fe9bb6782a,ent-3d6b89b0f79b,ent-60b74b2eb970,undisclosed_customer,medium,"[""cn-byd-2024-ev-aa54fe0fad""]","[""CN""]","[""CNINFO""]",False
 edge-157b499a3967,ent-3d6b89b0f79b,ent-72a4952e5023,undisclosed_customer,medium,"[""cn-byd-2024-ev-6a2a82be81""]","[""CN""]","[""CNINFO""]",False
 edge-6e2bfadb8e26,ent-3d6b89b0f79b,ent-3e3511d59940,undisclosed_customer,medium,"[""cn-byd-2024-ev-cf0efdb359""]","[""CN""]","[""CNINFO""]",False
@@ -92,16 +93,21 @@ edge-a71f8c361dd2,ent-3c1dfb3f4b19,ent-027f1972f7f2,supplier,high,"[""cn-china-y
 edge-f8e27c67fbd3,ent-224dc4f2246b,ent-027f1972f7f2,supplier,high,"[""cn-china-yangtze-power-2024-ev-b9c9d4d887""]","[""CN""]","[""CNINFO""]",True
 edge-83ce59709aaa,ent-63f4f4b68a2e,ent-027f1972f7f2,supplier,high,"[""cn-china-yangtze-power-2023-ev-a28ba5ba37""]","[""CN""]","[""CNINFO""]",True
 edge-5cdc04f0549d,ent-aa0c3335acf9,ent-027f1972f7f2,supplier,high,"[""cn-china-yangtze-power-2023-ev-6cc682cc9b""]","[""CN""]","[""CNINFO""]",True
-edge-ca3f41a8dc3e,ent-aa7fa45ade35,ent-4a748db66120,supplier,medium,"[""us-nvidia-2026-ev-eccc778823"", ""us-nvidia-2026-ev-92f3023bbe"", ""us-nvidia-2025-ev-eccc778823"", ""us-nvidia-2025-ev-92f3023bbe"", ""us-nvidia-2024-ev-eccc778823"", ""us-nvidia-2024-ev-92f3023bbe""]","[""US""]","[""SEC EDGAR""]",True
-edge-28f4107902e0,ent-ff0a15d82a3d,ent-67626106d193,undisclosed_customer,low,"[""us-apple-2025-ev-68da4c240a""]","[""US""]","[""SEC EDGAR""]",False
-edge-f98d1f82c458,ent-ff0a15d82a3d,ent-98a47b91398a,undisclosed_customer,low,"[""us-apple-2023-ev-68da4c240a""]","[""US""]","[""SEC EDGAR""]",False
-edge-b477b192a700,ent-1624a4589ebe,ent-e8bcd432550d,supplier,medium,"[""us-broadcom-2024-ev-3baff8ce17""]","[""US""]","[""SEC EDGAR""]",True
-edge-2655006d2508,ent-6f6a27f6fbaf,ent-69aa5d0c4034,supplier,medium,"[""us-tesla-2026-ev-34e2cf896f"", ""us-tesla-2025-ev-34e2cf896f"", ""us-tesla-2024-ev-34e2cf896f""]","[""US""]","[""SEC EDGAR""]",True
+edge-ca3f41a8dc3e,ent-aa7fa45ade35,ent-4a748db66120,supplier,medium,"[""us-nvidia-2026-ev-b38f17632a"", ""us-nvidia-2025-ev-b38f17632a"", ""us-nvidia-2024-ev-b38f17632a""]","[""US""]","[""SEC EDGAR""]",True
+edge-8e764c6fcc3a,ent-072e02ab52b3,ent-4a748db66120,supplier,medium,"[""us-nvidia-2026-ev-8570f6f1b8"", ""us-nvidia-2025-ev-8570f6f1b8"", ""us-nvidia-2024-ev-8570f6f1b8""]","[""US""]","[""SEC EDGAR""]",True
+edge-afc43a7b3aff,ent-cdd02a82fea8,ent-4a748db66120,supplier,medium,"[""us-nvidia-2026-ev-8c7e38e07a"", ""us-nvidia-2025-ev-8c7e38e07a"", ""us-nvidia-2024-ev-8c7e38e07a""]","[""US""]","[""SEC EDGAR""]",True
+edge-6b699deb9fef,ent-3e61397b98db,ent-4a748db66120,supplier,medium,"[""us-nvidia-2026-ev-54cee458f1"", ""us-nvidia-2025-ev-712703f41d"", ""us-nvidia-2024-ev-a054971a04""]","[""US""]","[""SEC EDGAR""]",True
+edge-02c00d4d9c7e,ent-71e72180a2a7,ent-ff0a15d82a3d,supplier,medium,"[""us-apple-2025-ev-aecc6d9e0a"", ""us-apple-2024-ev-aecc6d9e0a"", ""us-apple-2023-ev-aecc6d9e0a""]","[""US""]","[""SEC EDGAR""]",True
+edge-9779e20c35d4,ent-463f441657aa,ent-ff0a15d82a3d,supplier,medium,"[""us-apple-2025-ev-66768473c9"", ""us-apple-2024-ev-66768473c9"", ""us-apple-2023-ev-66768473c9""]","[""US""]","[""SEC EDGAR""]",True
+edge-c5f93173f90d,ent-aa7fa45ade35,ent-e8bcd432550d,supplier,medium,"[""us-broadcom-2025-ev-e72c907722"", ""us-broadcom-2024-ev-e72c907722"", ""us-broadcom-2023-ev-e72c907722""]","[""US""]","[""SEC EDGAR""]",True
+edge-826d25562252,ent-cdd02a82fea8,ent-e8bcd432550d,supplier,medium,"[""us-broadcom-2025-ev-b025435f21"", ""us-broadcom-2024-ev-6b9e03edaf"", ""us-broadcom-2023-ev-6b9e03edaf""]","[""US""]","[""SEC EDGAR""]",True
+edge-2655006d2508,ent-6f6a27f6fbaf,ent-69aa5d0c4034,supplier,medium,"[""us-tesla-2026-ev-c0e3ef7179"", ""us-tesla-2025-ev-c0e3ef7179"", ""us-tesla-2024-ev-c0e3ef7179""]","[""US""]","[""SEC EDGAR""]",True
 edge-d34dd298e203,ent-01674ee1fc95,ent-2451c73ce022,undisclosed_customer,low,"[""us-berkshire-hathaway-2026-ev-db435a27a0""]","[""US""]","[""SEC EDGAR""]",False
 edge-e5c0cb0223fa,ent-01674ee1fc95,ent-173730230d0e,undisclosed_customer,low,"[""us-berkshire-hathaway-2025-ev-db435a27a0""]","[""US""]","[""SEC EDGAR""]",False
 edge-934c19e60d62,ent-01674ee1fc95,ent-b398640fbcd7,undisclosed_customer,low,"[""us-berkshire-hathaway-2024-ev-3b9d9a4b9f""]","[""US""]","[""SEC EDGAR""]",False
-edge-e0b5c85dc823,ent-3867d9c8a100,ent-be87b76c2961,supplier,medium,"[""us-general-electric-2025-ev-a0f42ce5cb""]","[""US""]","[""SEC EDGAR""]",True
-edge-03ed713507aa,ent-5c398419db2c,ent-26380f5190e1,undisclosed_customer,low,"[""us-cisco-2025-ev-8100467c63""]","[""US""]","[""SEC EDGAR""]",False
-edge-30a100984c92,ent-5c398419db2c,ent-ece5af217d85,undisclosed_customer,low,"[""us-cisco-2024-ev-8100467c63""]","[""US""]","[""SEC EDGAR""]",False
+edge-ba87915808b2,ent-666360474399,ent-029076555719,supplier,medium,"[""us-walmart-2025-ev-14cf236c85"", ""us-walmart-2024-ev-14cf236c85"", ""us-walmart-2023-ev-14cf236c85""]","[""US""]","[""SEC EDGAR""]",True
+edge-5f7bfddebf42,ent-08a4b2cc0b0b,ent-47a3b2d19ca8,supplier,medium,"[""us-jpmorgan-chase-2026-ev-b020552c97""]","[""US""]","[""SEC EDGAR""]",True
+edge-bd63cdd6b9db,ent-5c398419db2c,ent-116ac06dd5a1,customer,medium,"[""us-cisco-2025-ev-65efb97f88"", ""us-cisco-2024-ev-da5375ee24""]","[""US""]","[""SEC EDGAR""]",True
 edge-274ee7721a62,ent-5c398419db2c,ent-3790604d1a57,undisclosed_customer,low,"[""us-cisco-2023-ev-8100467c63""]","[""US""]","[""SEC EDGAR""]",False
-edge-c5f93173f90d,ent-aa7fa45ade35,ent-e8bcd432550d,supplier,medium,"[""us-broadcom-2025-ev-9130b59c01"", ""us-broadcom-2024-ev-9130b59c01"", ""us-broadcom-2023-ev-9130b59c01""]","[""US""]","[""SEC EDGAR""]",True
+edge-eb38bb877078,ent-57e564dedfe4,ent-7488611ecfb3,supplier,medium,"[""us-merck-2026-ev-36aef939a0"", ""us-merck-2025-ev-36aef939a0"", ""us-merck-2024-ev-36aef939a0""]","[""US""]","[""SEC EDGAR""]",True
+edge-cb66ddb36be7,ent-3e61397b98db,ent-e8bcd432550d,supplier,medium,"[""us-broadcom-2024-ev-a388e6f7d9"", ""us-broadcom-2023-ev-8580e00f74""]","[""US""]","[""SEC EDGAR""]",True

@@ -1,10 +1,10 @@
 {
-  "nodeCount": 135,
-  "edgeCount": 106,
-  "evidenceCount": 121,
-  "candidateCount": 182,
-  "explicitEdgeCount": 16,
-  "placeholderEdgeCount": 90,
+  "nodeCount": 142,
+  "edgeCount": 112,
+  "evidenceCount": 144,
+  "candidateCount": 170,
+  "explicitEdgeCount": 26,
+  "placeholderEdgeCount": 86,
   "sources": {
     "AU": [
       "Modern Slavery Statements Register",

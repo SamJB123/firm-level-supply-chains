@@ -73,6 +73,8 @@ ent-3503bfdc476e,Undisclosed Supplier · Qantas Airways · au-qantas-airways-sta
 ent-7b12b898eec3,Undisclosed Supplier · Qantas Airways · au-qantas-airways-2025-annual-report,OTHER,[],{},placeholder
 ent-6f86e4d33957,Foxconn Industrial Internet,CN,[],{},company
 ent-a6a8ae9fa5bc,服务器工厂,OTHER,[],{},company
+ent-3dd78aae15d6,PDD Holdings (Pinduoduo),US,[],{},company
+ent-98b73f85d5e7,PRC Enterprise Inc,OTHER,[],{},company
 ent-3d6b89b0f79b,BYD,CN,[],{},company
 ent-60b74b2eb970,Undisclosed Customer · BYD · cn-byd-2024 · #1,OTHER,[],{},placeholder
 ent-72a4952e5023,Undisclosed Customer · BYD · cn-byd-2024 · #2,OTHER,[],{},placeholder
@@ -117,20 +119,25 @@ ent-63f4f4b68a2e,长江三峡实业有限公司,OTHER,[],{},company
 ent-aa0c3335acf9,三峡基地发展有限公司,OTHER,[],{},company
 ent-4a748db66120,NVIDIA,US,[],{},company
 ent-aa7fa45ade35,TSMC,OTHER,"[""Taiwan Semiconductor Manufacturing Company Limited""]",{},company
+ent-072e02ab52b3,Samsung Electronics,OTHER,"[""Samsung Electronics Co.""]",{},company
+ent-cdd02a82fea8,Foxconn,OTHER,"[""Hon Hai Precision Industry Co.""]",{},company
+ent-3e61397b98db,Renesas Electronics Corporation,OTHER,[],{},company
 ent-ff0a15d82a3d,Apple,US,[],{},company
-ent-67626106d193,Undisclosed Customer · Apple · us-apple-2025,OTHER,[],{},placeholder
-ent-98a47b91398a,Undisclosed Customer · Apple · us-apple-2023,OTHER,[],{},placeholder
+ent-71e72180a2a7,Manufacturing Purchase Obligations The Company,OTHER,[],{},company
+ent-463f441657aa,Other Purchase Obligations The Company,OTHER,[],{},company
 ent-e8bcd432550d,Broadcom,US,[],{},company
-ent-1624a4589ebe,BMC Software Inc,OTHER,[],{},company
 ent-69aa5d0c4034,Tesla,US,[],{},company
-ent-6f6a27f6fbaf,CATL,OTHER,"[""Contemporary Amperex Technology""]",{},company
+ent-6f6a27f6fbaf,CATL,OTHER,"[""Contemporary Amperex Technology Co.""]",{},company
 ent-01674ee1fc95,Berkshire Hathaway,US,[],{},company
 ent-2451c73ce022,Undisclosed Customer · Berkshire Hathaway · us-berkshire-hathaway-2026,OTHER,[],{},placeholder
 ent-173730230d0e,Undisclosed Customer · Berkshire Hathaway · us-berkshire-hathaway-2025,OTHER,[],{},placeholder
 ent-b398640fbcd7,Undisclosed Customer · Berkshire Hathaway · us-berkshire-hathaway-2024,OTHER,[],{},placeholder
-ent-be87b76c2961,General Electric,US,[],{},company
-ent-3867d9c8a100,Electric Insurance Company,OTHER,[],{},company
+ent-029076555719,Walmart,US,[],{},company
+ent-666360474399,Suppliers The Company,OTHER,[],{},company
+ent-47a3b2d19ca8,JPMorgan Chase,US,[],{},company
+ent-08a4b2cc0b0b,Employee Retirement Inc,OTHER,[],{},company
 ent-5c398419db2c,Cisco,US,[],{},company
-ent-26380f5190e1,Undisclosed Customer · Cisco · us-cisco-2025,OTHER,[],{},placeholder
-ent-ece5af217d85,Undisclosed Customer · Cisco · us-cisco-2024,OTHER,[],{},placeholder
+ent-116ac06dd5a1,Accumulated Other Comprehensive Inc,OTHER,[],{},company
 ent-3790604d1a57,Undisclosed Customer · Cisco · us-cisco-2023,OTHER,[],{},placeholder
+ent-7488611ecfb3,Merck,US,[],{},company
+ent-57e564dedfe4,Wuxi Apptech Co.,OTHER,[],{},company
