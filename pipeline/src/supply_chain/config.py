@@ -12,6 +12,7 @@ PROCESSED_DIR = DATA_DIR / "processed"
 DEMO_DIR = PROCESSED_DIR / "demo"
 CONFIG_DIR = ROOT_DIR / "config"
 WEB_PUBLIC_DIR = ROOT_DIR / "apps" / "web" / "public" / "data"
+WEB_GENERATED_DIR = ROOT_DIR / "apps" / "web" / "src" / "lib" / "generated"
 
 
 SOURCE_MANIFEST = {
@@ -54,6 +55,7 @@ class AppConfig:
     demo_dir: Path = DEMO_DIR
     config_dir: Path = CONFIG_DIR
     web_public_dir: Path = WEB_PUBLIC_DIR
+    web_generated_dir: Path = WEB_GENERATED_DIR
 
     def ensure_directories(self) -> None:
         for path in [
@@ -65,6 +67,7 @@ class AppConfig:
             self.intermediate_dir / "us",
             self.demo_dir,
             self.web_public_dir,
+            self.web_generated_dir,
             self.config_dir,
         ]:
             path.mkdir(parents=True, exist_ok=True)

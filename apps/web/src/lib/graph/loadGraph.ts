@@ -1,12 +1,13 @@
 import type { GraphBundle, GraphSummary } from '../types'
+import { dataManifest } from '../generated/dataManifest'
 
 export async function loadGraphData(): Promise<{
   bundle: GraphBundle
   summary: GraphSummary
 }> {
   const [bundleResponse, summaryResponse] = await Promise.all([
-    fetch('/data/graph.json'),
-    fetch('/data/summary.json'),
+    fetch(dataManifest.graphPath),
+    fetch(dataManifest.summaryPath),
   ])
 
   if (!bundleResponse.ok || !summaryResponse.ok) {

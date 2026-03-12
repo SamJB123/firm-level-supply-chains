@@ -7,7 +7,7 @@ import shutil
 from pathlib import Path
 
 from supply_chain.config import get_config
-from supply_chain.export.graph_json import write_graph_bundle
+from supply_chain.export.graph_json import publish_versioned_web_assets, write_graph_bundle
 from supply_chain.export.tables import write_tables
 from supply_chain.models import CompanySeed, Country, ParsedEvidence, SourceDocument
 from supply_chain.normalize.edges import build_edges
@@ -115,8 +115,12 @@ def build_demo(seed_limit: int = 20, country_limit: int = 20, years_back: int = 
         graph_path=config.demo_dir / "graph.json",
         summary_path=config.demo_dir / "summary.json",
     )
-    shutil.copyfile(config.demo_dir / "graph.json", config.web_public_dir / "graph.json")
-    shutil.copyfile(config.demo_dir / "summary.json", config.web_public_dir / "summary.json")
+    publish_versioned_web_assets(
+        graph_path=config.demo_dir / "graph.json",
+        summary_path=config.demo_dir / "summary.json",
+        web_public_dir=config.web_public_dir,
+        web_generated_dir=config.web_generated_dir,
+    )
     print(f"Built demo graph with {len(entities)} nodes, {len(edges)} edges, and {len(candidates)} candidates.")
 
 
