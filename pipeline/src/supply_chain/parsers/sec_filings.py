@@ -95,13 +95,14 @@ def parse_document(document: SourceDocument) -> list[ParsedEvidence]:
 
     if not evidence:
         for match in UNDISCLOSED_PATTERN.finditer(normalized_text):
+            placeholder_name = f"Undisclosed Customer · {document.company_name} · {document.filing_year or document.document_id}"
             evidence.append(
                 ParsedEvidence(
                     evidence_id=_make_evidence_id(document.document_id, match.group(0)),
                     country=Country.UNITED_STATES,
                     relation_type=RelationType.UNDISCLOSED_CUSTOMER,
                     reporter_name=document.company_name,
-                    counterparty_name="Undisclosed Customer",
+                    counterparty_name=placeholder_name,
                     confidence=ConfidenceBand.LOW,
                     source_system=document.source_system,
                     document_id=document.document_id,

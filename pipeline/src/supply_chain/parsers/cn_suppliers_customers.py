@@ -14,6 +14,7 @@ MASKED_COUNTERPARTY_PATTERN = re.compile(r"(客户|供应商)[一二三四五123
 PERCENTAGE_PATTERN = re.compile(r"(\d+(?:\.\d+)?)%")
 NAMED_ENTITY_PATTERN = re.compile(r"[\u4e00-\u9fffA-Za-z0-9（）()·&]{3,}(?:公司|集团|股份|有限|银行|大学|厂|矿业|能源)")
 TABLE_ROW_PATTERN = re.compile(r"^\d+\s+")
+ROW_RANK_PATTERN = re.compile(r"^(?P<rank>\d+)\s+")
 
 
 def parse_document(document: SourceDocument) -> list[ParsedEvidence]:
@@ -63,7 +64,13 @@ def parse_document(document: SourceDocument) -> list[ParsedEvidence]:
                 continue
 
             if MASKED_COUNTERPARTY_PATTERN.search(line):
-                masked_name = "Undisclosed Customer" if relation_type == RelationType.CUSTOMER else "Undisclosed Supplier"
+                row_rank_match = ROW_RANK_PATTERN.match(line)
+                row_rank = row_rank_match.group("rank") if row_rank_match else "?"
+                masked_name = (
+                    f"Undisclosed Customer · {document.company_name} · {document.filing_year or document.document_id} · #{row_rank}"
+                    if relation_type == RelationType.CUSTOMER
+                    else f"Undisclosed Supplier · {document.company_name} · {document.filing_year or document.document_id} · #{row_rank}"
+                )
                 evidence.append(
                     ParsedEvidence(
                         evidence_id=_make_evidence_id(document.document_id, line),

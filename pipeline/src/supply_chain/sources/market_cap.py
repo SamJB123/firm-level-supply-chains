@@ -25,9 +25,44 @@ ROW_PATTERN = re.compile(
     re.S,
 )
 
+EASTMONEY_NAME_URL = "https://push2.eastmoney.com/api/qt/stock/get"
+CNINFO_SEARCH_NAME_OVERRIDES = {
+    "中国建设银行": "建设银行",
+    "中国农业银行": "农业银行",
+}
+
 
 def _clean_html_text(value: str) -> str:
     return re.sub(r"<.*?>", "", value).strip()
+
+
+def _lookup_chinese_search_name(ticker: str, exchange: str) -> str:
+    ticker_code = ticker.split(".")[0].upper()
+    if exchange == "SS":
+        secid = f"1.{ticker_code}"
+    elif exchange == "SZ":
+        secid = f"0.{ticker_code}"
+    elif exchange == "HK":
+        secid = f"116.{ticker_code.zfill(5)}"
+    else:
+        return ""
+
+    response = requests.get(
+        EASTMONEY_NAME_URL,
+        headers={
+            **REQUEST_HEADERS["browser"],
+            "Referer": "https://quote.eastmoney.com/",
+        },
+        params={"secid": secid, "fields": "f57,f58"},
+        timeout=30,
+    )
+    response.raise_for_status()
+    payload = response.json()
+    data = payload.get("data") or {}
+    name = str(data.get("f58", "")).strip()
+    if not name:
+        return ""
+    return CNINFO_SEARCH_NAME_OVERRIDES.get(name, name)
 
 
 def fetch_top_companies(country: Country, limit: int = 20) -> list[CompanySeed]:
@@ -57,7 +92,11 @@ def fetch_top_companies(country: Country, limit: int = 20) -> list[CompanySeed]:
                 market_cap_usd_billions=market_cap_billions,
                 source_url=COUNTRY_PAGES[country],
                 profile_url=profile_url,
-                statement_search_name=name,
+                statement_search_name=(
+                    _lookup_chinese_search_name(ticker=ticker, exchange=ticker.split(".")[-1] if "." in ticker else "")
+                    if country == Country.CHINA
+                    else name
+                ),
             )
         )
     return seeds

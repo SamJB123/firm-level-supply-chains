@@ -23,13 +23,14 @@ def parse_document(document: SourceDocument) -> list[ParsedEvidence]:
     evidence: list[ParsedEvidence] = []
 
     if any(keyword in normalized_text.lower() for keyword in SUPPLY_CHAIN_KEYWORDS):
+        placeholder_name = f"Undisclosed Supplier · {document.company_name} · {document.filing_year or document.document_id}"
         evidence.append(
             ParsedEvidence(
                 evidence_id=_make_evidence_id(document.document_id, "undisclosed-supplier"),
                 country=Country.AUSTRALIA,
                 relation_type=RelationType.UNDISCLOSED_SUPPLIER,
                 reporter_name=document.company_name,
-                counterparty_name="Undisclosed Supplier",
+                counterparty_name=placeholder_name,
                 confidence=ConfidenceBand.LOW,
                 source_system=document.source_system,
                 document_id=document.document_id,

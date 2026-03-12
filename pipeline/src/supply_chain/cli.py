@@ -21,14 +21,6 @@ from supply_chain.sources.china import fetch_documents as fetch_cn_documents
 from supply_chain.sources.market_cap import fetch_all_top_companies
 from supply_chain.sources.united_states import fetch_documents as fetch_us_documents
 
-
-DEMO_SELECTIONS = {
-    Country.AUSTRALIA: ["BHP", "Wesfarmers", "Qantas"],
-    Country.CHINA: ["BYD", "Foxconn", "China Shenhua"],
-    Country.UNITED_STATES: ["NVIDIA", "Apple", "Tesla"],
-}
-
-
 def main() -> None:
     parser = argparse.ArgumentParser(description="Supply chain data pipeline")
     subparsers = parser.add_subparsers(dest="command", required=True)
@@ -44,6 +36,7 @@ def main() -> None:
 
     build_demo_parser = subparsers.add_parser("build-demo", help="Build demo graph from downloaded real sources")
     build_demo_parser.add_argument("--seed-limit", type=int, default=20)
+    build_demo_parser.add_argument("--country-limit", type=int, default=20)
     build_demo_parser.add_argument("--years-back", type=int, default=3)
 
     args = parser.parse_args()
@@ -52,7 +45,7 @@ def main() -> None:
     elif args.command == "fetch":
         fetch(country=Country(args.country), limit=args.limit, selector=args.selector, years_back=args.years_back)
     elif args.command == "build-demo":
-        build_demo(seed_limit=args.seed_limit, years_back=args.years_back)
+        build_demo(seed_limit=args.seed_limit, country_limit=args.country_limit, years_back=args.years_back)
 
 
 def generate_seeds(limit: int = 20) -> Path:
@@ -83,7 +76,7 @@ def fetch(country: Country, limit: int, selector: str, years_back: int) -> Path:
     return manifest_path
 
 
-def build_demo(seed_limit: int = 20, years_back: int = 3) -> None:
+def build_demo(seed_limit: int = 20, country_limit: int = 20, years_back: int = 3) -> None:
     config = get_config()
     if not (config.config_dir / "seed_companies.csv").exists():
         generate_seeds(limit=seed_limit)
@@ -94,7 +87,7 @@ def build_demo(seed_limit: int = 20, years_back: int = 3) -> None:
         documents.extend(
             _fetch_for_country(
                 country=country,
-                seeds=select_demo_seeds(seeds, country),
+                seeds=select_build_seeds(seeds, country, country_limit=country_limit),
                 years_back=years_back,
             )
         )
@@ -149,28 +142,23 @@ def select_seeds(seeds: list[CompanySeed], country: Country, selector: str, limi
 
 
 def select_demo_seeds(seeds: list[CompanySeed], country: Country) -> list[CompanySeed]:
+    return select_build_seeds(seeds, country, country_limit=3)
+
+
+def select_build_seeds(seeds: list[CompanySeed], country: Country, country_limit: int) -> list[CompanySeed]:
     country_seeds = [seed for seed in seeds if seed.country == country]
-    preferred = DEMO_SELECTIONS[country]
-    selected: list[CompanySeed] = []
-    for token in preferred:
-        for seed in country_seeds:
-            if token.lower() in seed.name.lower() or token.lower() in seed.ticker.lower():
-                selected.append(seed)
-                break
-    if selected:
-        return selected
-    return country_seeds[:3]
+    return country_seeds[:country_limit]
 
 
 def parse_documents(documents: list[SourceDocument]) -> list[ParsedEvidence]:
     evidence: list[ParsedEvidence] = []
     for document in documents:
-        if document.country == Country.AUSTRALIA:
+        if "SEC EDGAR" in document.source_system:
+            evidence.extend(parse_us_document(document))
+        elif document.country == Country.AUSTRALIA:
             evidence.extend(parse_au_document(document))
         elif document.country == Country.CHINA:
             evidence.extend(parse_cn_document(document))
-        elif document.country == Country.UNITED_STATES:
-            evidence.extend(parse_us_document(document))
     return evidence
 
 

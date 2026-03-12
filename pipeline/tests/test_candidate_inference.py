@@ -23,7 +23,7 @@ def test_candidate_inference_keeps_hypotheses_separate_from_explicit_edges():
             country=Country.AUSTRALIA,
             relation_type=RelationType.UNDISCLOSED_SUPPLIER,
             reporter_name="ReporterCo",
-            counterparty_name="Undisclosed Supplier",
+            counterparty_name="Undisclosed Supplier · ReporterCo · 2025",
             confidence=ConfidenceBand.LOW,
             source_system="Modern Slavery Statements Register",
             document_id="doc-2",
@@ -40,3 +40,42 @@ def test_candidate_inference_keeps_hypotheses_separate_from_explicit_edges():
     assert any(edge.explicit is False for edge in edges)
     assert len(candidates) == 1
     assert candidates[0].supporting_evidence_ids == ["ev-1"]
+
+
+def test_distinct_undisclosed_placeholders_are_not_merged():
+    evidence = [
+        ParsedEvidence(
+            evidence_id="ev-1",
+            country=Country.CHINA,
+            relation_type=RelationType.UNDISCLOSED_CUSTOMER,
+            reporter_name="BYD",
+            counterparty_name="Undisclosed Customer · BYD · 2024 · #1",
+            confidence=ConfidenceBand.MEDIUM,
+            source_system="CNINFO",
+            document_id="doc-1",
+            document_title="2024年年度报告",
+            excerpt="1 客户一 12.4%",
+            parser_method="cn_table_masked_line",
+            named_counterparty=False,
+        ),
+        ParsedEvidence(
+            evidence_id="ev-2",
+            country=Country.CHINA,
+            relation_type=RelationType.UNDISCLOSED_CUSTOMER,
+            reporter_name="BYD",
+            counterparty_name="Undisclosed Customer · BYD · 2024 · #2",
+            confidence=ConfidenceBand.MEDIUM,
+            source_system="CNINFO",
+            document_id="doc-1",
+            document_title="2024年年度报告",
+            excerpt="2 客户二 2.1%",
+            parser_method="cn_table_masked_line",
+            named_counterparty=False,
+        ),
+    ]
+
+    entities, lookup = build_entities(evidence, {})
+    edges, _ = build_edges(evidence, lookup)
+
+    assert len([entity for entity in entities if entity.node_kind == "placeholder"]) == 2
+    assert len([edge for edge in edges if edge.explicit is False]) == 2

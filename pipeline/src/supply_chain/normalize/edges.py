@@ -20,6 +20,7 @@ def build_edges(
     explicit_edges: dict[str, NormalizedEdge] = {}
     candidates: list[CandidateLink] = []
     named_relationships = _index_named_relationships(evidence_items)
+    role_candidates = _index_role_candidates(evidence_items)
 
     for item in evidence_items:
         reporter_id = entity_lookup[normalize_name(item.reporter_name)]
@@ -78,6 +79,7 @@ def build_edges(
                 placeholder_entity_id=counterparty_id,
                 named_relationships=named_relationships,
                 entity_lookup=entity_lookup,
+                role_candidates=role_candidates,
             )
         )
 
@@ -96,44 +98,99 @@ def _index_named_relationships(evidence_items: list[ParsedEvidence]) -> dict[str
     return indexed
 
 
+def _index_role_candidates(evidence_items: list[ParsedEvidence]) -> dict[str, dict[str, list[str]]]:
+    indexed: dict[str, dict[str, list[str]]] = {
+        "supplier": defaultdict(list),
+        "customer": defaultdict(list),
+    }
+    for item in evidence_items:
+        if not item.named_counterparty:
+            continue
+        if item.relation_type == RelationType.SUPPLIER:
+            indexed["supplier"][item.counterparty_name].append(item.evidence_id)
+            indexed["customer"][item.reporter_name].append(item.evidence_id)
+        elif item.relation_type == RelationType.CUSTOMER:
+            indexed["customer"][item.counterparty_name].append(item.evidence_id)
+            indexed["supplier"][item.reporter_name].append(item.evidence_id)
+    return indexed
+
+
 def _infer_candidates(
     item: ParsedEvidence,
     placeholder_entity_id: str,
     named_relationships: dict[str, list[ParsedEvidence]],
     entity_lookup: dict[str, str],
+    role_candidates: dict[str, dict[str, list[str]]],
 ) -> list[CandidateLink]:
     reporter_key = normalize_name(item.reporter_name)
     reporter_related = named_relationships.get(reporter_key, [])
-    possibilities: list[tuple[str, str]] = []
+    possibilities: dict[str, dict[str, object]] = {}
 
     for related in reporter_related:
         if related.evidence_id == item.evidence_id:
             continue
         if item.relation_type == RelationType.UNDISCLOSED_CUSTOMER and related.relation_type == RelationType.SUPPLIER:
-            possibilities.append((related.reporter_name, related.evidence_id))
+            _record_candidate(
+                possibilities,
+                candidate_name=related.reporter_name,
+                evidence_ids=[related.evidence_id],
+                rationale=f"{related.reporter_name} is explicitly connected to {item.reporter_name} in another downloaded filing.",
+                reciprocal=True,
+            )
         elif item.relation_type == RelationType.UNDISCLOSED_SUPPLIER and related.relation_type == RelationType.CUSTOMER:
-            possibilities.append((related.reporter_name, related.evidence_id))
+            _record_candidate(
+                possibilities,
+                candidate_name=related.reporter_name,
+                evidence_ids=[related.evidence_id],
+                rationale=f"{related.reporter_name} is explicitly connected to {item.reporter_name} in another downloaded filing.",
+                reciprocal=True,
+            )
         elif related.counterparty_name == item.reporter_name:
-            possibilities.append((related.reporter_name, related.evidence_id))
+            _record_candidate(
+                possibilities,
+                candidate_name=related.reporter_name,
+                evidence_ids=[related.evidence_id],
+                rationale=f"{related.reporter_name} names {item.reporter_name} as a counterparty in another downloaded filing.",
+                reciprocal=True,
+            )
 
-    deduped_names: dict[str, list[str]] = defaultdict(list)
-    for candidate_name, evidence_id in possibilities:
-        deduped_names[candidate_name].append(evidence_id)
+    fallback_role = "customer" if item.relation_type == RelationType.UNDISCLOSED_CUSTOMER else "supplier"
+    for candidate_name, evidence_ids in role_candidates[fallback_role].items():
+        if normalize_name(candidate_name) == reporter_key:
+            continue
+        _record_candidate(
+            possibilities,
+            candidate_name=candidate_name,
+            evidence_ids=evidence_ids,
+            rationale=f"{candidate_name} repeatedly appears as an explicit {fallback_role} in the downloaded-source corpus.",
+            reciprocal=False,
+        )
 
     ranked: list[CandidateLink] = []
-    for rank, (candidate_name, evidence_ids) in enumerate(sorted(deduped_names.items(), key=lambda item: (-len(item[1]), item[0]))[:5], start=1):
+    scored_candidates = sorted(
+        possibilities.items(),
+        key=lambda item: (
+            -int(bool(item[1]["reciprocal"])),
+            -len(item[1]["evidence_ids"]),
+            item[0],
+        ),
+    )
+    for rank, (candidate_name, candidate_meta) in enumerate(scored_candidates[:5], start=1):
         candidate_key = normalize_name(candidate_name)
         candidate_entity_id = entity_lookup.get(candidate_key)
         if not candidate_entity_id:
             continue
+        evidence_ids = sorted(candidate_meta["evidence_ids"])
+        reciprocal = bool(candidate_meta["reciprocal"])
+        rationale = str(candidate_meta["rationale"])
         ranked.append(
             CandidateLink(
                 candidate_link_id=_candidate_id(placeholder_entity_id, candidate_entity_id),
                 undisclosed_entity_id=placeholder_entity_id,
                 candidate_entity_id=candidate_entity_id,
                 rank=rank,
-                confidence=ConfidenceBand.LOW if len(evidence_ids) == 1 else ConfidenceBand.MEDIUM,
-                rationale=f"{candidate_name} appears in other downloaded-source evidence connected to {item.reporter_name}.",
+                confidence=ConfidenceBand.MEDIUM if reciprocal or len(evidence_ids) > 2 else ConfidenceBand.LOW,
+                rationale=rationale,
                 supporting_evidence_ids=evidence_ids,
             )
         )
@@ -152,3 +209,27 @@ def _edge_id(source_id: str, target_id: str, relation_type: RelationType) -> str
 
 def _candidate_id(placeholder_entity_id: str, candidate_entity_id: str) -> str:
     return f"cand-{hashlib.md5(f'{placeholder_entity_id}:{candidate_entity_id}'.encode('utf-8')).hexdigest()[:12]}"
+
+
+def _record_candidate(
+    possibilities: dict[str, dict[str, object]],
+    *,
+    candidate_name: str,
+    evidence_ids: list[str],
+    rationale: str,
+    reciprocal: bool,
+) -> None:
+    if candidate_name.startswith("Undisclosed "):
+        return
+    existing = possibilities.setdefault(
+        candidate_name,
+        {
+            "evidence_ids": set(),
+            "rationale": rationale,
+            "reciprocal": reciprocal,
+        },
+    )
+    existing["evidence_ids"].update(evidence_ids)
+    if reciprocal:
+        existing["reciprocal"] = True
+        existing["rationale"] = rationale
