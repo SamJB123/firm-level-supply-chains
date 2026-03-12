@@ -1,41 +1,56 @@
 edge_id,source_entity_id,target_entity_id,relation_type,confidence,evidence_ids,countries,source_systems,explicit
 edge-f6e1d51f292a,ent-c94ad312fbfc,ent-13e23534eb8e,undisclosed_supplier,low,"[""au-commonwealth-bank-statement-1-ev-91246b92ed""]","[""AU""]","[""Modern Slavery Statements Register""]",False
 edge-bf4a4e76f3f3,ent-79faffaaa636,ent-13e23534eb8e,undisclosed_supplier,low,"[""au-commonwealth-bank-statement-2-ev-91246b92ed""]","[""AU""]","[""Modern Slavery Statements Register""]",False
+edge-b071b292adf9,ent-1047c80c439f,ent-13e23534eb8e,undisclosed_supplier,low,"[""au-commonwealth-bank-2025-annual-report-ev-8908b74ea7""]","[""AU""]","[""Australian Annual Report""]",False
 edge-e767e63c89a6,ent-7da5f29e9c3c,ent-7179ecc5f47f,undisclosed_supplier,low,"[""au-bhp-group-statement-1-ev-91246b92ed""]","[""AU""]","[""Modern Slavery Statements Register""]",False
 edge-ae071f41dfd4,ent-1cc8a4bba936,ent-7179ecc5f47f,undisclosed_supplier,low,"[""au-bhp-group-statement-2-ev-91246b92ed""]","[""AU""]","[""Modern Slavery Statements Register""]",False
 edge-f849a74abead,ent-c3bf9001b626,ent-3f2a9664a364,undisclosed_supplier,low,"[""au-national-australia-bank-statement-1-ev-91246b92ed""]","[""AU""]","[""Modern Slavery Statements Register""]",False
 edge-4dffad969f63,ent-9372762fcab4,ent-3f2a9664a364,undisclosed_supplier,low,"[""au-national-australia-bank-statement-2-ev-91246b92ed""]","[""AU""]","[""Modern Slavery Statements Register""]",False
+edge-34c74859b083,ent-1fce686e0be4,ent-3f2a9664a364,undisclosed_supplier,low,"[""au-national-australia-bank-2024-annual-report-ev-8908b74ea7""]","[""AU""]","[""Australian Annual Report""]",False
 edge-42b6b5c77456,ent-4d8e4acaf378,ent-035b2439d6fd,undisclosed_supplier,low,"[""au-westpac-banking-statement-1-ev-91246b92ed""]","[""AU""]","[""Modern Slavery Statements Register""]",False
 edge-1fd956b0e22a,ent-59994dd6440c,ent-035b2439d6fd,undisclosed_supplier,low,"[""au-westpac-banking-statement-2-ev-91246b92ed""]","[""AU""]","[""Modern Slavery Statements Register""]",False
+edge-9f765e546994,ent-cdbdd0c81a8e,ent-035b2439d6fd,undisclosed_supplier,low,"[""au-westpac-banking-2024-annual-report-ev-8908b74ea7""]","[""AU""]","[""Australian Annual Report""]",False
 edge-a6d5ec52b1eb,ent-f7e6340da899,ent-cd7449b31e36,undisclosed_supplier,low,"[""au-anz-bank-statement-1-ev-91246b92ed""]","[""AU""]","[""Modern Slavery Statements Register""]",False
+edge-7ad79112d133,ent-a583efc08bd6,ent-cd7449b31e36,undisclosed_supplier,low,"[""au-anz-bank-2024-annual-report-ev-8908b74ea7""]","[""AU""]","[""Australian Annual Report""]",False
 edge-f874e8ea0200,ent-91cfc801a29a,ent-f2202d662dbc,undisclosed_supplier,low,"[""au-wesfarmers-statement-1-ev-91246b92ed""]","[""AU""]","[""Modern Slavery Statements Register""]",False
 edge-10faa5ecf965,ent-2e2f50e65dfc,ent-f2202d662dbc,undisclosed_supplier,low,"[""au-wesfarmers-statement-2-ev-91246b92ed""]","[""AU""]","[""Modern Slavery Statements Register""]",False
+edge-0fcc3b6241ed,ent-29a1338cedc3,ent-f2202d662dbc,undisclosed_supplier,low,"[""au-wesfarmers-2024-annual-report-ev-8908b74ea7""]","[""AU""]","[""Australian Annual Report""]",False
 edge-629be2811bca,ent-9800606c5597,ent-4ba0de8959cc,undisclosed_supplier,low,"[""au-macquarie-group-limited-statement-1-ev-91246b92ed""]","[""AU""]","[""Modern Slavery Statements Register""]",False
 edge-71d431fac628,ent-cee48ffe61c3,ent-4ba0de8959cc,undisclosed_supplier,low,"[""au-macquarie-group-limited-statement-2-ev-91246b92ed""]","[""AU""]","[""Modern Slavery Statements Register""]",False
+edge-24acdb8a154d,ent-4cc577642779,ent-4ba0de8959cc,undisclosed_supplier,low,"[""au-macquarie-group-limited-2025-annual-report-ev-8908b74ea7""]","[""AU""]","[""Australian Annual Report""]",False
 edge-73a85837b5ca,ent-89d569ebcffe,ent-07029de96d24,undisclosed_supplier,low,"[""au-csl-statement-1-ev-91246b92ed""]","[""AU""]","[""Modern Slavery Statements Register""]",False
 edge-8d14108eebda,ent-20708056584e,ent-07029de96d24,undisclosed_supplier,low,"[""au-csl-statement-2-ev-91246b92ed""]","[""AU""]","[""Modern Slavery Statements Register""]",False
+edge-5ca20418ae51,ent-edeced9d8194,ent-07029de96d24,undisclosed_supplier,low,"[""au-csl-2025-annual-report-ev-8908b74ea7""]","[""AU""]","[""Australian Annual Report""]",False
 edge-60e1426f9b43,ent-01ffbaf31493,ent-2ebdcf52c86f,undisclosed_supplier,low,"[""au-fortescue-statement-1-ev-91246b92ed""]","[""AU""]","[""Modern Slavery Statements Register""]",False
 edge-df902ae8beb7,ent-414b207c9f25,ent-2ebdcf52c86f,undisclosed_supplier,low,"[""au-fortescue-statement-2-ev-91246b92ed""]","[""AU""]","[""Modern Slavery Statements Register""]",False
+edge-14730a9aa7d7,ent-9bfe361a2959,ent-22c5f0f7d2a9,undisclosed_supplier,low,"[""au-goodman-group-2024-annual-report-ev-8908b74ea7""]","[""AU""]","[""Australian Annual Report""]",False
 edge-6d59bb3dc585,ent-2531f35fb211,ent-b6c5a455eecc,undisclosed_supplier,low,"[""au-transurban-statement-1-ev-91246b92ed""]","[""AU""]","[""Modern Slavery Statements Register""]",False
 edge-ad2ef586f5de,ent-582983fbbea8,ent-b6c5a455eecc,undisclosed_supplier,low,"[""au-transurban-statement-2-ev-91246b92ed""]","[""AU""]","[""Modern Slavery Statements Register""]",False
+edge-c00101000798,ent-233ae35b9cd3,ent-b6c5a455eecc,undisclosed_supplier,low,"[""au-transurban-2025-annual-report-ev-8908b74ea7""]","[""AU""]","[""Australian Annual Report""]",False
 edge-33cc06ee6dc2,ent-af8fae49fb60,ent-c004e3aac2c3,undisclosed_supplier,low,"[""au-woolworths-group-statement-1-ev-91246b92ed""]","[""AU""]","[""Modern Slavery Statements Register""]",False
 edge-5cf3dc3196e9,ent-86aca71a709e,ent-c004e3aac2c3,undisclosed_supplier,low,"[""au-woolworths-group-statement-2-ev-91246b92ed""]","[""AU""]","[""Modern Slavery Statements Register""]",False
+edge-87c0d20af503,ent-233788b23023,ent-c004e3aac2c3,undisclosed_supplier,low,"[""au-woolworths-group-2025-annual-report-ev-8908b74ea7""]","[""AU""]","[""Australian Annual Report""]",False
 edge-4941324a13df,ent-da40ae340aae,ent-6cbeed2835e4,undisclosed_supplier,low,"[""au-northern-star-statement-1-ev-91246b92ed""]","[""AU""]","[""Modern Slavery Statements Register""]",False
 edge-e256a275135a,ent-01e6904a3663,ent-6cbeed2835e4,undisclosed_supplier,low,"[""au-northern-star-statement-2-ev-91246b92ed""]","[""AU""]","[""Modern Slavery Statements Register""]",False
+edge-9758083da41f,ent-8b5a6c04d624,ent-6cbeed2835e4,undisclosed_supplier,low,"[""au-northern-star-2024-annual-report-ev-8908b74ea7""]","[""AU""]","[""Australian Annual Report""]",False
 edge-b84043f0cbb9,ent-2b4d989df8cc,ent-529455b9c239,undisclosed_supplier,low,"[""au-coles-group-statement-1-ev-91246b92ed""]","[""AU""]","[""Modern Slavery Statements Register""]",False
 edge-eca933cde5ad,ent-d56b547c1287,ent-529455b9c239,undisclosed_supplier,low,"[""au-coles-group-statement-2-ev-91246b92ed""]","[""AU""]","[""Modern Slavery Statements Register""]",False
 edge-4a737601e8e0,ent-5862d35d9a93,ent-d879fc587d05,undisclosed_supplier,low,"[""au-santos-statement-1-ev-91246b92ed""]","[""AU""]","[""Modern Slavery Statements Register""]",False
 edge-992956a60a87,ent-97e4b01471ff,ent-d879fc587d05,undisclosed_supplier,low,"[""au-santos-statement-2-ev-91246b92ed""]","[""AU""]","[""Modern Slavery Statements Register""]",False
+edge-3094eece51e5,ent-98f68d8fbd57,ent-d879fc587d05,undisclosed_supplier,low,"[""au-santos-2025-annual-report-ev-8908b74ea7""]","[""AU""]","[""Australian Annual Report""]",False
 edge-e0f54dc6a40c,ent-66049380137d,ent-55d17ac422bc,undisclosed_supplier,low,"[""au-rea-group-statement-1-ev-91246b92ed""]","[""AU""]","[""Modern Slavery Statements Register""]",False
 edge-ef7b4eadb1eb,ent-85961d2debbd,ent-55d17ac422bc,undisclosed_supplier,low,"[""au-rea-group-statement-2-ev-91246b92ed""]","[""AU""]","[""Modern Slavery Statements Register""]",False
+edge-cd1ec460ef8a,ent-9fca882fceb4,ent-55d17ac422bc,undisclosed_supplier,low,"[""au-rea-group-2024-annual-report-ev-8908b74ea7""]","[""AU""]","[""Australian Annual Report""]",False
 edge-54159230d63e,ent-36ad8cad7e1b,ent-77eb052b7b46,undisclosed_supplier,low,"[""au-south32-statement-1-ev-91246b92ed""]","[""AU""]","[""Modern Slavery Statements Register""]",False
 edge-fc31822856a3,ent-1b07152821d8,ent-77eb052b7b46,undisclosed_supplier,low,"[""au-south32-statement-2-ev-91246b92ed""]","[""AU""]","[""Modern Slavery Statements Register""]",False
+edge-2daa25b6a1bf,ent-25185c584175,ent-77eb052b7b46,undisclosed_supplier,low,"[""au-south32-2024-annual-report-ev-8908b74ea7""]","[""AU""]","[""Australian Annual Report""]",False
 edge-56d044fc9d40,ent-89721fa4a6e0,ent-331bd5c5fc22,undisclosed_supplier,low,"[""au-computershare-statement-1-ev-91246b92ed""]","[""AU""]","[""Modern Slavery Statements Register""]",False
 edge-8612ac6da76c,ent-4475f759fbd0,ent-331bd5c5fc22,undisclosed_supplier,low,"[""au-computershare-statement-2-ev-91246b92ed""]","[""AU""]","[""Modern Slavery Statements Register""]",False
 edge-3e9045519e5b,ent-9869f7cce665,ent-e79a8c41fe36,undisclosed_supplier,low,"[""au-pilbara-minerals-statement-1-ev-91246b92ed""]","[""AU""]","[""Modern Slavery Statements Register""]",False
 edge-6c93380876fd,ent-a3315edb216f,ent-e79a8c41fe36,undisclosed_supplier,low,"[""au-pilbara-minerals-statement-2-ev-91246b92ed""]","[""AU""]","[""Modern Slavery Statements Register""]",False
 edge-fa352ebf83f9,ent-f7fbac5050b8,ent-1e0623b2d6b2,undisclosed_supplier,low,"[""au-qantas-airways-statement-1-ev-91246b92ed""]","[""AU""]","[""Modern Slavery Statements Register""]",False
 edge-8cce91bdb10f,ent-3503bfdc476e,ent-1e0623b2d6b2,undisclosed_supplier,low,"[""au-qantas-airways-statement-2-ev-91246b92ed""]","[""AU""]","[""Modern Slavery Statements Register""]",False
+edge-6056b3bf66f8,ent-7b12b898eec3,ent-1e0623b2d6b2,undisclosed_supplier,low,"[""au-qantas-airways-2025-annual-report-ev-8908b74ea7""]","[""AU""]","[""Australian Annual Report""]",False
 edge-f294b10f1afb,ent-6f86e4d33957,ent-a6a8ae9fa5bc,customer,high,"[""cn-foxconn-industrial-internet-2023-ev-ecb6a4b2ff""]","[""CN""]","[""CNINFO""]",True
 edge-79fe9bb6782a,ent-3d6b89b0f79b,ent-60b74b2eb970,undisclosed_customer,medium,"[""cn-byd-2024-ev-aa54fe0fad""]","[""CN""]","[""CNINFO""]",False
 edge-157b499a3967,ent-3d6b89b0f79b,ent-72a4952e5023,undisclosed_customer,medium,"[""cn-byd-2024-ev-6a2a82be81""]","[""CN""]","[""CNINFO""]",False
@@ -89,3 +104,4 @@ edge-e0b5c85dc823,ent-3867d9c8a100,ent-be87b76c2961,supplier,medium,"[""us-gener
 edge-03ed713507aa,ent-5c398419db2c,ent-26380f5190e1,undisclosed_customer,low,"[""us-cisco-2025-ev-8100467c63""]","[""US""]","[""SEC EDGAR""]",False
 edge-30a100984c92,ent-5c398419db2c,ent-ece5af217d85,undisclosed_customer,low,"[""us-cisco-2024-ev-8100467c63""]","[""US""]","[""SEC EDGAR""]",False
 edge-274ee7721a62,ent-5c398419db2c,ent-3790604d1a57,undisclosed_customer,low,"[""us-cisco-2023-ev-8100467c63""]","[""US""]","[""SEC EDGAR""]",False
+edge-c5f93173f90d,ent-aa7fa45ade35,ent-e8bcd432550d,supplier,medium,"[""us-broadcom-2025-ev-9130b59c01"", ""us-broadcom-2024-ev-9130b59c01"", ""us-broadcom-2023-ev-9130b59c01""]","[""US""]","[""SEC EDGAR""]",True

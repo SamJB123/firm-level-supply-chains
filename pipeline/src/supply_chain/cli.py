@@ -13,6 +13,7 @@ from supply_chain.models import CompanySeed, Country, ParsedEvidence, SourceDocu
 from supply_chain.normalize.edges import build_edges
 from supply_chain.normalize.entities import build_entities, load_overrides, normalize_name
 from supply_chain.normalize.evidence import rescore_evidence
+from supply_chain.normalize.interconnections import discover_cross_links
 from supply_chain.parsers.cn_suppliers_customers import parse_document as parse_cn_document
 from supply_chain.parsers.modern_slavery import parse_document as parse_au_document
 from supply_chain.parsers.sec_filings import parse_document as parse_us_document
@@ -93,6 +94,7 @@ def build_demo(seed_limit: int = 20, country_limit: int = 20, years_back: int = 
         )
 
     evidence = parse_documents(documents)
+    evidence.extend(discover_cross_links(documents=documents, evidence_items=evidence))
     evidence = rescore_evidence(evidence)
     overrides = load_overrides(config.config_dir / "entity_overrides.csv")
     entities, entity_lookup = build_entities(evidence, overrides)

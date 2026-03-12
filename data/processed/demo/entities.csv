@@ -2,50 +2,65 @@ entity_id,display_name,country,aliases,source_ids,node_kind
 ent-13e23534eb8e,Commonwealth Bank,AU,[],{},company
 ent-c94ad312fbfc,Undisclosed Supplier · Commonwealth Bank · au-commonwealth-bank-statement-1,OTHER,[],{},placeholder
 ent-79faffaaa636,Undisclosed Supplier · Commonwealth Bank · au-commonwealth-bank-statement-2,OTHER,[],{},placeholder
+ent-1047c80c439f,Undisclosed Supplier · Commonwealth Bank · au-commonwealth-bank-2025-annual-report,OTHER,[],{},placeholder
 ent-7179ecc5f47f,BHP Group,AU,[],{},company
 ent-7da5f29e9c3c,Undisclosed Supplier · BHP Group · au-bhp-group-statement-1,OTHER,[],{},placeholder
 ent-1cc8a4bba936,Undisclosed Supplier · BHP Group · au-bhp-group-statement-2,OTHER,[],{},placeholder
 ent-3f2a9664a364,National Australia Bank,AU,[],{},company
 ent-c3bf9001b626,Undisclosed Supplier · National Australia Bank · au-national-australia-bank-statement-1,OTHER,[],{},placeholder
 ent-9372762fcab4,Undisclosed Supplier · National Australia Bank · au-national-australia-bank-statement-2,OTHER,[],{},placeholder
+ent-1fce686e0be4,Undisclosed Supplier · National Australia Bank · au-national-australia-bank-2024-annual-report,OTHER,[],{},placeholder
 ent-035b2439d6fd,Westpac Banking,AU,[],{},company
 ent-4d8e4acaf378,Undisclosed Supplier · Westpac Banking · au-westpac-banking-statement-1,OTHER,[],{},placeholder
 ent-59994dd6440c,Undisclosed Supplier · Westpac Banking · au-westpac-banking-statement-2,OTHER,[],{},placeholder
+ent-cdbdd0c81a8e,Undisclosed Supplier · Westpac Banking · au-westpac-banking-2024-annual-report,OTHER,[],{},placeholder
 ent-cd7449b31e36,ANZ Bank,AU,[],{},company
 ent-f7e6340da899,Undisclosed Supplier · ANZ Bank · au-anz-bank-statement-1,OTHER,[],{},placeholder
+ent-a583efc08bd6,Undisclosed Supplier · ANZ Bank · au-anz-bank-2024-annual-report,OTHER,[],{},placeholder
 ent-f2202d662dbc,Wesfarmers,AU,[],{},company
 ent-91cfc801a29a,Undisclosed Supplier · Wesfarmers · au-wesfarmers-statement-1,OTHER,[],{},placeholder
 ent-2e2f50e65dfc,Undisclosed Supplier · Wesfarmers · au-wesfarmers-statement-2,OTHER,[],{},placeholder
+ent-29a1338cedc3,Undisclosed Supplier · Wesfarmers · au-wesfarmers-2024-annual-report,OTHER,[],{},placeholder
 ent-4ba0de8959cc,Macquarie Group Limited,AU,[],{},company
 ent-9800606c5597,Undisclosed Supplier · Macquarie Group Limited · au-macquarie-group-limited-statement-1,OTHER,[],{},placeholder
 ent-cee48ffe61c3,Undisclosed Supplier · Macquarie Group Limited · au-macquarie-group-limited-statement-2,OTHER,[],{},placeholder
+ent-4cc577642779,Undisclosed Supplier · Macquarie Group Limited · au-macquarie-group-limited-2025-annual-report,OTHER,[],{},placeholder
 ent-07029de96d24,CSL,AU,[],{},company
 ent-89d569ebcffe,Undisclosed Supplier · CSL · au-csl-statement-1,OTHER,[],{},placeholder
 ent-20708056584e,Undisclosed Supplier · CSL · au-csl-statement-2,OTHER,[],{},placeholder
+ent-edeced9d8194,Undisclosed Supplier · CSL · au-csl-2025-annual-report,OTHER,[],{},placeholder
 ent-2ebdcf52c86f,Fortescue,AU,[],{},company
 ent-01ffbaf31493,Undisclosed Supplier · Fortescue · au-fortescue-statement-1,OTHER,[],{},placeholder
 ent-414b207c9f25,Undisclosed Supplier · Fortescue · au-fortescue-statement-2,OTHER,[],{},placeholder
+ent-22c5f0f7d2a9,Goodman Group,AU,[],{},company
+ent-9bfe361a2959,Undisclosed Supplier · Goodman Group · au-goodman-group-2024-annual-report,OTHER,[],{},placeholder
 ent-b6c5a455eecc,Transurban,AU,[],{},company
 ent-2531f35fb211,Undisclosed Supplier · Transurban · au-transurban-statement-1,OTHER,[],{},placeholder
 ent-582983fbbea8,Undisclosed Supplier · Transurban · au-transurban-statement-2,OTHER,[],{},placeholder
+ent-233ae35b9cd3,Undisclosed Supplier · Transurban · au-transurban-2025-annual-report,OTHER,[],{},placeholder
 ent-c004e3aac2c3,Woolworths Group,AU,[],{},company
 ent-af8fae49fb60,Undisclosed Supplier · Woolworths Group · au-woolworths-group-statement-1,OTHER,[],{},placeholder
 ent-86aca71a709e,Undisclosed Supplier · Woolworths Group · au-woolworths-group-statement-2,OTHER,[],{},placeholder
+ent-233788b23023,Undisclosed Supplier · Woolworths Group · au-woolworths-group-2025-annual-report,OTHER,[],{},placeholder
 ent-6cbeed2835e4,Northern Star,AU,[],{},company
 ent-da40ae340aae,Undisclosed Supplier · Northern Star · au-northern-star-statement-1,OTHER,[],{},placeholder
 ent-01e6904a3663,Undisclosed Supplier · Northern Star · au-northern-star-statement-2,OTHER,[],{},placeholder
+ent-8b5a6c04d624,Undisclosed Supplier · Northern Star · au-northern-star-2024-annual-report,OTHER,[],{},placeholder
 ent-529455b9c239,Coles Group,AU,[],{},company
 ent-2b4d989df8cc,Undisclosed Supplier · Coles Group · au-coles-group-statement-1,OTHER,[],{},placeholder
 ent-d56b547c1287,Undisclosed Supplier · Coles Group · au-coles-group-statement-2,OTHER,[],{},placeholder
 ent-d879fc587d05,Santos,AU,[],{},company
 ent-5862d35d9a93,Undisclosed Supplier · Santos · au-santos-statement-1,OTHER,[],{},placeholder
 ent-97e4b01471ff,Undisclosed Supplier · Santos · au-santos-statement-2,OTHER,[],{},placeholder
+ent-98f68d8fbd57,Undisclosed Supplier · Santos · au-santos-2025-annual-report,OTHER,[],{},placeholder
 ent-55d17ac422bc,REA Group,AU,[],{},company
 ent-66049380137d,Undisclosed Supplier · REA Group · au-rea-group-statement-1,OTHER,[],{},placeholder
 ent-85961d2debbd,Undisclosed Supplier · REA Group · au-rea-group-statement-2,OTHER,[],{},placeholder
+ent-9fca882fceb4,Undisclosed Supplier · REA Group · au-rea-group-2024-annual-report,OTHER,[],{},placeholder
 ent-77eb052b7b46,South32,AU,[],{},company
 ent-36ad8cad7e1b,Undisclosed Supplier · South32 · au-south32-statement-1,OTHER,[],{},placeholder
 ent-1b07152821d8,Undisclosed Supplier · South32 · au-south32-statement-2,OTHER,[],{},placeholder
+ent-25185c584175,Undisclosed Supplier · South32 · au-south32-2024-annual-report,OTHER,[],{},placeholder
 ent-331bd5c5fc22,Computershare,AU,[],{},company
 ent-89721fa4a6e0,Undisclosed Supplier · Computershare · au-computershare-statement-1,OTHER,[],{},placeholder
 ent-4475f759fbd0,Undisclosed Supplier · Computershare · au-computershare-statement-2,OTHER,[],{},placeholder
@@ -55,6 +70,7 @@ ent-a3315edb216f,Undisclosed Supplier · Pilbara Minerals · au-pilbara-minerals
 ent-1e0623b2d6b2,Qantas Airways,AU,[],{},company
 ent-f7fbac5050b8,Undisclosed Supplier · Qantas Airways · au-qantas-airways-statement-1,OTHER,[],{},placeholder
 ent-3503bfdc476e,Undisclosed Supplier · Qantas Airways · au-qantas-airways-statement-2,OTHER,[],{},placeholder
+ent-7b12b898eec3,Undisclosed Supplier · Qantas Airways · au-qantas-airways-2025-annual-report,OTHER,[],{},placeholder
 ent-6f86e4d33957,Foxconn Industrial Internet,CN,[],{},company
 ent-a6a8ae9fa5bc,服务器工厂,OTHER,[],{},company
 ent-3d6b89b0f79b,BYD,CN,[],{},company

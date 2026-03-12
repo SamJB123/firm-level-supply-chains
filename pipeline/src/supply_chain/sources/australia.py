@@ -1,5 +1,6 @@
 from __future__ import annotations
 
+import csv
 import json
 import re
 from pathlib import Path
@@ -19,6 +20,7 @@ STATEMENT_LINK_PATTERN = re.compile(r'href="(/statements/(?P<statement_id>\d+)/)
 TITLE_PATTERN = re.compile(r"<title>(?P<title>[^<]+)</title>")
 PDF_PATH_PATTERN = re.compile(r'href="(?P<pdf>/statements/[^"]+/pdf/)"')
 YEAR_PATTERN = re.compile(r"(20\d{2})")
+ANNUAL_REPORT_CATALOG = "au_annual_reports.csv"
 
 
 def _safe_slug(value: str) -> str:
@@ -102,8 +104,75 @@ def fetch_statement_document(seed: CompanySeed, limit: int = 3) -> list[SourceDo
     return results
 
 
+def load_annual_report_catalog() -> list[dict[str, str]]:
+    config = get_config()
+    path = config.config_dir / ANNUAL_REPORT_CATALOG
+    if not path.exists():
+        return []
+    with path.open(newline="") as handle:
+        return list(csv.DictReader(handle))
+
+
+def fetch_annual_report_documents(seed: CompanySeed, years_back: int = 1) -> list[SourceDocument]:
+    config = get_config()
+    company_slug = _safe_slug(seed.name)
+    local_dir = config.raw_dir / "au" / company_slug
+    local_dir.mkdir(parents=True, exist_ok=True)
+
+    catalog_rows = [
+        row for row in load_annual_report_catalog() if row.get("company_name", "").strip() == seed.name
+    ]
+    catalog_rows = sorted(
+        catalog_rows,
+        key=lambda row: int(row.get("year", "0") or "0"),
+        reverse=True,
+    )[:years_back]
+
+    documents: list[SourceDocument] = []
+    for row in catalog_rows:
+        year = int(row["year"])
+        download_url = row["report_url"]
+        pdf_path = local_dir / f"{year}-annual-report.pdf"
+        metadata_path = local_dir / f"{year}-annual-report.json"
+        if not pdf_path.exists():
+            try:
+                response = requests.get(
+                    download_url,
+                    headers=REQUEST_HEADERS["browser"],
+                    timeout=(30, 300),
+                    stream=True,
+                )
+                response.raise_for_status()
+                with pdf_path.open("wb") as handle:
+                    for chunk in response.iter_content(chunk_size=1024 * 256):
+                        if chunk:
+                            handle.write(chunk)
+            except requests.RequestException:
+                if pdf_path.exists():
+                    pdf_path.unlink(missing_ok=True)
+                continue
+        if not metadata_path.exists():
+            metadata_path.write_text(json.dumps(row, indent=2))
+        documents.append(
+            SourceDocument(
+                document_id=f"au-{company_slug}-{year}-annual-report",
+                country=Country.AUSTRALIA,
+                company_name=seed.name,
+                source_system="Australian Annual Report",
+                document_type="annual_report",
+                title=f"{seed.name} annual report {year}",
+                filing_year=year,
+                download_url=download_url,
+                local_path=str(pdf_path),
+                metadata_path=str(metadata_path),
+            )
+        )
+    return documents
+
+
 def fetch_documents(seeds: list[CompanySeed], limit_per_company: int = 1) -> list[SourceDocument]:
     documents: list[SourceDocument] = []
     for seed in seeds:
         documents.extend(fetch_statement_document(seed=seed, limit=limit_per_company))
+        documents.extend(fetch_annual_report_documents(seed=seed, years_back=1))
     return documents

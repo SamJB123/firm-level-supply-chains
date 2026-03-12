@@ -25,6 +25,14 @@
       "source_ids": {}
     },
     {
+      "id": "ent-1047c80c439f",
+      "label": "Undisclosed Supplier · Commonwealth Bank · au-commonwealth-bank-2025-annual-report",
+      "country": "OTHER",
+      "node_kind": "placeholder",
+      "aliases": [],
+      "source_ids": {}
+    },
+    {
       "id": "ent-7179ecc5f47f",
       "label": "BHP Group",
       "country": "AU",
@@ -73,6 +81,14 @@
       "source_ids": {}
     },
     {
+      "id": "ent-1fce686e0be4",
+      "label": "Undisclosed Supplier · National Australia Bank · au-national-australia-bank-2024-annual-report",
+      "country": "OTHER",
+      "node_kind": "placeholder",
+      "aliases": [],
+      "source_ids": {}
+    },
+    {
       "id": "ent-035b2439d6fd",
       "label": "Westpac Banking",
       "country": "AU",
@@ -97,6 +113,14 @@
       "source_ids": {}
     },
     {
+      "id": "ent-cdbdd0c81a8e",
+      "label": "Undisclosed Supplier · Westpac Banking · au-westpac-banking-2024-annual-report",
+      "country": "OTHER",
+      "node_kind": "placeholder",
+      "aliases": [],
+      "source_ids": {}
+    },
+    {
       "id": "ent-cd7449b31e36",
       "label": "ANZ Bank",
       "country": "AU",
@@ -107,6 +131,14 @@
     {
       "id": "ent-f7e6340da899",
       "label": "Undisclosed Supplier · ANZ Bank · au-anz-bank-statement-1",
+      "country": "OTHER",
+      "node_kind": "placeholder",
+      "aliases": [],
+      "source_ids": {}
+    },
+    {
+      "id": "ent-a583efc08bd6",
+      "label": "Undisclosed Supplier · ANZ Bank · au-anz-bank-2024-annual-report",
       "country": "OTHER",
       "node_kind": "placeholder",
       "aliases": [],
@@ -137,6 +169,14 @@
       "source_ids": {}
     },
     {
+      "id": "ent-29a1338cedc3",
+      "label": "Undisclosed Supplier · Wesfarmers · au-wesfarmers-2024-annual-report",
+      "country": "OTHER",
+      "node_kind": "placeholder",
+      "aliases": [],
+      "source_ids": {}
+    },
+    {
       "id": "ent-4ba0de8959cc",
       "label": "Macquarie Group Limited",
       "country": "AU",
@@ -155,6 +195,14 @@
     {
       "id": "ent-cee48ffe61c3",
       "label": "Undisclosed Supplier · Macquarie Group Limited · au-macquarie-group-limited-statement-2",
+      "country": "OTHER",
+      "node_kind": "placeholder",
+      "aliases": [],
+      "source_ids": {}
+    },
+    {
+      "id": "ent-4cc577642779",
+      "label": "Undisclosed Supplier · Macquarie Group Limited · au-macquarie-group-limited-2025-annual-report",
       "country": "OTHER",
       "node_kind": "placeholder",
       "aliases": [],
@@ -185,6 +233,14 @@
       "source_ids": {}
     },
     {
+      "id": "ent-edeced9d8194",
+      "label": "Undisclosed Supplier · CSL · au-csl-2025-annual-report",
+      "country": "OTHER",
+      "node_kind": "placeholder",
+      "aliases": [],
+      "source_ids": {}
+    },
+    {
       "id": "ent-2ebdcf52c86f",
       "label": "Fortescue",
       "country": "AU",
@@ -203,6 +259,22 @@
     {
       "id": "ent-414b207c9f25",
       "label": "Undisclosed Supplier · Fortescue · au-fortescue-statement-2",
+      "country": "OTHER",
+      "node_kind": "placeholder",
+      "aliases": [],
+      "source_ids": {}
+    },
+    {
+      "id": "ent-22c5f0f7d2a9",
+      "label": "Goodman Group",
+      "country": "AU",
+      "node_kind": "company",
+      "aliases": [],
+      "source_ids": {}
+    },
+    {
+      "id": "ent-9bfe361a2959",
+      "label": "Undisclosed Supplier · Goodman Group · au-goodman-group-2024-annual-report",
       "country": "OTHER",
       "node_kind": "placeholder",
       "aliases": [],
@@ -233,6 +305,14 @@
       "source_ids": {}
     },
     {
+      "id": "ent-233ae35b9cd3",
+      "label": "Undisclosed Supplier · Transurban · au-transurban-2025-annual-report",
+      "country": "OTHER",
+      "node_kind": "placeholder",
+      "aliases": [],
+      "source_ids": {}
+    },
+    {
       "id": "ent-c004e3aac2c3",
       "label": "Woolworths Group",
       "country": "AU",
@@ -257,6 +337,14 @@
       "source_ids": {}
     },
     {
+      "id": "ent-233788b23023",
+      "label": "Undisclosed Supplier · Woolworths Group · au-woolworths-group-2025-annual-report",
+      "country": "OTHER",
+      "node_kind": "placeholder",
+      "aliases": [],
+      "source_ids": {}
+    },
+    {
       "id": "ent-6cbeed2835e4",
       "label": "Northern Star",
       "country": "AU",
@@ -275,6 +363,14 @@
     {
       "id": "ent-01e6904a3663",
       "label": "Undisclosed Supplier · Northern Star · au-northern-star-statement-2",
+      "country": "OTHER",
+      "node_kind": "placeholder",
+      "aliases": [],
+      "source_ids": {}
+    },
+    {
+      "id": "ent-8b5a6c04d624",
+      "label": "Undisclosed Supplier · Northern Star · au-northern-star-2024-annual-report",
       "country": "OTHER",
       "node_kind": "placeholder",
       "aliases": [],
@@ -329,6 +425,14 @@
       "source_ids": {}
     },
     {
+      "id": "ent-98f68d8fbd57",
+      "label": "Undisclosed Supplier · Santos · au-santos-2025-annual-report",
+      "country": "OTHER",
+      "node_kind": "placeholder",
+      "aliases": [],
+      "source_ids": {}
+    },
+    {
       "id": "ent-55d17ac422bc",
       "label": "REA Group",
       "country": "AU",
@@ -353,6 +457,14 @@
       "source_ids": {}
     },
     {
+      "id": "ent-9fca882fceb4",
+      "label": "Undisclosed Supplier · REA Group · au-rea-group-2024-annual-report",
+      "country": "OTHER",
+      "node_kind": "placeholder",
+      "aliases": [],
+      "source_ids": {}
+    },
+    {
       "id": "ent-77eb052b7b46",
       "label": "South32",
       "country": "AU",
@@ -371,6 +483,14 @@
     {
       "id": "ent-1b07152821d8",
       "label": "Undisclosed Supplier · South32 · au-south32-statement-2",
+      "country": "OTHER",
+      "node_kind": "placeholder",
+      "aliases": [],
+      "source_ids": {}
+    },
+    {
+      "id": "ent-25185c584175",
+      "label": "Undisclosed Supplier · South32 · au-south32-2024-annual-report",
       "country": "OTHER",
       "node_kind": "placeholder",
       "aliases": [],
@@ -443,6 +563,14 @@
     {
       "id": "ent-3503bfdc476e",
       "label": "Undisclosed Supplier · Qantas Airways · au-qantas-airways-statement-2",
+      "country": "OTHER",
+      "node_kind": "placeholder",
+      "aliases": [],
+      "source_ids": {}
+    },
+    {
+      "id": "ent-7b12b898eec3",
+      "label": "Undisclosed Supplier · Qantas Airways · au-qantas-airways-2025-annual-report",
       "country": "OTHER",
       "node_kind": "placeholder",
       "aliases": [],
@@ -981,6 +1109,17 @@
       ]
     },
     {
+      "id": "edge-b071b292adf9",
+      "source": "ent-1047c80c439f",
+      "target": "ent-13e23534eb8e",
+      "relation_type": "undisclosed_supplier",
+      "confidence": "low",
+      "explicit": false,
+      "evidence_ids": [
+        "au-commonwealth-bank-2025-annual-report-ev-8908b74ea7"
+      ]
+    },
+    {
       "id": "edge-e767e63c89a6",
       "source": "ent-7da5f29e9c3c",
       "target": "ent-7179ecc5f47f",
@@ -1025,6 +1164,17 @@
       ]
     },
     {
+      "id": "edge-34c74859b083",
+      "source": "ent-1fce686e0be4",
+      "target": "ent-3f2a9664a364",
+      "relation_type": "undisclosed_supplier",
+      "confidence": "low",
+      "explicit": false,
+      "evidence_ids": [
+        "au-national-australia-bank-2024-annual-report-ev-8908b74ea7"
+      ]
+    },
+    {
       "id": "edge-42b6b5c77456",
       "source": "ent-4d8e4acaf378",
       "target": "ent-035b2439d6fd",
@@ -1047,6 +1197,17 @@
       ]
     },
     {
+      "id": "edge-9f765e546994",
+      "source": "ent-cdbdd0c81a8e",
+      "target": "ent-035b2439d6fd",
+      "relation_type": "undisclosed_supplier",
+      "confidence": "low",
+      "explicit": false,
+      "evidence_ids": [
+        "au-westpac-banking-2024-annual-report-ev-8908b74ea7"
+      ]
+    },
+    {
       "id": "edge-a6d5ec52b1eb",
       "source": "ent-f7e6340da899",
       "target": "ent-cd7449b31e36",
@@ -1055,6 +1216,17 @@
       "explicit": false,
       "evidence_ids": [
         "au-anz-bank-statement-1-ev-91246b92ed"
+      ]
+    },
+    {
+      "id": "edge-7ad79112d133",
+      "source": "ent-a583efc08bd6",
+      "target": "ent-cd7449b31e36",
+      "relation_type": "undisclosed_supplier",
+      "confidence": "low",
+      "explicit": false,
+      "evidence_ids": [
+        "au-anz-bank-2024-annual-report-ev-8908b74ea7"
       ]
     },
     {
@@ -1080,6 +1252,17 @@
       ]
     },
     {
+      "id": "edge-0fcc3b6241ed",
+      "source": "ent-29a1338cedc3",
+      "target": "ent-f2202d662dbc",
+      "relation_type": "undisclosed_supplier",
+      "confidence": "low",
+      "explicit": false,
+      "evidence_ids": [
+        "au-wesfarmers-2024-annual-report-ev-8908b74ea7"
+      ]
+    },
+    {
       "id": "edge-629be2811bca",
       "source": "ent-9800606c5597",
       "target": "ent-4ba0de8959cc",
@@ -1099,6 +1282,17 @@
       "explicit": false,
       "evidence_ids": [
         "au-macquarie-group-limited-statement-2-ev-91246b92ed"
+      ]
+    },
+    {
+      "id": "edge-24acdb8a154d",
+      "source": "ent-4cc577642779",
+      "target": "ent-4ba0de8959cc",
+      "relation_type": "undisclosed_supplier",
+      "confidence": "low",
+      "explicit": false,
+      "evidence_ids": [
+        "au-macquarie-group-limited-2025-annual-report-ev-8908b74ea7"
       ]
     },
     {
@@ -1124,6 +1318,17 @@
       ]
     },
     {
+      "id": "edge-5ca20418ae51",
+      "source": "ent-edeced9d8194",
+      "target": "ent-07029de96d24",
+      "relation_type": "undisclosed_supplier",
+      "confidence": "low",
+      "explicit": false,
+      "evidence_ids": [
+        "au-csl-2025-annual-report-ev-8908b74ea7"
+      ]
+    },
+    {
       "id": "edge-60e1426f9b43",
       "source": "ent-01ffbaf31493",
       "target": "ent-2ebdcf52c86f",
@@ -1143,6 +1348,17 @@
       "explicit": false,
       "evidence_ids": [
         "au-fortescue-statement-2-ev-91246b92ed"
+      ]
+    },
+    {
+      "id": "edge-14730a9aa7d7",
+      "source": "ent-9bfe361a2959",
+      "target": "ent-22c5f0f7d2a9",
+      "relation_type": "undisclosed_supplier",
+      "confidence": "low",
+      "explicit": false,
+      "evidence_ids": [
+        "au-goodman-group-2024-annual-report-ev-8908b74ea7"
       ]
     },
     {
@@ -1168,6 +1384,17 @@
       ]
     },
     {
+      "id": "edge-c00101000798",
+      "source": "ent-233ae35b9cd3",
+      "target": "ent-b6c5a455eecc",
+      "relation_type": "undisclosed_supplier",
+      "confidence": "low",
+      "explicit": false,
+      "evidence_ids": [
+        "au-transurban-2025-annual-report-ev-8908b74ea7"
+      ]
+    },
+    {
       "id": "edge-33cc06ee6dc2",
       "source": "ent-af8fae49fb60",
       "target": "ent-c004e3aac2c3",
@@ -1190,6 +1417,17 @@
       ]
     },
     {
+      "id": "edge-87c0d20af503",
+      "source": "ent-233788b23023",
+      "target": "ent-c004e3aac2c3",
+      "relation_type": "undisclosed_supplier",
+      "confidence": "low",
+      "explicit": false,
+      "evidence_ids": [
+        "au-woolworths-group-2025-annual-report-ev-8908b74ea7"
+      ]
+    },
+    {
       "id": "edge-4941324a13df",
       "source": "ent-da40ae340aae",
       "target": "ent-6cbeed2835e4",
@@ -1209,6 +1447,17 @@
       "explicit": false,
       "evidence_ids": [
         "au-northern-star-statement-2-ev-91246b92ed"
+      ]
+    },
+    {
+      "id": "edge-9758083da41f",
+      "source": "ent-8b5a6c04d624",
+      "target": "ent-6cbeed2835e4",
+      "relation_type": "undisclosed_supplier",
+      "confidence": "low",
+      "explicit": false,
+      "evidence_ids": [
+        "au-northern-star-2024-annual-report-ev-8908b74ea7"
       ]
     },
     {
@@ -1256,6 +1505,17 @@
       ]
     },
     {
+      "id": "edge-3094eece51e5",
+      "source": "ent-98f68d8fbd57",
+      "target": "ent-d879fc587d05",
+      "relation_type": "undisclosed_supplier",
+      "confidence": "low",
+      "explicit": false,
+      "evidence_ids": [
+        "au-santos-2025-annual-report-ev-8908b74ea7"
+      ]
+    },
+    {
       "id": "edge-e0f54dc6a40c",
       "source": "ent-66049380137d",
       "target": "ent-55d17ac422bc",
@@ -1278,6 +1538,17 @@
       ]
     },
     {
+      "id": "edge-cd1ec460ef8a",
+      "source": "ent-9fca882fceb4",
+      "target": "ent-55d17ac422bc",
+      "relation_type": "undisclosed_supplier",
+      "confidence": "low",
+      "explicit": false,
+      "evidence_ids": [
+        "au-rea-group-2024-annual-report-ev-8908b74ea7"
+      ]
+    },
+    {
       "id": "edge-54159230d63e",
       "source": "ent-36ad8cad7e1b",
       "target": "ent-77eb052b7b46",
@@ -1297,6 +1568,17 @@
       "explicit": false,
       "evidence_ids": [
         "au-south32-statement-2-ev-91246b92ed"
+      ]
+    },
+    {
+      "id": "edge-2daa25b6a1bf",
+      "source": "ent-25185c584175",
+      "target": "ent-77eb052b7b46",
+      "relation_type": "undisclosed_supplier",
+      "confidence": "low",
+      "explicit": false,
+      "evidence_ids": [
+        "au-south32-2024-annual-report-ev-8908b74ea7"
       ]
     },
     {
@@ -1363,6 +1645,17 @@
       "explicit": false,
       "evidence_ids": [
         "au-qantas-airways-statement-2-ev-91246b92ed"
+      ]
+    },
+    {
+      "id": "edge-6056b3bf66f8",
+      "source": "ent-7b12b898eec3",
+      "target": "ent-1e0623b2d6b2",
+      "relation_type": "undisclosed_supplier",
+      "confidence": "low",
+      "explicit": false,
+      "evidence_ids": [
+        "au-qantas-airways-2025-annual-report-ev-8908b74ea7"
       ]
     },
     {
@@ -1960,6 +2253,19 @@
       "evidence_ids": [
         "us-cisco-2023-ev-8100467c63"
       ]
+    },
+    {
+      "id": "edge-c5f93173f90d",
+      "source": "ent-aa7fa45ade35",
+      "target": "ent-e8bcd432550d",
+      "relation_type": "supplier",
+      "confidence": "medium",
+      "explicit": true,
+      "evidence_ids": [
+        "us-broadcom-2025-ev-9130b59c01",
+        "us-broadcom-2024-ev-9130b59c01",
+        "us-broadcom-2023-ev-9130b59c01"
+      ]
     }
   ],
   "evidence": [
@@ -2004,6 +2310,27 @@
       "named_counterparty": false,
       "download_url": "https://modernslaveryregister.gov.au/statements/I5Tq13waiwoMEah/pdf/",
       "local_path": "/workspace/data/raw/au/commonwealth-bank/statement-2.pdf"
+    },
+    {
+      "evidence_id": "au-commonwealth-bank-2025-annual-report-ev-8908b74ea7",
+      "country": "AU",
+      "relation_type": "undisclosed_supplier",
+      "reporter_name": "Commonwealth Bank",
+      "counterparty_name": "Undisclosed Supplier · Commonwealth Bank · au-commonwealth-bank-2025-annual-report",
+      "counterparty_country": null,
+      "confidence": "low",
+      "source_system": "Australian Annual Report",
+      "document_id": "au-commonwealth-bank-2025-annual-report",
+      "document_title": "Commonwealth Bank annual report 2025",
+      "excerpt": "2025 Annual Report Commonwealth Bank of Australia Front cover Our cover reflects our optimism for Australia and commitment to building a brighter future for all. Each chapter of our report opens with an Australian landscape or cityscape, representing the communities we bank across Australia and our commitment to helping the nation prosper. Contents Overview 2025 highlights 2 About this report 4 Message from our Chair and CEO 6 Who we are 8 Our operating context 10 How we create value 12 Creating",
+      "page_reference": "",
+      "filing_year": 2025,
+      "amount_text": "",
+      "percentage_text": "",
+      "parser_method": "australia_annual_report_placeholder",
+      "named_counterparty": false,
+      "download_url": "https://www.commbank.com.au/content/dam/commbank-assets/investors/docs/results/fy25/2025-annual-report.pdf",
+      "local_path": "/workspace/data/raw/au/commonwealth-bank/2025-annual-report.pdf"
     },
     {
       "evidence_id": "au-bhp-group-statement-1-ev-91246b92ed",
@@ -2090,6 +2417,27 @@
       "local_path": "/workspace/data/raw/au/national-australia-bank/statement-2.pdf"
     },
     {
+      "evidence_id": "au-national-australia-bank-2024-annual-report-ev-8908b74ea7",
+      "country": "AU",
+      "relation_type": "undisclosed_supplier",
+      "reporter_name": "National Australia Bank",
+      "counterparty_name": "Undisclosed Supplier · National Australia Bank · au-national-australia-bank-2024-annual-report",
+      "counterparty_country": null,
+      "confidence": "low",
+      "source_system": "Australian Annual Report",
+      "document_id": "au-national-australia-bank-2024-annual-report",
+      "document_title": "National Australia Bank annual report 2024",
+      "excerpt": "Annual Report 2024 National Australia Bank Limited ABN 12 004 044 937 National Australia Bank Limited ABN 12 004 044 937 This 2024 Annual Report (Report) is lodged with the Australian Securities and Investments Commission and ASX Limited. National Australia Bank Limited (NAB) is publicly listed in Australia. The Report contains information prepared on the basis of the Banking Act 1959 (Cth), Corporations Act 2001 (Cth), 4th edition ASX Corporate Governance Councilʼs Corporate Governance Principl",
+      "page_reference": "",
+      "filing_year": 2024,
+      "amount_text": "",
+      "percentage_text": "",
+      "parser_method": "australia_annual_report_placeholder",
+      "named_counterparty": false,
+      "download_url": "https://www.nab.com.au/content/dam/nab/documents/reports/corporate/2024-annual-report.pdf",
+      "local_path": "/workspace/data/raw/au/national-australia-bank/2024-annual-report.pdf"
+    },
+    {
       "evidence_id": "au-westpac-banking-statement-1-ev-91246b92ed",
       "country": "AU",
       "relation_type": "undisclosed_supplier",
@@ -2132,6 +2480,27 @@
       "local_path": "/workspace/data/raw/au/westpac-banking/statement-2.pdf"
     },
     {
+      "evidence_id": "au-westpac-banking-2024-annual-report-ev-8908b74ea7",
+      "country": "AU",
+      "relation_type": "undisclosed_supplier",
+      "reporter_name": "Westpac Banking",
+      "counterparty_name": "Undisclosed Supplier · Westpac Banking · au-westpac-banking-2024-annual-report",
+      "counterparty_country": null,
+      "confidence": "low",
+      "source_system": "Australian Annual Report",
+      "document_id": "au-westpac-banking-2024-annual-report",
+      "document_title": "Westpac Banking annual report 2024",
+      "excerpt": "WESTPAC 2024 ANNUAL REPORT WESTPAC 2024 ANNUAL REPORT WESTPAC 2024 ANNUAL REPORT Acknowledgement of Indigenous Peoples Westpac acknowledges the First Peoples of Australia. We recognise their ongoing role as Traditional Owners of the land and waters of this country and pay our respects to Elders, past and present. We extend our respect to Westpac’s Aboriginal and Torres Strait Islander employees, partners and stakeholders and to the Indigenous Peoples in the other locations where we operate. In A",
+      "page_reference": "",
+      "filing_year": 2024,
+      "amount_text": "",
+      "percentage_text": "",
+      "parser_method": "australia_annual_report_placeholder",
+      "named_counterparty": false,
+      "download_url": "https://www.westpac.com.au/content/dam/public/wbc/documents/pdf/aw/ic/wbc-annual-report-2024.pdf",
+      "local_path": "/workspace/data/raw/au/westpac-banking/2024-annual-report.pdf"
+    },
+    {
       "evidence_id": "au-anz-bank-statement-1-ev-91246b92ed",
       "country": "AU",
       "relation_type": "undisclosed_supplier",
@@ -2151,6 +2520,27 @@
       "named_counterparty": false,
       "download_url": "https://modernslaveryregister.gov.au/statements/TZ5kLfE5dccTcWk/pdf/",
       "local_path": "/workspace/data/raw/au/anz-bank/statement-1.pdf"
+    },
+    {
+      "evidence_id": "au-anz-bank-2024-annual-report-ev-8908b74ea7",
+      "country": "AU",
+      "relation_type": "undisclosed_supplier",
+      "reporter_name": "ANZ Bank",
+      "counterparty_name": "Undisclosed Supplier · ANZ Bank · au-anz-bank-2024-annual-report",
+      "counterparty_country": null,
+      "confidence": "low",
+      "source_system": "Australian Annual Report",
+      "document_id": "au-anz-bank-2024-annual-report",
+      "document_title": "ANZ Bank annual report 2024",
+      "excerpt": "2024 Annual Report 2024 Annual Report Contents Overview Our 2024 reporting suite 2 2024 performance snapshot 3 Chairman’s message 4 CEO’s message 6 Operating environment Our operating environment 8 Our purpose and strategy 10 How we create value 12 About our business 14 Our approach to ESG 16 Our approach to climate change 17 Governance Governance 18 Directors’ qualifications, experience and special responsibilities 19 Company secretaries qualifications and experience 24 Executive Committee 25 R",
+      "page_reference": "",
+      "filing_year": 2024,
+      "amount_text": "",
+      "percentage_text": "",
+      "parser_method": "australia_annual_report_placeholder",
+      "named_counterparty": false,
+      "download_url": "https://www.anz.com.au/content/dam/anzcom/shareholder/ANZGHL-2024-Annual%20Report.pdf",
+      "local_path": "/workspace/data/raw/au/anz-bank/2024-annual-report.pdf"
     },
     {
       "evidence_id": "au-wesfarmers-statement-1-ev-91246b92ed",
@@ -2195,6 +2585,27 @@
       "local_path": "/workspace/data/raw/au/wesfarmers/statement-2.pdf"
     },
     {
+      "evidence_id": "au-wesfarmers-2024-annual-report-ev-8908b74ea7",
+      "country": "AU",
+      "relation_type": "undisclosed_supplier",
+      "reporter_name": "Wesfarmers",
+      "counterparty_name": "Undisclosed Supplier · Wesfarmers · au-wesfarmers-2024-annual-report",
+      "counterparty_country": null,
+      "confidence": "low",
+      "source_system": "Australian Annual Report",
+      "document_id": "au-wesfarmers-2024-annual-report",
+      "document_title": "Wesfarmers annual report 2024",
+      "excerpt": "29 August 2024 The Manager Market Announcements Office Australian Securities Exchange Dear Manager 2024 ANNUAL REPORT (INCLUDING APPENDIX 4E) In accordance with the requirements of the ASX Listing Rules, attached for release to the market is the 2024 Annual Report (including Appendix 4E). The following will be released in conjunction with today’s announcement: • Notification of Dividend/Distribution; • 2024 Full-year results; • 2024 Full-year results briefing presentation; and • 2024 Corporate G",
+      "page_reference": "",
+      "filing_year": 2024,
+      "amount_text": "",
+      "percentage_text": "",
+      "parser_method": "australia_annual_report_placeholder",
+      "named_counterparty": false,
+      "download_url": "https://www.wesfarmers.com.au/docs/default-source/asx-announcements/2024-annual-report-(including-appendix-4e).pdf?sfvrsn=1ab4e5bb_0",
+      "local_path": "/workspace/data/raw/au/wesfarmers/2024-annual-report.pdf"
+    },
+    {
       "evidence_id": "au-macquarie-group-limited-statement-1-ev-91246b92ed",
       "country": "AU",
       "relation_type": "undisclosed_supplier",
@@ -2235,6 +2646,27 @@
       "named_counterparty": false,
       "download_url": "https://modernslaveryregister.gov.au/statements/9v8vMDkgIKhZV6q/pdf/",
       "local_path": "/workspace/data/raw/au/macquarie-group-limited/statement-2.pdf"
+    },
+    {
+      "evidence_id": "au-macquarie-group-limited-2025-annual-report-ev-8908b74ea7",
+      "country": "AU",
+      "relation_type": "undisclosed_supplier",
+      "reporter_name": "Macquarie Group Limited",
+      "counterparty_name": "Undisclosed Supplier · Macquarie Group Limited · au-macquarie-group-limited-2025-annual-report",
+      "counterparty_country": null,
+      "confidence": "low",
+      "source_system": "Australian Annual Report",
+      "document_id": "au-macquarie-group-limited-2025-annual-report",
+      "document_title": "Macquarie Group Limited annual report 2025",
+      "excerpt": "2025 Annual Report Macquarie Group | Year ended 31 March 2025 Macquarie is a diversified financial services group providing clients with asset management, retail and business banking, wealth management, as well as advisory, and risk and capital solutions across debt, equity, financial markets and commodities. Macquarie Group Limited ABN 94 122 169 279 Cover image Farnborough Airport United Kingdom Farnborough Airport is a key UK business aviation gateway. Since 2019, Macquarie Asset Management h",
+      "page_reference": "",
+      "filing_year": 2025,
+      "amount_text": "",
+      "percentage_text": "",
+      "parser_method": "australia_annual_report_placeholder",
+      "named_counterparty": false,
+      "download_url": "https://www.macquarie.com/assets/macq/investor/reports/2025/macquarie-group-fy25-annual-report.pdf",
+      "local_path": "/workspace/data/raw/au/macquarie-group-limited/2025-annual-report.pdf"
     },
     {
       "evidence_id": "au-csl-statement-1-ev-91246b92ed",
@@ -2279,6 +2711,27 @@
       "local_path": "/workspace/data/raw/au/csl/statement-2.pdf"
     },
     {
+      "evidence_id": "au-csl-2025-annual-report-ev-8908b74ea7",
+      "country": "AU",
+      "relation_type": "undisclosed_supplier",
+      "reporter_name": "CSL",
+      "counterparty_name": "Undisclosed Supplier · CSL · au-csl-2025-annual-report",
+      "counterparty_country": null,
+      "confidence": "low",
+      "source_system": "Australian Annual Report",
+      "document_id": "au-csl-2025-annual-report",
+      "document_title": "CSL annual report 2025",
+      "excerpt": "Driven by Our Promise Annual Report 2024/25 Our ambition is to deliver enduring patient impact in areas of high unmet medical need. CSL provides lifesaving products to patients in more than 100 countries and employs over 29,000 people. + READ MORE PAGE 18 INNOVATION EXCELLENCE AND INNOVATION CSL is one of the world’s largest collectors of human plasma CSL Plasma operates one of the world’s largest and most sophisticated plasma collection networks, with collection centres in the US and Europe. Pl",
+      "page_reference": "",
+      "filing_year": 2025,
+      "amount_text": "",
+      "percentage_text": "",
+      "parser_method": "australia_annual_report_placeholder",
+      "named_counterparty": false,
+      "download_url": "https://www.csl.com/-/media/shared/documents/annual-report/csl-annual-report-2025.pdf",
+      "local_path": "/workspace/data/raw/au/csl/2025-annual-report.pdf"
+    },
+    {
       "evidence_id": "au-fortescue-statement-1-ev-91246b92ed",
       "country": "AU",
       "relation_type": "undisclosed_supplier",
@@ -2319,6 +2772,27 @@
       "named_counterparty": false,
       "download_url": "https://modernslaveryregister.gov.au/statements/np2IpXps22emY6C/pdf/",
       "local_path": "/workspace/data/raw/au/fortescue/statement-2.pdf"
+    },
+    {
+      "evidence_id": "au-goodman-group-2024-annual-report-ev-8908b74ea7",
+      "country": "AU",
+      "relation_type": "undisclosed_supplier",
+      "reporter_name": "Goodman Group",
+      "counterparty_name": "Undisclosed Supplier · Goodman Group · au-goodman-group-2024-annual-report",
+      "counterparty_country": null,
+      "confidence": "low",
+      "source_system": "Australian Annual Report",
+      "document_id": "au-goodman-group-2024-annual-report",
+      "document_title": "Goodman Group annual report 2024",
+      "excerpt": "GOODMAN GROUP ANNUAL REPORT 2024 ESSENTIAL INFRASTRUCTUREFOR THE DIGITAL ECONOMY 1 Contents Chairman and Group CEO’s letter 2 Corporate Governance 2024 5 Goodman Limited and its controlled entities 6 Appendix A – Goodman Logistics (HK) Limited and its subsidiaries A1 Appendix B – Securities information B1 Appendix C – Corporate directory C1 GOODMAN’S 2024 REPORTING SUITE We encourage you to explore our full suite detailing our Group performance on goodman.com. Goodman Group 2 Chairman and Group ",
+      "page_reference": "",
+      "filing_year": 2024,
+      "amount_text": "",
+      "percentage_text": "",
+      "parser_method": "australia_annual_report_placeholder",
+      "named_counterparty": false,
+      "download_url": "https://www.goodman.com/-/media/project/goodman/global/files/investor-centre/gmg-goodman-group/reports-and-newsletters/annual-reports/fy24_goodman-group_annual-report_distributed.pdf?hash=E236E571FA86C63AA550AF2DAFD503CA&rev=9e0e930e0b54414a8d8583dd511b7110",
+      "local_path": "/workspace/data/raw/au/goodman-group/2024-annual-report.pdf"
     },
     {
       "evidence_id": "au-transurban-statement-1-ev-91246b92ed",
@@ -2363,6 +2837,27 @@
       "local_path": "/workspace/data/raw/au/transurban/statement-2.pdf"
     },
     {
+      "evidence_id": "au-transurban-2025-annual-report-ev-8908b74ea7",
+      "country": "AU",
+      "relation_type": "undisclosed_supplier",
+      "reporter_name": "Transurban",
+      "counterparty_name": "Undisclosed Supplier · Transurban · au-transurban-2025-annual-report",
+      "counterparty_country": null,
+      "confidence": "low",
+      "source_system": "Australian Annual Report",
+      "document_id": "au-transurban-2025-annual-report",
+      "document_title": "Transurban annual report 2025",
+      "excerpt": "Corporate Report for the year ended 30 June 2025 Corporate Report for the year ended 30 June 2025 Our year in numbers $2,019M gross distributions to security holders $2,848M proportional operating EBITDA 1 11.3M customers globally 2 5.6% increase in proportional toll revenue 1,3 2.5M trips on average taken on our roads every day $3.1M towards community investment 4.16 road injury crash index, against threshold of 4.15 $2.3M estimated fuel saved on average every workday by taking our Australian r",
+      "page_reference": "",
+      "filing_year": 2025,
+      "amount_text": "",
+      "percentage_text": "",
+      "parser_method": "australia_annual_report_placeholder",
+      "named_counterparty": false,
+      "download_url": "https://www.transurban.com/content/dam/investor-centre/04/2025-Corporate-Report.pdf",
+      "local_path": "/workspace/data/raw/au/transurban/2025-annual-report.pdf"
+    },
+    {
       "evidence_id": "au-woolworths-group-statement-1-ev-91246b92ed",
       "country": "AU",
       "relation_type": "undisclosed_supplier",
@@ -2405,6 +2900,27 @@
       "local_path": "/workspace/data/raw/au/woolworths-group/statement-2.pdf"
     },
     {
+      "evidence_id": "au-woolworths-group-2025-annual-report-ev-8908b74ea7",
+      "country": "AU",
+      "relation_type": "undisclosed_supplier",
+      "reporter_name": "Woolworths Group",
+      "counterparty_name": "Undisclosed Supplier · Woolworths Group · au-woolworths-group-2025-annual-report",
+      "counterparty_country": null,
+      "confidence": "low",
+      "source_system": "Australian Annual Report",
+      "document_id": "au-woolworths-group-2025-annual-report",
+      "document_title": "Woolworths Group annual report 2025",
+      "excerpt": "potential Realising our 2025 Annual Report WOOLWORTHS GROUP LIMITED ABN 88 000 014 675 Contents SECTION 1 Performance highlights About this report 2 About Woolworths Group 4 Message from the Chair 6 Message from the CEO 8 Medium-term strategic priorities 10 Our business model 12 Our value chain 14 Our operating context 16 Delivering for our stakeholders 18 Group financial performance 26 SECTION 2 Business review Australian Food 30 Australian B2B 36 New Zealand Food 38 W Living 40 Climate-related",
+      "page_reference": "",
+      "filing_year": 2025,
+      "amount_text": "",
+      "percentage_text": "",
+      "parser_method": "australia_annual_report_placeholder",
+      "named_counterparty": false,
+      "download_url": "https://www.woolworthsgroup.com.au/content/dam/wwg/sustainability/reports/f25/Woolworths%20Group%20Annual%20Report%202025%20.pdf",
+      "local_path": "/workspace/data/raw/au/woolworths-group/2025-annual-report.pdf"
+    },
+    {
       "evidence_id": "au-northern-star-statement-1-ev-91246b92ed",
       "country": "AU",
       "relation_type": "undisclosed_supplier",
@@ -2445,6 +2961,27 @@
       "named_counterparty": false,
       "download_url": "https://modernslaveryregister.gov.au/statements/THBCyv8EX6qUYyB/pdf/",
       "local_path": "/workspace/data/raw/au/northern-star/statement-2.pdf"
+    },
+    {
+      "evidence_id": "au-northern-star-2024-annual-report-ev-8908b74ea7",
+      "country": "AU",
+      "relation_type": "undisclosed_supplier",
+      "reporter_name": "Northern Star",
+      "counterparty_name": "Undisclosed Supplier · Northern Star · au-northern-star-2024-annual-report",
+      "counterparty_country": null,
+      "confidence": "low",
+      "source_system": "Australian Annual Report",
+      "document_id": "au-northern-star-2024-annual-report",
+      "document_title": "Northern Star annual report 2024",
+      "excerpt": " Who we are Northern Star is a global-scale gold producer, with operating mines and exploration programs in Western Australia and Alaska. Our Purpose To generate superior returns for our shareholders, while providing positive benefits for our stakeholders, through operational effectiveness, exploration and active portfolio management. Acknowledgement of country Northern Star would like to acknowledge and pay our respects to Traditional Owner groups, upon whose land our operations in Australia ar",
+      "page_reference": "",
+      "filing_year": 2024,
+      "amount_text": "",
+      "percentage_text": "",
+      "parser_method": "australia_annual_report_placeholder",
+      "named_counterparty": false,
+      "download_url": "https://www.nsrltd.com/media/kmlbwkzn/2-2024-annual-report-double-page-22-08-2024.pdf",
+      "local_path": "/workspace/data/raw/au/northern-star/2024-annual-report.pdf"
     },
     {
       "evidence_id": "au-coles-group-statement-1-ev-91246b92ed",
@@ -2531,6 +3068,27 @@
       "local_path": "/workspace/data/raw/au/santos/statement-2.pdf"
     },
     {
+      "evidence_id": "au-santos-2025-annual-report-ev-8908b74ea7",
+      "country": "AU",
+      "relation_type": "undisclosed_supplier",
+      "reporter_name": "Santos",
+      "counterparty_name": "Undisclosed Supplier · Santos · au-santos-2025-annual-report",
+      "counterparty_country": null,
+      "confidence": "low",
+      "source_system": "Australian Annual Report",
+      "document_id": "au-santos-2025-annual-report",
+      "document_title": "Santos annual report 2025",
+      "excerpt": "Overview Sustainability Report (voluntary) Sustainability Report (mandatory) Governance Reserves Statement Directors’ Report Remuneration Report Financial Report Additional information Incorporating Appendix 4E Annual Report 2025 Appendix 4E Results for Announcement to the Market1 Revenue/Profit US$million Revenue from ordinary activities down 8% to 4,939 Net profit from ordinary activities after tax attributable to members2 down 33% to 818 Net profit for the period attributable to members2 down",
+      "page_reference": "",
+      "filing_year": 2025,
+      "amount_text": "",
+      "percentage_text": "",
+      "parser_method": "australia_annual_report_placeholder",
+      "named_counterparty": false,
+      "download_url": "https://www.santos.com/wp-content/uploads/2026/02/Appendix-4E-and-2025-Annual-Report.pdf",
+      "local_path": "/workspace/data/raw/au/santos/2025-annual-report.pdf"
+    },
+    {
       "evidence_id": "au-rea-group-statement-1-ev-91246b92ed",
       "country": "AU",
       "relation_type": "undisclosed_supplier",
@@ -2573,6 +3131,27 @@
       "local_path": "/workspace/data/raw/au/rea-group/statement-2.pdf"
     },
     {
+      "evidence_id": "au-rea-group-2024-annual-report-ev-8908b74ea7",
+      "country": "AU",
+      "relation_type": "undisclosed_supplier",
+      "reporter_name": "REA Group",
+      "counterparty_name": "Undisclosed Supplier · REA Group · au-rea-group-2024-annual-report",
+      "counterparty_country": null,
+      "confidence": "low",
+      "source_system": "Australian Annual Report",
+      "document_id": "au-rea-group-2024-annual-report",
+      "document_title": "REA Group annual report 2024",
+      "excerpt": "Annual Report 2024 Changing the way the world experiences property Overview 2 About us 4 Financial highlights 6 FY24 highlights 8 Chairman’s message 10 CEO’s message 14 Our people and culture 18 Full year results and operations review 20 Australian highlights 30 Global highlights 32 Environmental, Social and Governance Governance 38 Executive Leadership Team 40 Board of Directors Financial Report 42 Directors’ Report 51 Auditor’s Independence Declaration 52 Remuneration Report 68 Consolidated In",
+      "page_reference": "",
+      "filing_year": 2024,
+      "amount_text": "",
+      "percentage_text": "",
+      "parser_method": "australia_annual_report_placeholder",
+      "named_counterparty": false,
+      "download_url": "https://cdn.rea-group.com/wp-content/uploads/2024/08/09085646/Annual-Report-to-shareholders.pdf",
+      "local_path": "/workspace/data/raw/au/rea-group/2024-annual-report.pdf"
+    },
+    {
       "evidence_id": "au-south32-statement-1-ev-91246b92ed",
       "country": "AU",
       "relation_type": "undisclosed_supplier",
@@ -2613,6 +3192,27 @@
       "named_counterparty": false,
       "download_url": "https://modernslaveryregister.gov.au/statements/GWwEcTE9R6JEPGr/pdf/",
       "local_path": "/workspace/data/raw/au/south32/statement-2.pdf"
+    },
+    {
+      "evidence_id": "au-south32-2024-annual-report-ev-8908b74ea7",
+      "country": "AU",
+      "relation_type": "undisclosed_supplier",
+      "reporter_name": "South32",
+      "counterparty_name": "Undisclosed Supplier · South32 · au-south32-2024-annual-report",
+      "counterparty_country": null,
+      "confidence": "low",
+      "source_system": "Australian Annual Report",
+      "document_id": "au-south32-2024-annual-report",
+      "document_title": "South32 annual report 2024",
+      "excerpt": "ANNUAL REPORT 2024 Corporate Governance Statement Modern Slavery Statement Sustainable Development Report Tax Transparency and Payments to Governments Report SUSTAINABLE DEVELOPMENT REPORT 2024 Sustainability Databook Standards and Frameworks Reporting Index SUSTAINABILITY DATABOOK 2024 STANDARDS AND FRAMEWORKS REPORTING INDEX 2024 CORPORATE GOVERNANCE STATEMENT 2024 MODERN SLAVERY STATEMENT 2024 TAX TRANSPARENCY AND PAYMENTS TO GOVERNMENTS REPORT 2024 Annual Report FY24 This Annual Report is a ",
+      "page_reference": "",
+      "filing_year": 2024,
+      "amount_text": "",
+      "percentage_text": "",
+      "parser_method": "australia_annual_report_placeholder",
+      "named_counterparty": false,
+      "download_url": "https://www.south32.net/docs/default-source/exchange-releases/annual-report-2024-0x3a746a0c1a77ea64.pdf?sfvrsn=54e343e9_0",
+      "local_path": "/workspace/data/raw/au/south32/2024-annual-report.pdf"
     },
     {
       "evidence_id": "au-computershare-statement-1-ev-91246b92ed",
@@ -2739,6 +3339,27 @@
       "named_counterparty": false,
       "download_url": "https://modernslaveryregister.gov.au/statements/l7hxefeutZm217y/pdf/",
       "local_path": "/workspace/data/raw/au/qantas-airways/statement-2.pdf"
+    },
+    {
+      "evidence_id": "au-qantas-airways-2025-annual-report-ev-8908b74ea7",
+      "country": "AU",
+      "relation_type": "undisclosed_supplier",
+      "reporter_name": "Qantas Airways",
+      "counterparty_name": "Undisclosed Supplier · Qantas Airways · au-qantas-airways-2025-annual-report",
+      "counterparty_country": null,
+      "confidence": "low",
+      "source_system": "Australian Annual Report",
+      "document_id": "au-qantas-airways-2025-annual-report",
+      "document_title": "Qantas Airways annual report 2025",
+      "excerpt": "Annual Report 2025 Cocos (Keeling) Islands Financial and Operational Highlights 02 Five-Year History 03 Chair’s Message 04 CEO’s Message 06 Board of Directors 08 Group Leadership Team 11 Review of Operations 15 Condensed Corporate Governance Statement 29 Directors’ Report 32 Financial Report 65 Shareholder Information 139 Financial Calendar and Additional Information 140 Disclaimer This Report contains summary information about Qantas Airways Limited and its related bodies corporate (Qantas Grou",
+      "page_reference": "",
+      "filing_year": 2025,
+      "amount_text": "",
+      "percentage_text": "",
+      "parser_method": "australia_annual_report_placeholder",
+      "named_counterparty": false,
+      "download_url": "https://investor.qantas.com/FormBuilder/_Resource/_module/doLLG5ufYkCyEPjF1tpgyw/file/annual-reports/2025-Annual-Report.pdf",
+      "local_path": "/workspace/data/raw/au/qantas-airways/2025-annual-report.pdf"
     },
     {
       "evidence_id": "cn-foxconn-industrial-internet-2023-ev-ecb6a4b2ff",
@@ -4125,6 +4746,69 @@
       "named_counterparty": false,
       "download_url": "https://www.sec.gov/Archives/edgar/data/858877/000085887723000023/csco-20230729.htm",
       "local_path": "/workspace/data/raw/us/cisco/2023-10-k.html"
+    },
+    {
+      "evidence_id": "us-broadcom-2025-ev-9130b59c01",
+      "country": "US",
+      "relation_type": "supplier",
+      "reporter_name": "Broadcom",
+      "counterparty_name": "Taiwan Semiconductor Manufacturing Company Limited",
+      "counterparty_country": null,
+      "confidence": "medium",
+      "source_system": "SEC EDGAR",
+      "document_id": "us-broadcom-2025",
+      "document_title": "Broadcom 10-K 2025",
+      "excerpt": "The majority of our front-end wafer manufacturing operations is outsourced to external foundries, including Taiwan Semiconductor Manufacturing Company Limited (&#8220;TSMC&#8221;).",
+      "page_reference": "",
+      "filing_year": 2025,
+      "amount_text": "",
+      "percentage_text": "",
+      "parser_method": "cross_document_known_entity_probe",
+      "named_counterparty": true,
+      "download_url": "https://www.sec.gov/Archives/edgar/data/1730168/000173016825000121/avgo-20251102.htm",
+      "local_path": "/workspace/data/raw/us/broadcom/2025-10-k.html"
+    },
+    {
+      "evidence_id": "us-broadcom-2024-ev-9130b59c01",
+      "country": "US",
+      "relation_type": "supplier",
+      "reporter_name": "Broadcom",
+      "counterparty_name": "Taiwan Semiconductor Manufacturing Company Limited",
+      "counterparty_country": null,
+      "confidence": "medium",
+      "source_system": "SEC EDGAR",
+      "document_id": "us-broadcom-2024",
+      "document_title": "Broadcom 10-K 2024",
+      "excerpt": "The majority of our front-end wafer manufacturing operations is outsourced to external foundries, including Taiwan Semiconductor Manufacturing Company Limited (&#8220;TSMC&#8221;).",
+      "page_reference": "",
+      "filing_year": 2024,
+      "amount_text": "",
+      "percentage_text": "",
+      "parser_method": "cross_document_known_entity_probe",
+      "named_counterparty": true,
+      "download_url": "https://www.sec.gov/Archives/edgar/data/1730168/000173016824000139/avgo-20241103.htm",
+      "local_path": "/workspace/data/raw/us/broadcom/2024-10-k.html"
+    },
+    {
+      "evidence_id": "us-broadcom-2023-ev-9130b59c01",
+      "country": "US",
+      "relation_type": "supplier",
+      "reporter_name": "Broadcom",
+      "counterparty_name": "Taiwan Semiconductor Manufacturing Company Limited",
+      "counterparty_country": null,
+      "confidence": "medium",
+      "source_system": "SEC EDGAR",
+      "document_id": "us-broadcom-2023",
+      "document_title": "Broadcom 10-K 2023",
+      "excerpt": "The majority of our front-end wafer manufacturing operations is outsourced to external foundries, including Taiwan Semiconductor Manufacturing Company Limited (&#8220;TSMC&#8221;).",
+      "page_reference": "",
+      "filing_year": 2023,
+      "amount_text": "",
+      "percentage_text": "",
+      "parser_method": "cross_document_known_entity_probe",
+      "named_counterparty": true,
+      "download_url": "https://www.sec.gov/Archives/edgar/data/1730168/000173016823000096/avgo-20231029.htm",
+      "local_path": "/workspace/data/raw/us/broadcom/2023-10-k.html"
     }
   ],
   "candidates": [
@@ -6095,27 +6779,30 @@
       ]
     },
     {
+      "candidate_link_id": "cand-ec72c4f1e245",
+      "undisclosed_entity_id": "ent-67626106d193",
+      "candidate_entity_id": "ent-e8bcd432550d",
+      "rank": 2,
+      "confidence": "medium",
+      "rationale": "Broadcom repeatedly appears as an explicit customer in the downloaded-source corpus.",
+      "supporting_evidence_ids": [
+        "us-broadcom-2023-ev-9130b59c01",
+        "us-broadcom-2024-ev-3baff8ce17",
+        "us-broadcom-2024-ev-9130b59c01",
+        "us-broadcom-2025-ev-9130b59c01"
+      ]
+    },
+    {
       "candidate_link_id": "cand-9180d365f6f3",
       "undisclosed_entity_id": "ent-67626106d193",
       "candidate_entity_id": "ent-69aa5d0c4034",
-      "rank": 2,
+      "rank": 3,
       "confidence": "medium",
       "rationale": "Tesla repeatedly appears as an explicit customer in the downloaded-source corpus.",
       "supporting_evidence_ids": [
         "us-tesla-2024-ev-34e2cf896f",
         "us-tesla-2025-ev-34e2cf896f",
         "us-tesla-2026-ev-34e2cf896f"
-      ]
-    },
-    {
-      "candidate_link_id": "cand-ec72c4f1e245",
-      "undisclosed_entity_id": "ent-67626106d193",
-      "candidate_entity_id": "ent-e8bcd432550d",
-      "rank": 3,
-      "confidence": "low",
-      "rationale": "Broadcom repeatedly appears as an explicit customer in the downloaded-source corpus.",
-      "supporting_evidence_ids": [
-        "us-broadcom-2024-ev-3baff8ce17"
       ]
     },
     {
@@ -6146,27 +6833,30 @@
       ]
     },
     {
+      "candidate_link_id": "cand-34d210d242bf",
+      "undisclosed_entity_id": "ent-98a47b91398a",
+      "candidate_entity_id": "ent-e8bcd432550d",
+      "rank": 2,
+      "confidence": "medium",
+      "rationale": "Broadcom repeatedly appears as an explicit customer in the downloaded-source corpus.",
+      "supporting_evidence_ids": [
+        "us-broadcom-2023-ev-9130b59c01",
+        "us-broadcom-2024-ev-3baff8ce17",
+        "us-broadcom-2024-ev-9130b59c01",
+        "us-broadcom-2025-ev-9130b59c01"
+      ]
+    },
+    {
       "candidate_link_id": "cand-fba4cfa7c98a",
       "undisclosed_entity_id": "ent-98a47b91398a",
       "candidate_entity_id": "ent-69aa5d0c4034",
-      "rank": 2,
+      "rank": 3,
       "confidence": "medium",
       "rationale": "Tesla repeatedly appears as an explicit customer in the downloaded-source corpus.",
       "supporting_evidence_ids": [
         "us-tesla-2024-ev-34e2cf896f",
         "us-tesla-2025-ev-34e2cf896f",
         "us-tesla-2026-ev-34e2cf896f"
-      ]
-    },
-    {
-      "candidate_link_id": "cand-34d210d242bf",
-      "undisclosed_entity_id": "ent-98a47b91398a",
-      "candidate_entity_id": "ent-e8bcd432550d",
-      "rank": 3,
-      "confidence": "low",
-      "rationale": "Broadcom repeatedly appears as an explicit customer in the downloaded-source corpus.",
-      "supporting_evidence_ids": [
-        "us-broadcom-2024-ev-3baff8ce17"
       ]
     },
     {
@@ -6197,27 +6887,30 @@
       ]
     },
     {
+      "candidate_link_id": "cand-d673d3496eef",
+      "undisclosed_entity_id": "ent-2451c73ce022",
+      "candidate_entity_id": "ent-e8bcd432550d",
+      "rank": 2,
+      "confidence": "medium",
+      "rationale": "Broadcom repeatedly appears as an explicit customer in the downloaded-source corpus.",
+      "supporting_evidence_ids": [
+        "us-broadcom-2023-ev-9130b59c01",
+        "us-broadcom-2024-ev-3baff8ce17",
+        "us-broadcom-2024-ev-9130b59c01",
+        "us-broadcom-2025-ev-9130b59c01"
+      ]
+    },
+    {
       "candidate_link_id": "cand-8c9fcbed773b",
       "undisclosed_entity_id": "ent-2451c73ce022",
       "candidate_entity_id": "ent-69aa5d0c4034",
-      "rank": 2,
+      "rank": 3,
       "confidence": "medium",
       "rationale": "Tesla repeatedly appears as an explicit customer in the downloaded-source corpus.",
       "supporting_evidence_ids": [
         "us-tesla-2024-ev-34e2cf896f",
         "us-tesla-2025-ev-34e2cf896f",
         "us-tesla-2026-ev-34e2cf896f"
-      ]
-    },
-    {
-      "candidate_link_id": "cand-d673d3496eef",
-      "undisclosed_entity_id": "ent-2451c73ce022",
-      "candidate_entity_id": "ent-e8bcd432550d",
-      "rank": 3,
-      "confidence": "low",
-      "rationale": "Broadcom repeatedly appears as an explicit customer in the downloaded-source corpus.",
-      "supporting_evidence_ids": [
-        "us-broadcom-2024-ev-3baff8ce17"
       ]
     },
     {
@@ -6248,27 +6941,30 @@
       ]
     },
     {
+      "candidate_link_id": "cand-9ff8a624811e",
+      "undisclosed_entity_id": "ent-173730230d0e",
+      "candidate_entity_id": "ent-e8bcd432550d",
+      "rank": 2,
+      "confidence": "medium",
+      "rationale": "Broadcom repeatedly appears as an explicit customer in the downloaded-source corpus.",
+      "supporting_evidence_ids": [
+        "us-broadcom-2023-ev-9130b59c01",
+        "us-broadcom-2024-ev-3baff8ce17",
+        "us-broadcom-2024-ev-9130b59c01",
+        "us-broadcom-2025-ev-9130b59c01"
+      ]
+    },
+    {
       "candidate_link_id": "cand-3c569c733a71",
       "undisclosed_entity_id": "ent-173730230d0e",
       "candidate_entity_id": "ent-69aa5d0c4034",
-      "rank": 2,
+      "rank": 3,
       "confidence": "medium",
       "rationale": "Tesla repeatedly appears as an explicit customer in the downloaded-source corpus.",
       "supporting_evidence_ids": [
         "us-tesla-2024-ev-34e2cf896f",
         "us-tesla-2025-ev-34e2cf896f",
         "us-tesla-2026-ev-34e2cf896f"
-      ]
-    },
-    {
-      "candidate_link_id": "cand-9ff8a624811e",
-      "undisclosed_entity_id": "ent-173730230d0e",
-      "candidate_entity_id": "ent-e8bcd432550d",
-      "rank": 3,
-      "confidence": "low",
-      "rationale": "Broadcom repeatedly appears as an explicit customer in the downloaded-source corpus.",
-      "supporting_evidence_ids": [
-        "us-broadcom-2024-ev-3baff8ce17"
       ]
     },
     {
@@ -6299,27 +6995,30 @@
       ]
     },
     {
+      "candidate_link_id": "cand-9477ea7bb815",
+      "undisclosed_entity_id": "ent-b398640fbcd7",
+      "candidate_entity_id": "ent-e8bcd432550d",
+      "rank": 2,
+      "confidence": "medium",
+      "rationale": "Broadcom repeatedly appears as an explicit customer in the downloaded-source corpus.",
+      "supporting_evidence_ids": [
+        "us-broadcom-2023-ev-9130b59c01",
+        "us-broadcom-2024-ev-3baff8ce17",
+        "us-broadcom-2024-ev-9130b59c01",
+        "us-broadcom-2025-ev-9130b59c01"
+      ]
+    },
+    {
       "candidate_link_id": "cand-9e74fc5f78b9",
       "undisclosed_entity_id": "ent-b398640fbcd7",
       "candidate_entity_id": "ent-69aa5d0c4034",
-      "rank": 2,
+      "rank": 3,
       "confidence": "medium",
       "rationale": "Tesla repeatedly appears as an explicit customer in the downloaded-source corpus.",
       "supporting_evidence_ids": [
         "us-tesla-2024-ev-34e2cf896f",
         "us-tesla-2025-ev-34e2cf896f",
         "us-tesla-2026-ev-34e2cf896f"
-      ]
-    },
-    {
-      "candidate_link_id": "cand-9477ea7bb815",
-      "undisclosed_entity_id": "ent-b398640fbcd7",
-      "candidate_entity_id": "ent-e8bcd432550d",
-      "rank": 3,
-      "confidence": "low",
-      "rationale": "Broadcom repeatedly appears as an explicit customer in the downloaded-source corpus.",
-      "supporting_evidence_ids": [
-        "us-broadcom-2024-ev-3baff8ce17"
       ]
     },
     {
@@ -6350,27 +7049,30 @@
       ]
     },
     {
+      "candidate_link_id": "cand-2057651ea2db",
+      "undisclosed_entity_id": "ent-26380f5190e1",
+      "candidate_entity_id": "ent-e8bcd432550d",
+      "rank": 2,
+      "confidence": "medium",
+      "rationale": "Broadcom repeatedly appears as an explicit customer in the downloaded-source corpus.",
+      "supporting_evidence_ids": [
+        "us-broadcom-2023-ev-9130b59c01",
+        "us-broadcom-2024-ev-3baff8ce17",
+        "us-broadcom-2024-ev-9130b59c01",
+        "us-broadcom-2025-ev-9130b59c01"
+      ]
+    },
+    {
       "candidate_link_id": "cand-133d11032b39",
       "undisclosed_entity_id": "ent-26380f5190e1",
       "candidate_entity_id": "ent-69aa5d0c4034",
-      "rank": 2,
+      "rank": 3,
       "confidence": "medium",
       "rationale": "Tesla repeatedly appears as an explicit customer in the downloaded-source corpus.",
       "supporting_evidence_ids": [
         "us-tesla-2024-ev-34e2cf896f",
         "us-tesla-2025-ev-34e2cf896f",
         "us-tesla-2026-ev-34e2cf896f"
-      ]
-    },
-    {
-      "candidate_link_id": "cand-2057651ea2db",
-      "undisclosed_entity_id": "ent-26380f5190e1",
-      "candidate_entity_id": "ent-e8bcd432550d",
-      "rank": 3,
-      "confidence": "low",
-      "rationale": "Broadcom repeatedly appears as an explicit customer in the downloaded-source corpus.",
-      "supporting_evidence_ids": [
-        "us-broadcom-2024-ev-3baff8ce17"
       ]
     },
     {
@@ -6401,27 +7103,30 @@
       ]
     },
     {
+      "candidate_link_id": "cand-4807b09bc7d0",
+      "undisclosed_entity_id": "ent-ece5af217d85",
+      "candidate_entity_id": "ent-e8bcd432550d",
+      "rank": 2,
+      "confidence": "medium",
+      "rationale": "Broadcom repeatedly appears as an explicit customer in the downloaded-source corpus.",
+      "supporting_evidence_ids": [
+        "us-broadcom-2023-ev-9130b59c01",
+        "us-broadcom-2024-ev-3baff8ce17",
+        "us-broadcom-2024-ev-9130b59c01",
+        "us-broadcom-2025-ev-9130b59c01"
+      ]
+    },
+    {
       "candidate_link_id": "cand-094236ca291b",
       "undisclosed_entity_id": "ent-ece5af217d85",
       "candidate_entity_id": "ent-69aa5d0c4034",
-      "rank": 2,
+      "rank": 3,
       "confidence": "medium",
       "rationale": "Tesla repeatedly appears as an explicit customer in the downloaded-source corpus.",
       "supporting_evidence_ids": [
         "us-tesla-2024-ev-34e2cf896f",
         "us-tesla-2025-ev-34e2cf896f",
         "us-tesla-2026-ev-34e2cf896f"
-      ]
-    },
-    {
-      "candidate_link_id": "cand-4807b09bc7d0",
-      "undisclosed_entity_id": "ent-ece5af217d85",
-      "candidate_entity_id": "ent-e8bcd432550d",
-      "rank": 3,
-      "confidence": "low",
-      "rationale": "Broadcom repeatedly appears as an explicit customer in the downloaded-source corpus.",
-      "supporting_evidence_ids": [
-        "us-broadcom-2024-ev-3baff8ce17"
       ]
     },
     {
@@ -6452,27 +7157,30 @@
       ]
     },
     {
+      "candidate_link_id": "cand-13cf98afa6cd",
+      "undisclosed_entity_id": "ent-3790604d1a57",
+      "candidate_entity_id": "ent-e8bcd432550d",
+      "rank": 2,
+      "confidence": "medium",
+      "rationale": "Broadcom repeatedly appears as an explicit customer in the downloaded-source corpus.",
+      "supporting_evidence_ids": [
+        "us-broadcom-2023-ev-9130b59c01",
+        "us-broadcom-2024-ev-3baff8ce17",
+        "us-broadcom-2024-ev-9130b59c01",
+        "us-broadcom-2025-ev-9130b59c01"
+      ]
+    },
+    {
       "candidate_link_id": "cand-c75c44118b70",
       "undisclosed_entity_id": "ent-3790604d1a57",
       "candidate_entity_id": "ent-69aa5d0c4034",
-      "rank": 2,
+      "rank": 3,
       "confidence": "medium",
       "rationale": "Tesla repeatedly appears as an explicit customer in the downloaded-source corpus.",
       "supporting_evidence_ids": [
         "us-tesla-2024-ev-34e2cf896f",
         "us-tesla-2025-ev-34e2cf896f",
         "us-tesla-2026-ev-34e2cf896f"
-      ]
-    },
-    {
-      "candidate_link_id": "cand-13cf98afa6cd",
-      "undisclosed_entity_id": "ent-3790604d1a57",
-      "candidate_entity_id": "ent-e8bcd432550d",
-      "rank": 3,
-      "confidence": "low",
-      "rationale": "Broadcom repeatedly appears as an explicit customer in the downloaded-source corpus.",
-      "supporting_evidence_ids": [
-        "us-broadcom-2024-ev-3baff8ce17"
       ]
     },
     {
